@@ -310,10 +310,6 @@ const PokemonDraftData = {
       "natDexId": 12,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -2598,10 +2594,6 @@ const PokemonDraftData = {
       "natDexId": 99,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -3455,10 +3447,6 @@ const PokemonDraftData = {
       "natDexId": 131,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": true,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": true,
           "fullyEvolved": true
@@ -3716,10 +3704,6 @@ const PokemonDraftData = {
       "natDexId": 143,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -13263,10 +13247,6 @@ const PokemonDraftData = {
       "natDexId": 569,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -17064,24 +17044,6 @@ const PokemonDraftData = {
       "formOrder": 0
     },
     {
-      "name": "Wishiwashi-School",
-      "natDexId": 746,
-      "formOrder": 1,
-      "games": {
-        "natDex": {
-          "stage1": true,
-          "fullyEvolved": true
-        },
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": true
-        }
-      },
-      "tags": [
-        "abilityForm"
-      ]
-    },
-    {
       "name": "Wishiwashi-Sevii",
       "natDexId": 746,
       "formOrder": 20,
@@ -17093,22 +17055,6 @@ const PokemonDraftData = {
       },
       "tags": [
         "alternateForm"
-      ],
-      "spriteSource": "radicalRed"
-    },
-    {
-      "name": "Wishiwashi-School-Sevii",
-      "natDexId": 746,
-      "formOrder": 21,
-      "games": {
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": true
-        }
-      },
-      "tags": [
-        "alternateForm",
-        "abilityForm"
       ],
       "spriteSource": "radicalRed"
     },
@@ -17928,24 +17874,6 @@ const PokemonDraftData = {
       "formOrder": 0
     },
     {
-      "name": "Minior-Meteor",
-      "natDexId": 774,
-      "formOrder": 1,
-      "games": {
-        "natDex": {
-          "stage1": true,
-          "fullyEvolved": true
-        },
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": true
-        }
-      },
-      "tags": [
-        "abilityForm"
-      ]
-    },
-    {
       "name": "Komala",
       "games": {
         "radicalRed": {
@@ -18008,24 +17936,6 @@ const PokemonDraftData = {
       },
       "natDexId": 778,
       "formOrder": 0
-    },
-    {
-      "name": "Mimikyu-Busted",
-      "natDexId": 778,
-      "formOrder": 1,
-      "games": {
-        "natDex": {
-          "stage1": true,
-          "fullyEvolved": true
-        },
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": true
-        }
-      },
-      "tags": [
-        "abilityForm"
-      ]
     },
     {
       "name": "Bruxish",
@@ -18728,7 +18638,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 811,
+      "natDexId": 810,
       "formOrder": 0
     },
     {
@@ -18743,7 +18653,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 812,
+      "natDexId": 811,
       "formOrder": 0
     },
     {
@@ -18758,7 +18668,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 813,
+      "natDexId": 812,
       "formOrder": 0
     },
     {
@@ -18773,7 +18683,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 814,
+      "natDexId": 813,
       "formOrder": 0
     },
     {
@@ -18788,7 +18698,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 815,
+      "natDexId": 814,
       "formOrder": 0
     },
     {
@@ -18803,7 +18713,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 816,
+      "natDexId": 815,
       "formOrder": 0
     },
     {
@@ -18818,7 +18728,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 817,
+      "natDexId": 816,
       "formOrder": 0
     },
     {
@@ -18833,7 +18743,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 818,
+      "natDexId": 817,
       "formOrder": 0
     },
     {
@@ -18848,7 +18758,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 819,
+      "natDexId": 818,
       "formOrder": 0
     },
     {
@@ -18863,7 +18773,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 820,
+      "natDexId": 819,
       "formOrder": 0
     },
     {
@@ -18878,7 +18788,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 821,
+      "natDexId": 820,
       "formOrder": 0
     },
     {
@@ -18893,7 +18803,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 822,
+      "natDexId": 821,
       "formOrder": 0
     },
     {
@@ -18908,7 +18818,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 823,
+      "natDexId": 822,
       "formOrder": 0
     },
     {
@@ -18923,7 +18833,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 824,
+      "natDexId": 823,
       "formOrder": 0
     },
     {
@@ -18938,7 +18848,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 825,
+      "natDexId": 824,
       "formOrder": 0
     },
     {
@@ -18953,7 +18863,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 826,
+      "natDexId": 825,
       "formOrder": 0
     },
     {
@@ -18968,18 +18878,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 827,
+      "natDexId": 826,
       "formOrder": 0
     },
     {
       "name": "Orbeetle-Mega",
-      "natDexId": 827,
+      "natDexId": 826,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19002,7 +18908,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 828,
+      "natDexId": 827,
       "formOrder": 0
     },
     {
@@ -19017,7 +18923,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 829,
+      "natDexId": 828,
       "formOrder": 0
     },
     {
@@ -19032,7 +18938,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 830,
+      "natDexId": 829,
       "formOrder": 0
     },
     {
@@ -19047,7 +18953,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 831,
+      "natDexId": 830,
       "formOrder": 0
     },
     {
@@ -19062,7 +18968,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 832,
+      "natDexId": 831,
       "formOrder": 0
     },
     {
@@ -19077,7 +18983,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 833,
+      "natDexId": 832,
       "formOrder": 0
     },
     {
@@ -19092,7 +18998,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 834,
+      "natDexId": 833,
       "formOrder": 0
     },
     {
@@ -19107,18 +19013,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 835,
+      "natDexId": 834,
       "formOrder": 0
     },
     {
       "name": "Drednaw-Mega",
-      "natDexId": 835,
+      "natDexId": 834,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19141,7 +19043,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 836,
+      "natDexId": 835,
       "formOrder": 0
     },
     {
@@ -19156,7 +19058,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 837,
+      "natDexId": 836,
       "formOrder": 0
     },
     {
@@ -19171,7 +19073,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 838,
+      "natDexId": 837,
       "formOrder": 0
     },
     {
@@ -19186,7 +19088,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 839,
+      "natDexId": 838,
       "formOrder": 0
     },
     {
@@ -19201,18 +19103,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 840,
+      "natDexId": 839,
       "formOrder": 0
     },
     {
       "name": "Coalossal-Mega",
-      "natDexId": 840,
+      "natDexId": 839,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19235,7 +19133,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 841,
+      "natDexId": 840,
       "formOrder": 0
     },
     {
@@ -19250,18 +19148,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 842,
+      "natDexId": 841,
       "formOrder": 0
     },
     {
       "name": "Flapple-Mega",
-      "natDexId": 842,
+      "natDexId": 841,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19284,18 +19178,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 843,
+      "natDexId": 842,
       "formOrder": 0
     },
     {
       "name": "Appletun-Mega",
-      "natDexId": 843,
+      "natDexId": 842,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19318,7 +19208,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 844,
+      "natDexId": 843,
       "formOrder": 0
     },
     {
@@ -19333,18 +19223,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 845,
+      "natDexId": 844,
       "formOrder": 0
     },
     {
       "name": "Sandaconda-Mega",
-      "natDexId": 845,
+      "natDexId": 844,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19367,7 +19253,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 846,
+      "natDexId": 845,
       "formOrder": 0
     },
     {
@@ -19382,7 +19268,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 847,
+      "natDexId": 846,
       "formOrder": 0
     },
     {
@@ -19397,7 +19283,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 848,
+      "natDexId": 847,
       "formOrder": 0
     },
     {
@@ -19412,7 +19298,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 849,
+      "natDexId": 848,
       "formOrder": 0
     },
     {
@@ -19427,18 +19313,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 850,
+      "natDexId": 849,
       "formOrder": 0
     },
     {
       "name": "Toxtricity-Mega",
-      "natDexId": 850,
+      "natDexId": 849,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19461,12 +19343,12 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 851,
+      "natDexId": 850,
       "formOrder": 0
     },
     {
       "name": "Sizzlipede-Sevii",
-      "natDexId": 851,
+      "natDexId": 850,
       "formOrder": 20,
       "games": {
         "radicalRed": {
@@ -19491,18 +19373,14 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 852,
+      "natDexId": 851,
       "formOrder": 0
     },
     {
       "name": "Centiskorch-Mega",
-      "natDexId": 852,
+      "natDexId": 851,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -19515,7 +19393,7 @@ const PokemonDraftData = {
     },
     {
       "name": "Centiskorch-Sevii",
-      "natDexId": 852,
+      "natDexId": 851,
       "formOrder": 20,
       "games": {
         "radicalRed": {
@@ -19530,7 +19408,7 @@ const PokemonDraftData = {
     },
     {
       "name": "Centiskorch-Sevii-Mega",
-      "natDexId": 852,
+      "natDexId": 851,
       "formOrder": 21,
       "games": {
         "radicalRed": {
@@ -19556,7 +19434,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 853,
+      "natDexId": 852,
       "formOrder": 0
     },
     {
@@ -19571,7 +19449,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 854,
+      "natDexId": 853,
       "formOrder": 0
     },
     {
@@ -19586,7 +19464,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 855,
+      "natDexId": 854,
       "formOrder": 0
     },
     {
@@ -19601,7 +19479,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 856,
+      "natDexId": 855,
       "formOrder": 0
     },
     {
@@ -19616,7 +19494,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 857,
+      "natDexId": 856,
       "formOrder": 0
     },
     {
@@ -19631,7 +19509,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 858,
+      "natDexId": 857,
       "formOrder": 0
     },
     {
@@ -19646,7 +19524,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 859,
+      "natDexId": 858,
       "formOrder": 0
     },
     {
@@ -19661,7 +19539,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 860,
+      "natDexId": 859,
       "formOrder": 0
     },
     {
@@ -19676,7 +19554,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 861,
+      "natDexId": 860,
       "formOrder": 0
     },
     {
@@ -19691,7 +19569,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 862,
+      "natDexId": 861,
       "formOrder": 0
     },
     {
@@ -19706,7 +19584,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 863,
+      "natDexId": 862,
       "formOrder": 0
     },
     {
@@ -19721,7 +19599,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 864,
+      "natDexId": 863,
       "formOrder": 0
     },
     {
@@ -19736,7 +19614,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 865,
+      "natDexId": 864,
       "formOrder": 0
     },
     {
@@ -19751,7 +19629,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 866,
+      "natDexId": 865,
       "formOrder": 0
     },
     {
@@ -19766,10 +19644,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "tags": [
-        "alternateForm"
-      ],
-      "natDexId": 867,
+      "natDexId": 866,
       "formOrder": 0
     },
     {
@@ -19784,7 +19659,7 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 868,
+      "natDexId": 867,
       "formOrder": 0
     },
     {
@@ -19799,7 +19674,7 @@ const PokemonDraftData = {
           "fullyEvolved": false
         }
       },
-      "natDexId": 869,
+      "natDexId": 868,
       "formOrder": 0
     },
     {
@@ -19814,8 +19689,23 @@ const PokemonDraftData = {
           "fullyEvolved": true
         }
       },
-      "natDexId": 870,
+      "natDexId": 869,
       "formOrder": 0
+    },
+    {
+      "name": "Alcremie-Mega",
+      "natDexId": 869,
+      "formOrder": 10,
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "tags": [
+        "itemForm"
+      ],
+      "spriteSource": "radicalRed"
     },
     {
       "name": "Falinks",
@@ -19831,25 +19721,6 @@ const PokemonDraftData = {
       },
       "natDexId": 870,
       "formOrder": 0
-    },
-    {
-      "name": "Alcremie-Mega",
-      "natDexId": 870,
-      "formOrder": 10,
-      "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
-        "radicalRed": {
-          "stage1": false,
-          "fullyEvolved": true
-        }
-      },
-      "tags": [
-        "itemForm"
-      ],
-      "spriteSource": "radicalRed"
     },
     {
       "name": "Falinks-Mega",
@@ -20023,10 +19894,6 @@ const PokemonDraftData = {
       "natDexId": 879,
       "formOrder": 10,
       "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
         "radicalRed": {
           "stage1": false,
           "fullyEvolved": true
@@ -21586,24 +21453,6 @@ const PokemonDraftData = {
       },
       "natDexId": 964,
       "formOrder": 0
-    },
-    {
-      "name": "Palafin-Hero",
-      "natDexId": 964,
-      "formOrder": 1,
-      "games": {
-        "natDex": {
-          "stage1": false,
-          "fullyEvolved": true
-        },
-        "radicalRed": {
-          "stage1": false,
-          "fullyEvolved": true
-        }
-      },
-      "tags": [
-        "abilityForm"
-      ]
     },
     {
       "name": "Varoom",
