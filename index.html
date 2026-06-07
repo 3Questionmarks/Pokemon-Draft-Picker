@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Draft Picker</title>
+  <style>
+    /* =========================
+       STYLING
+       Edit colours, spacing, sizes, and layout here.
+       ========================= */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 32px auto;
+      padding: 0 20px;
+      background: linear-gradient(135deg, #e8f3ff 0%, #fff7cc 100%);
+      color: #1f2a44;
+    }
+
+    h1, .intro, #setup, #draftArea, #status {
+      text-align: center;
+    }
+
+    h1 {
+      color: #e3350d;
+      text-shadow: 2px 2px 0 #ffcb05;
+      letter-spacing: 1px;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      margin-bottom: 24px;
+      color: #3b4cca;
+      font-weight: 600;
+    }
+
+    #setup, .player-card {
+      background: #ffffff;
+      border: 3px solid #ffcb05;
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 6px 14px rgba(59, 76, 202, 0.18);
+    }
+
+    #setup {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .setup-section {
+      border: 2px solid #e8eefc;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+      background: #fafdff;
+    }
+
+    .setup-section h2 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+      color: #e3350d;
+      border-bottom: 2px solid #ffcb05;
+      padding-bottom: 6px;
+    }
+
+    .mode-settings {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #dbe5ff;
+    }
+
+    
+    .dex-selection-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .dex-selection-row > div {
+      min-width: 180px;
+    }
+
+    .tag-filter-section {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #dbe5ff;
+    }
+
+    .filter-heading {
+      margin: 0 0 8px;
+      font-weight: bold;
+      color: #3b4cca;
+    }
+
+    .tag-filter-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px 16px;
+      flex-wrap: wrap;
+    }
+
+    .checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0;
+      color: #1f2a44;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .checkbox-label input {
+      margin: 0;
+      width: auto;
+    }
+
+    .alternate-form-row {
+      margin-top: 10px;
+    }
+
+    .draft-all-label {
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+.mode-setting-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .mode-setting-row > div {
+      min-width: 190px;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #3b4cca;
+    }
+
+    input, select {
+      font-size: 1rem;
+      padding: 10px;
+      border: 2px solid #3b4cca;
+      border-radius: 10px;
+      margin: 6px;
+      background: #fafdff;
+    }
+
+    input:focus, select:focus {
+      outline: 3px solid #ffcb05;
+    }
+
+    select {
+      max-width: 100%;
+    }
+
+    .number-input {
+      width: 6ch;
+      max-width: 10ch;
+      min-width: 5ch;
+      text-align: center;
+    }
+
+    #playerNameInputs {
+      margin: 16px 0;
+    }
+
+    .main-button {
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 12px 22px;
+      border: 2px solid #2a2a2a;
+      border-radius: 999px;
+      background: #e3350d;
+      color: white;
+      cursor: pointer;
+      margin-top: 8px;
+      box-shadow: 0 4px 0 #9d2209;
+    }
+
+    .main-button:hover, .pokemon-button:hover {
+      background: #ffcb05;
+      color: #1f2a44;
+    }
+
+    .main-button:active, .pokemon-button:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+
+    .setup-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .secondary-button {
+      background: #3b4cca;
+      box-shadow: 0 4px 0 #1f2a8a;
+    }
+
+    #draftArea, #listViewerArea {
+      display: none;
+    }
+
+    .draft-controls {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    #currentPlayer {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 20px 0;
+      padding: 10px 18px;
+      background: #3b4cca;
+      color: white;
+      border-radius: 999px;
+      border: 3px solid #ffcb05;
+    }
+
+    #pokemonChoices {
+      display: grid;
+      grid-template-columns: repeat(var(--choice-columns, 3), minmax(160px, 220px));
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #pokemonListViewer {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 760px) {
+      #pokemonChoices {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+
+    #listViewerTitle {
+      display: block;
+      width: fit-content;
+      max-width: 90%;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 20px auto 8px;
+      padding: 10px 18px;
+      background: #3b4cca;
+      color: white;
+      border-radius: 999px;
+      border: 3px solid #ffcb05;
+      text-align: center;
+    }
+
+    #listViewerFilters {
+      text-align: center;
+      color: #3b4cca;
+      font-weight: bold;
+      margin: 0 auto 14px;
+      max-width: 760px;
+      line-height: 1.5;
+    }
+
+    #listViewerInstruction,
+    #listViewerStatus {
+      color: #3b4cca;
+      font-weight: bold;
+      margin: 0 auto 18px;
+      max-width: 760px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .list-search-row {
+      max-width: 420px;
+      margin: 0 auto 18px;
+      text-align: center;
+    }
+
+    .list-search-row input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    #listViewerInstruction {
+      margin-bottom: 10px;
+    }
+
+    #listViewerStatus {
+      margin-top: -4px;
+    }
+
+    .pokemon-button {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 18px 28px;
+      border: 3px solid #2a2a2a;
+      border-radius: 18px;
+      background: white;
+      cursor: pointer;
+      width: 190px;
+      height: 190px;
+      box-sizing: border-box;
+      transition: transform 0.1s ease, background 0.1s ease;
+      overflow: hidden;
+      box-shadow: 0 5px 0 #d5d5d5;
+    }
+
+    .pokemon-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .pokemon-button.unavailable {
+      opacity: 0.45;
+      cursor: not-allowed;
+      filter: grayscale(1);
+      transform: none;
+    }
+
+    .pokemon-button.unavailable:hover {
+      background: white;
+      color: #1f2a44;
+      transform: none;
+    }
+
+    .picked-by-label {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #e3350d;
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ffcb05;
+      border-radius: 999px;
+      padding: 3px 9px;
+      margin-top: 2px;
+    }
+
+    #status, #setupStatus, #marketPoolStatus {
+      color: #3b4cca;
+      font-weight: bold;
+    }
+
+    #marketPoolStatus {
+      margin: 10px 0 0;
+    }
+
+    #setupStatus.error {
+      color: #e3350d;
+    }
+
+    #playerLists {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .player-card {
+      width: 220px;
+      border-color: #3b4cca;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .player-card.active {
+      outline: 4px solid #e3350d;
+      background: #fff7cc;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(227, 53, 13, 0.25);
+    }
+
+    .player-card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #e3350d;
+      border-bottom: 2px solid #ffcb05;
+      padding-bottom: 8px;
+    }
+
+    .player-card ol {
+      text-align: left;
+      min-height: 24px;
+      padding-left: 24px;
+    }
+
+    .player-card li {
+      margin: 4px 0;
+    }
+
+    .pokemon-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 150px;
+    }
+
+    .choice-sprite {
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      flex: 0 0 auto;
+    }
+
+    .pokemon-button span {
+      max-width: 100%;
+      text-align: center;
+      overflow-wrap: anywhere;
+      line-height: 1.15;
+    }
+
+    .picked-pokemon {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 4px 0;
+    }
+
+    .picked-sprite {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      flex: 0 0 auto;
+    }
+
+    .shiny-pick {
+      color: #b8860b;
+      font-weight: bold;
+    }
+
+    .shiny-pick::after {
+      content: " ✨";
+    }
+
+    .pokemon-button.shiny-choice,
+    .list-viewer-card.shiny-choice {
+      background: linear-gradient(135deg, #fff8c6 0%, #ffe066 100%);
+      border-color: #d4a017;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+      animation: shinyPulse 1.5s infinite;
+    }
+
+
+    .list-viewer-card {
+      position: relative;
+    }
+
+    .natdex-label {
+      font-size: 0.85rem;
+      color: #3b4cca;
+      font-weight: bold;
+    }
+
+
+    .shiny-badge {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #8b6508;
+      background: rgba(255,255,255,0.8);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    @keyframes shinyPulse {
+      0% { box-shadow: 0 0 10px rgba(255,215,0,0.5); }
+      50% { box-shadow: 0 0 25px rgba(255,215,0,1); }
+      100% { box-shadow: 0 0 10px rgba(255,215,0,0.5); }
+    }
+
+    /* =========================
+       RESPONSIVE / MOBILE LAYOUT
+       Keeps the page usable on narrow screens.
+       ========================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        max-width: 100%;
+        margin: 18px auto;
+        padding: 0 14px;
+      }
+
+      #setup {
+        max-width: 100%;
+      }
+
+      .setup-section {
+        padding: 14px;
+      }
+
+      .dex-selection-row,
+      .mode-setting-row,
+      .tag-filter-row,
+      .setup-actions {
+        gap: 10px;
+      }
+
+      .player-card {
+        width: min(220px, calc(50vw - 28px));
+      }
+
+      #pokemonChoices {
+        grid-template-columns: repeat(var(--choice-columns, 2), minmax(140px, 1fr));
+        gap: 12px;
+      }
+
+      .pokemon-button {
+        width: 100%;
+        max-width: 210px;
+        height: clamp(150px, 28vw, 190px);
+        padding: 12px;
+        font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+      }
+
+      .choice-sprite {
+        width: clamp(72px, 16vw, 96px);
+        height: clamp(72px, 16vw, 96px);
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        margin: 12px auto;
+        padding: 0 10px;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+        margin-bottom: 18px;
+      }
+
+      .setup-section h2 {
+        font-size: 1rem;
+      }
+
+      input,
+      select {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0;
+      }
+
+      .number-input {
+        width: 7ch;
+        max-width: 9ch;
+      }
+
+      .dex-selection-row,
+      .mode-setting-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .dex-selection-row > div,
+      .mode-setting-row > div {
+        min-width: 0;
+        width: 100%;
+      }
+
+      .tag-filter-row {
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+
+      .checkbox-label {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 8px 10px;
+        border: 1px solid #dbe5ff;
+        border-radius: 10px;
+        background: #ffffff;
+      }
+
+      .setup-actions {
+        flex-direction: column;
+      }
+
+      .main-button {
+        width: 100%;
+        margin-top: 6px;
+      }
+
+      #currentPlayer,
+      #listViewerTitle {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.05rem;
+        border-radius: 14px;
+      }
+
+      #pokemonChoices {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .pokemon-button {
+        max-width: none;
+        min-height: 132px;
+        height: clamp(132px, 42vw, 168px);
+        border-radius: 14px;
+        padding: 10px 6px;
+        font-size: 0.9rem;
+      }
+
+      .choice-sprite {
+        width: clamp(64px, 22vw, 84px);
+        height: clamp(64px, 22vw, 84px);
+      }
+
+      #pokemonListViewer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      #pokemonListViewer .pokemon-button {
+        width: 100%;
+      }
+
+      #playerLists {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .player-card {
+        width: 100%;
+        padding: 12px;
+      }
+
+      .player-card h2 {
+        font-size: 0.95rem;
+      }
+
+      .player-card ol {
+        padding-left: 18px;
+      }
+
+      .picked-pokemon {
+        gap: 5px;
+        font-size: 0.9rem;
+      }
+
+      .picked-sprite {
+        width: 36px;
+        height: 36px;
+      }
+
+      .list-search-row {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #pokemonChoices,
+      #pokemonListViewer,
+      #playerLists {
+        grid-template-columns: 1fr;
+      }
+
+      .pokemon-button {
+        height: auto;
+        min-height: 132px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Pokémon Draft Picker</h1>
+
+  <!-- =========================
+       SETUP SCREEN
+       Configure players, dex, draft settings and mode.
+       ========================= -->
+  <section id="setup">
+    <div class="setup-section">
+      <h2>Players</h2>
+      <label for="playerCount">Number of players</label>
+      <input id="playerCount" type="number" class="number-input" min="1" max="20" value="2" />
+      <div id="playerNameInputs"></div>
+    </div>
+
+    <div class="setup-section">
+      <h2>Pokémon List</h2>
+      <div class="dex-selection-row">
+        <div>
+          <label for="pokemonGameSelect">Game</label>
+          <select id="pokemonGameSelect">
+            <option value="natDex" selected>NatDex</option>
+            <option value="infiniteFusion">Infinite Fusion</option>
+            <option value="radicalRed">Radical Red</option>
+          </select>
+
+
+      
+        </div>
+
+        <div>
+          <label for="pokemonDexSelect">Dex</label>
+          <select id="pokemonDexSelect">
+            <option value="stage1">Stage 1 Dex</option>
+            <option value="fullyEvolved">Fully Evolved Dex</option>
+            <option value="full">Full Dex</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tag-filter-section">
+        <p class="filter-heading">Include categories</p>
+        <div class="tag-filter-row">
+          <label class="checkbox-label" title="Box-style major legendaries and other strongest legendary-category Pokémon in this tool.">
+            <input type="checkbox" class="tag-filter" value="legendary" checked />
+            Legendaries
+          </label>
+          <label class="checkbox-label" title="Mythical Pokémon such as Mew, Celebi, Jirachi, Darkrai, Arceus, and similar event/mythical Pokémon.">
+            <input type="checkbox" class="tag-filter" value="mythical" checked />
+            Mythicals
+          </label>
+          <label class="checkbox-label" title="Legendary Pokémon below the main legendary category, such as roaming trios, Tapus, Loyal Three, Ogerpon, and similar Pokémon.">
+            <input type="checkbox" class="tag-filter" value="subLegendary" checked />
+            Sub-legendaries
+          </label>
+          <label class="checkbox-label" title="Non-legendary 600 BST evolution lines, such as Dragonite, Tyranitar, Metagross, Garchomp, Dragapult, and Baxcalibur.">
+            <input type="checkbox" class="tag-filter" value="pseudoLegendary" checked />
+            Pseudo-legendaries
+          </label>
+          <label class="checkbox-label" title="Paradox Pokémon and Ultra Beasts.">
+            <input type="checkbox" class="tag-filter" value="paradoxUltraBeast" checked />
+            Paradox / Ultra Beast
+          </label>
+        </div>
+
+        <div class="tag-filter-row alternate-form-row">
+          <label class="checkbox-label" title="Shows separate entries for mechanically different forms, such as regional forms, gender forms, Deoxys forms, Shaymin-Sky, Kyurem fusions, and Calyrex riders. When off, the base Pokémon may cycle through grouped sprites.">
+            <input type="checkbox" id="includeAlternateForms" checked />
+            Mechanically different forms
+          </label>
+          <label class="checkbox-label" title="Shows separate forms caused by abilities, such as Zen Mode, Schooling, Shields Down, Disguise, Zero to Hero, and Power Construct.">
+            <input type="checkbox" id="includeAbilityForms" />
+            Ability-based forms
+          </label>
+          <label class="checkbox-label" title="Shows separate forms caused by held items or equivalent item-style transformations, such as Megas, Primals, Origin forms, plates, drives, memories, masks, and crowned forms.">
+            <input type="checkbox" id="includeItemForms" />
+            Item-based forms
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="setup-section">
+      <h2>Draft total</h2>
+      <label for="pokemonPerPlayer">Pokémon drafted per player</label>
+      <input id="pokemonPerPlayer" type="number" class="number-input" min="1" max="100" value="10" />
+
+      <label class="checkbox-label draft-all-label" title="Drafts as many Pokémon as possible while keeping every player on the same number of picks. Any leftover Pokémon that would make totals uneven are ignored.">
+        <input type="checkbox" id="draftAllPossible" />
+        Full Draft
+      </label>
+
+      <p id="setupStatus"></p>
+    </div>
+
+    <div class="setup-section">
+      <h2>Mode</h2>
+      <label for="draftMode">Draft mode</label>
+      <select id="draftMode">
+        <option value="classic">Classic: Players Pick from a Personal Pool</option>
+        <option value="rounds">Market Draft: Players Pick from a Shared Pool</option>
+        <option value="reverseClassic">Reverse Draft: Players Pick from a Personal Pool for Someone Else</option>
+        <option value="reverseRounds">Reverse Market Draft: Players Pick from a Shared Pool for Someone Else</option>
+      </select>
+
+      <div class="mode-settings" id="reverseSettings">
+        <label class="checkbox-label" title="When off, each player is randomly assigned another player to draft for at the start. When on, the receiving player is randomly chosen again each pick/round.">
+          <input type="checkbox" id="reverseFullRandom" />
+          Full random reverse targets
+        </label>
+      </div>
+
+      <div class="mode-settings" id="classicSettings">
+        <label for="classicChoiceCount">Pool Size</label>
+        <input id="classicChoiceCount" type="number" class="number-input" min="1" max="10" value="3" />
+      </div>
+
+      <div class="mode-settings" id="marketSettings">
+        <div class="mode-setting-row">
+          <div>
+            <label for="marketPokemonPerPlayerInPool">Pokémon per Player in Pool</label>
+            <input id="marketPokemonPerPlayerInPool" type="number" class="number-input" min="1" max="5" value="1" />
+          </div>
+          <div>
+            <label for="marketBonusCount">Bonus Pokémon Added to Pool</label>
+            <input id="marketBonusCount" type="number" class="number-input" min="0" max="10" value="2" />
+          </div>
+        </div>
+        <p id="marketPoolStatus"></p>
+      </div>
+    </div>
+
+    <div class="setup-actions">
+      <button class="main-button" id="startDraftButton">Start draft</button>
+      <button class="main-button secondary-button" id="viewListButton">View list</button>
+    </div>
+  </section>
+
+  <!-- =========================
+       DRAFT SCREEN
+       Active draft UI shown after Start Draft.
+       ========================= -->
+  <section id="draftArea">
+    <div class="draft-controls">
+      <button class="main-button" id="backToSetupButton">Back to Setup</button>
+    </div>
+
+    <div id="currentPlayer"></div>
+    <div id="pokemonChoices"></div>
+    <p id="status"></p>
+    <div id="playerLists"></div>
+  </section>
+
+  <!-- =========================
+       LIST VIEWER SCREEN
+       Debug view for checking filtered Pokémon and sprites.
+       ========================= -->
+  <section id="listViewerArea">
+    <div class="draft-controls">
+      <button class="main-button" id="backFromListButton">Back to Setup</button>
+    </div>
+
+    <div id="listViewerTitle"></div>
+    <div id="listViewerFilters"></div>
+
+    <p id="listViewerInstruction">Click a Pokémon to toggle it shiny.</p>
+
+    <div class="list-search-row">
+      <input id="listSearchInput" type="text" placeholder="Search Pokémon..." />
+    </div>
+
+    <p id="listViewerStatus"></p>
+
+    <div id="pokemonListViewer"></div>
+  </section>
+
+  <script src="pokemon-data.js"></script>
+
+  <script>
+    /* =========================
+       POKÉMON DATA HELPERS
+
+       The Pokémon lists now live in pokemon-data.js.
+       This script reads that data and builds the selectable dexes.
+       ========================= */
+    
+    // ===== POKÉMON DATA HELPERS =====
+
+    function getSelectedTagFilters() {
+      const selectedTags = {};
+      tagFilterElements.forEach((checkbox) => {
+        selectedTags[checkbox.value] = checkbox.checked;
+      });
+      return selectedTags;
+    }
+
+    function pokemonPassesTagFilters(pokemon) {
+      const tags = pokemon.tags || [];
+      const selectedTags = getSelectedTagFilters();
+
+      if (tags.includes("alternateForm") && !includeAlternateFormsElement.checked) {
+        return false;
+      }
+
+      if (tags.includes("abilityForm") && !includeAbilityFormsElement.checked) {
+        return false;
+      }
+
+      if (tags.includes("itemForm") && !includeItemFormsElement.checked) {
+        return false;
+      }
+
+      return tags
+        .filter((tag) => !["alternateForm", "abilityForm", "itemForm"].includes(tag))
+        .every((tag) => selectedTags[tag] !== false);
+    }
+
+    function getPokemonNamesForDex(gameKey, dexKey) {
+      return PokemonDraftData.pokemon
+        .filter((pokemon) => {
+          const gameInfo = pokemon.games[gameKey];
+          if (!gameInfo) return false;
+
+          if (!pokemonPassesTagFilters(pokemon)) return false;
+
+          if (dexKey === "stage1") {
+            return gameInfo.stage1;
+          }
+
+          if (dexKey === "fullyEvolved") {
+            return gameInfo.fullyEvolved;
+          }
+
+          return true;
+        })
+        .sort((a, b) => {
+          const idA = a.natDexId ?? 99999;
+          const idB = b.natDexId ?? 99999;
+          const formA = a.formOrder ?? 0;
+          const formB = b.formOrder ?? 0;
+
+          if (idA !== idB) return idA - idB;
+          if (formA !== formB) return formA - formB;
+          return a.name.localeCompare(b.name);
+        })
+        .map((pokemon) => pokemon.name);
+    }
+
+    function getSelectedPokemonList() {
+      return getPokemonNamesForDex(selectedPokemonGame, selectedPokemonDex);
+    }
+
+    function getPokemonDataByName(name) {
+      return PokemonDraftData.pokemon.find((pokemon) => pokemon.name === name);
+    }
+
+    function getPokemonSpriteSource(name) {
+      return getPokemonDataByName(name)?.spriteSource || "showdown";
+    }
+
+    function isRadicalRedSelected() {
+      return selectedPokemonGame === "radicalRed";
+    }
+
+    function formatNatDexId(id) {
+      return `#${String(id).padStart(4, "0")}`;
+    }
+
+    function getPokemonDexLabel(pokemonData) {
+      if (pokemonData?.customDexId) return pokemonData.customDexId;
+      if (pokemonData?.natDexId) return formatNatDexId(pokemonData.natDexId);
+      return "";
+    }
+
+    function getPokemonDisplayName(name) {
+      if (!includeAlternateFormsElement.checked) {
+        if (name === "Oricorio-Baile") return "Oricorio";
+        if (name === "Squawkabilly") return "Squawkabilly";
+      }
+
+      if (name === "Squawkabilly") return "Squawkabilly-Green/Blue";
+      if (name === "Urshifu-Single-Strike") return "Urshifu-Single Strike";
+
+      return name;
+    }
+
+
+    // ===== GLOBAL DRAFT STATE =====
+
+    let selectedPokemonGame = "natDex";
+    let selectedPokemonDex = "stage1";
+    let originalPokemon = [];
+    let availablePokemon = [...originalPokemon];
+    let players = [];
+    let currentPlayerIndex = 0;
+    let draftMode = "classic";
+    let currentRoundChoices = [];
+    let currentRoundOrder = [];
+    let currentRoundPickIndex = 0;
+    let roundNumber = 1;
+    let snakeDirection = 1;
+    let reverseTargetMap = [];
+    let reverseCurrentTargetIndex = -1;
+    let pokemonPerPlayer = 10;
+    let classicChoiceCount = 3;
+    let marketBonusCount = 2;
+    let marketPokemonPerPlayerInPool = 1;
+
+    const setupElement = document.getElementById("setup");
+    const pokemonGameSelectElement = document.getElementById("pokemonGameSelect");
+    const pokemonDexSelectElement = document.getElementById("pokemonDexSelect");
+    const tagFilterElements = [...document.querySelectorAll(".tag-filter")];
+    const includeAlternateFormsElement = document.getElementById("includeAlternateForms");
+    const includeAbilityFormsElement = document.getElementById("includeAbilityForms");
+    const includeItemFormsElement = document.getElementById("includeItemForms");
+    const playerCountElement = document.getElementById("playerCount");
+    const pokemonPerPlayerElement = document.getElementById("pokemonPerPlayer");
+    const draftAllPossibleElement = document.getElementById("draftAllPossible");
+    const setupStatusElement = document.getElementById("setupStatus");
+    const playerNameInputsElement = document.getElementById("playerNameInputs");
+    const draftModeElement = document.getElementById("draftMode");
+    const classicSettingsElement = document.getElementById("classicSettings");
+    const marketSettingsElement = document.getElementById("marketSettings");
+    const reverseSettingsElement = document.getElementById("reverseSettings");
+    const reverseFullRandomElement = document.getElementById("reverseFullRandom");
+    const classicChoiceCountElement = document.getElementById("classicChoiceCount");
+    const marketBonusCountElement = document.getElementById("marketBonusCount");
+    const marketPokemonPerPlayerInPoolElement = document.getElementById("marketPokemonPerPlayerInPool");
+    const marketPoolStatusElement = document.getElementById("marketPoolStatus");
+    const startDraftButton = document.getElementById("startDraftButton");
+    const viewListButton = document.getElementById("viewListButton");
+    const draftAreaElement = document.getElementById("draftArea");
+    const listViewerAreaElement = document.getElementById("listViewerArea");
+    const backFromListButton = document.getElementById("backFromListButton");
+    const listViewerTitleElement = document.getElementById("listViewerTitle");
+    const listViewerStatusElement = document.getElementById("listViewerStatus");
+    const listViewerFiltersElement = document.getElementById("listViewerFilters");
+    const listSearchInputElement = document.getElementById("listSearchInput");
+    const pokemonListViewerElement = document.getElementById("pokemonListViewer");
+    const currentPlayerElement = document.getElementById("currentPlayer");
+    const choicesElement = document.getElementById("pokemonChoices");
+    const statusElement = document.getElementById("status");
+    const playerListsElement = document.getElementById("playerLists");
+    const backToSetupButton = document.getElementById("backToSetupButton");
+
+    
+    // ===== DEX SELECTION =====
+
+    function updatePokemonList() {
+      selectedPokemonGame = pokemonGameSelectElement.value;
+      selectedPokemonDex = pokemonDexSelectElement.value;
+
+      originalPokemon = getSelectedPokemonList();
+
+      validateSetup();
+    }
+
+    function resizeNumberInput(input) {
+      const length = Math.max(1, input.value.length);
+      input.style.width = `${Math.min(Math.max(length + 3, 5), 10)}ch`;
+    }
+
+    function resizeAllNumberInputs() {
+      document.querySelectorAll(".number-input").forEach(resizeNumberInput);
+    }
+
+    function getPlayerCount() {
+      return Math.max(1, Math.min(20, Number(playerCountElement.value) || 1));
+    }
+
+    function getPokemonPerPlayer() {
+      return Math.max(1, Math.min(100, Number(pokemonPerPlayerElement.value) || 1));
+    }
+
+    function getEffectivePokemonPerPlayer() {
+      const playerCount = getPlayerCount();
+
+      if (draftAllPossibleElement.checked) {
+        return Math.floor(originalPokemon.length / playerCount);
+      }
+
+      return getPokemonPerPlayer();
+    }
+
+    function getClassicChoiceCount() {
+      return Math.max(1, Math.min(10, Number(classicChoiceCountElement.value) || 1));
+    }
+
+    function getMarketBonusCount() {
+      return Math.max(0, Math.min(10, Number(marketBonusCountElement.value) || 0));
+    }
+
+    function getMarketPokemonPerPlayerInPool() {
+      return Math.max(1, Math.min(5, Number(marketPokemonPerPlayerInPoolElement.value) || 1));
+    }
+
+    function getMarketPoolSize() {
+      return (getPlayerCount() * getMarketPokemonPerPlayerInPool()) + getMarketBonusCount();
+    }
+
+    function updateMarketPoolStatus() {
+      const poolSize = getMarketPoolSize();
+      const playerCount = getPlayerCount();
+      const perPlayer = getMarketPokemonPerPlayerInPool();
+      const bonus = getMarketBonusCount();
+      marketPoolStatusElement.textContent = `Market pool size: ${poolSize} Pokémon (${playerCount} players × ${perPlayer}, plus ${bonus} bonus).`;
+    }
+
+    function isMarketMode() {
+      return draftMode === "rounds" || draftMode === "reverseRounds";
+    }
+
+    function isReverseMode(mode = draftMode) {
+      return mode === "reverseClassic" || mode === "reverseRounds";
+    }
+
+    function getModeFamily(mode = draftModeElement.value) {
+      return mode === "classic" || mode === "reverseClassic" ? "classic" : "rounds";
+    }
+
+    function shuffleIndexes(count) {
+      return [...Array(count).keys()].sort(() => Math.random() - 0.5);
+    }
+
+    function createReverseTargetMap() {
+      const playerCount = players.length;
+      reverseTargetMap = [];
+
+      if (playerCount < 2) return;
+
+      let targets = shuffleIndexes(playerCount);
+      let attempts = 0;
+
+      while (targets.some((target, index) => target === index) && attempts < 100) {
+        targets = shuffleIndexes(playerCount);
+        attempts++;
+      }
+
+      if (targets.some((target, index) => target === index)) {
+        targets = targets.map((_, index) => (index + 1) % playerCount);
+      }
+
+      reverseTargetMap = targets;
+    }
+
+    function getRandomReverseTargetIndex(actorIndex) {
+      const possibleTargets = players
+        .map((_, index) => index)
+        .filter((index) => index !== actorIndex && playerCanPick(index));
+
+      if (possibleTargets.length === 0) return -1;
+
+      return possibleTargets[Math.floor(Math.random() * possibleTargets.length)];
+    }
+
+    function getReverseTargetIndex(actorIndex, reroll = false) {
+      if (!isReverseMode()) return actorIndex;
+
+      if (reverseFullRandomElement.checked || reroll) {
+        return getRandomReverseTargetIndex(actorIndex);
+      }
+
+      const assignedTarget = reverseTargetMap[actorIndex];
+
+      if (assignedTarget === undefined || !playerCanPick(assignedTarget)) {
+        return -1;
+      }
+
+      return assignedTarget;
+    }
+
+    function actorCanDraft(actorIndex) {
+      if (!isReverseMode()) {
+        return playerCanPick(actorIndex);
+      }
+
+      return getReverseTargetIndex(actorIndex) !== -1;
+    }
+
+    function getDraftTurnText(actorIndex, targetIndex, prefix = "") {
+      const actor = players[actorIndex];
+      const target = players[targetIndex];
+
+      if (!isReverseMode()) {
+        return `${prefix}${actor.name}'s pick`;
+      }
+
+      return `${prefix}${actor.name}'s pick for ${target.name}`;
+    }
+
+    function updateModeSettings() {
+      const selectedMode = draftModeElement.value;
+      const modeFamily = getModeFamily(selectedMode);
+
+      classicSettingsElement.style.display = modeFamily === "classic" ? "block" : "none";
+      marketSettingsElement.style.display = modeFamily === "rounds" ? "block" : "none";
+      reverseSettingsElement.style.display = isReverseMode(selectedMode) ? "block" : "none";
+
+      updateMarketPoolStatus();
+      validateSetup();
+    }
+
+    function getTotalRequiredPokemon() {
+      return getPlayerCount() * getEffectivePokemonPerPlayer();
+    }
+
+    function validateSetup() {
+      const playerCount = getPlayerCount();
+      const picksEach = getEffectivePokemonPerPlayer();
+      const requiredPokemon = playerCount * picksEach;
+      const classicChoices = getClassicChoiceCount();
+      const marketBonus = getMarketBonusCount();
+      const marketPoolPerPlayer = getMarketPokemonPerPlayerInPool();
+
+      playerCountElement.value = playerCount;
+      if (!draftAllPossibleElement.checked) {
+        pokemonPerPlayerElement.value = picksEach;
+      }
+      classicChoiceCountElement.value = classicChoices;
+      marketBonusCountElement.value = marketBonus;
+      marketPokemonPerPlayerInPoolElement.value = marketPoolPerPlayer;
+      updateMarketPoolStatus();
+
+      if (isReverseMode(draftModeElement.value) && playerCount < 2) {
+        setupStatusElement.textContent = "Reverse draft modes need at least 2 players.";
+        setupStatusElement.className = "error";
+        startDraftButton.disabled = true;
+        return false;
+      }
+
+      if (draftAllPossibleElement.checked && picksEach < 1) {
+        setupStatusElement.textContent = `Not enough Pokémon for each player to draft equally. You need at least ${playerCount}, but only ${originalPokemon.length} are available.`;
+        setupStatusElement.className = "error";
+        startDraftButton.disabled = true;
+        return false;
+      }
+
+      if (requiredPokemon > originalPokemon.length) {
+        setupStatusElement.textContent = `Not enough Pokémon. ${playerCount} players × ${picksEach} picks = ${requiredPokemon}, but only ${originalPokemon.length} are available.`;
+        setupStatusElement.className = "error";
+        startDraftButton.disabled = true;
+        return false;
+      }
+
+      setupStatusElement.textContent = `${requiredPokemon} Pokémon will be drafted total. ${originalPokemon.length - requiredPokemon} will remain unused.`;
+      setupStatusElement.className = "";
+      startDraftButton.disabled = false;
+      return true;
+    }
+
+    function allPlayersFull() {
+      return players.length > 0 && players.every(player => player.picks.length >= pokemonPerPlayer);
+    }
+
+    function playerCanPick(index) {
+      return players[index].picks.length < pokemonPerPlayer;
+    }
+
+    function createPlayerInputs() {
+      const existingNames = [...document.querySelectorAll(".player-name-input")].map(input => input.value);
+      const playerCount = getPlayerCount();
+      playerCountElement.value = playerCount;
+      playerNameInputsElement.innerHTML = "";
+
+      for (let i = 0; i < playerCount; i++) {
+        const input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = `Player ${i + 1} name`;
+        input.maxLength = 16;
+        input.value = (existingNames[i] || `Player ${i + 1}`).slice(0, 16);
+        input.className = "player-name-input";
+        playerNameInputsElement.appendChild(input);
+      }
+
+      validateSetup();
+    }
+
+    function returnToSetup() {
+      draftAreaElement.style.display = "none";
+      listViewerAreaElement.style.display = "none";
+      setupElement.style.display = "block";
+    }
+
+    
+    // ===== DRAFT INITIALIZATION =====
+
+    function showListViewer() {
+      updatePokemonList();
+
+      setupElement.style.display = "none";
+      draftAreaElement.style.display = "none";
+      listViewerAreaElement.style.display = "block";
+
+      listSearchInputElement.value = "";
+      renderListViewer();
+    }
+
+    function getActiveFilterText() {
+      const categoryLabels = {
+        legendary: "Legendaries",
+        mythical: "Mythicals",
+        subLegendary: "Sub-legendaries",
+        pseudoLegendary: "Pseudo-legendaries",
+        paradoxUltraBeast: "Paradox / Ultra Beast"
+      };
+
+      const activeCategories = tagFilterElements
+        .filter((checkbox) => checkbox.checked)
+        .map((checkbox) => categoryLabels[checkbox.value] || checkbox.value);
+
+      const categoriesText = activeCategories.length
+        ? activeCategories.join(", ")
+        : "Standard Pokémon only";
+
+      const formTexts = [
+        includeAlternateFormsElement.checked
+          ? "Mechanically different forms: on"
+          : "Mechanically different forms: off",
+        includeAbilityFormsElement.checked
+          ? "Ability-based forms: on"
+          : "Ability-based forms: off",
+        includeItemFormsElement.checked
+          ? "Item-based forms: on"
+          : "Item-based forms: off"
+      ];
+
+      return `<strong>Active Filters:</strong><br>${categoriesText}<br>${formTexts.join("<br>")}`;
+    }
+
+    function renderListViewer() {
+      pokemonListViewerElement.innerHTML = "";
+
+      const pokemonList = getSelectedPokemonList();
+      const searchTerm = listSearchInputElement.value.trim().toLowerCase();
+      const filteredPokemonList = searchTerm
+        ? pokemonList.filter((pokemon) => getPokemonDisplayName(pokemon).toLowerCase().includes(searchTerm) || pokemon.toLowerCase().includes(searchTerm))
+        : pokemonList;
+
+      const gameLabel = PokemonDraftData.games[selectedPokemonGame] || selectedPokemonGame;
+      const dexLabel = pokemonDexSelectElement.options[pokemonDexSelectElement.selectedIndex].textContent;
+
+      listViewerTitleElement.textContent = `${gameLabel}: ${dexLabel}`;
+      listViewerFiltersElement.innerHTML = getActiveFilterText();
+      listViewerStatusElement.textContent = searchTerm
+        ? `${filteredPokemonList.length} of ${pokemonList.length} Pokémon shown.`
+        : `${pokemonList.length} Pokémon shown.`;
+
+      filteredPokemonList.forEach((pokemon) => {
+        const button = createPokemonChoiceButton(
+          pokemon,
+          false,
+          () => toggleListViewerShiny(button, pokemon)
+        );
+
+        const pokemonData = getPokemonDataByName(pokemon);
+        const dexLabelText = getPokemonDexLabel(pokemonData);
+        if (dexLabelText) {
+          const natDexLabel = document.createElement("div");
+          natDexLabel.className = "natdex-label";
+          natDexLabel.textContent = dexLabelText;
+          button.insertBefore(natDexLabel, button.firstChild);
+        }
+
+        button.classList.add("list-viewer-card");
+        pokemonListViewerElement.appendChild(button);
+      });
+    }
+
+    function toggleListViewerShiny(button, pokemon) {
+      const isShiny = !button.classList.contains("shiny-choice");
+      button.classList.toggle("shiny-choice", isShiny);
+
+      const sprite = button.querySelector("img");
+      if (sprite) {
+        sprite.src = getPokemonSpriteUrl(pokemon, isShiny);
+        sprite.alt = isShiny ? "Shiny Pokémon sprite" : "Pokémon sprite";
+      }
+
+      const badge = button.querySelector(".shiny-badge");
+      if (badge) {
+        badge.remove();
+      }
+    }
+
+    function startDraft() {
+      updatePokemonList();
+      if (!validateSetup()) return;
+
+      pokemonPerPlayer = getEffectivePokemonPerPlayer();
+      classicChoiceCount = getClassicChoiceCount();
+      marketBonusCount = getMarketBonusCount();
+      marketPokemonPerPlayerInPool = getMarketPokemonPerPlayerInPool();
+      const nameInputs = [...document.querySelectorAll(".player-name-input")];
+      players = nameInputs.map((input, index) => ({
+        name: (input.value.trim() || `Player ${index + 1}`).slice(0, 16),
+        picks: []
+      }));
+
+      currentPlayerIndex = 0;
+      draftMode = draftModeElement.value;
+      availablePokemon = [...originalPokemon];
+      currentRoundChoices = [];
+      currentRoundOrder = [];
+      currentRoundPickIndex = 0;
+      roundNumber = 1;
+      snakeDirection = 1;
+      reverseCurrentTargetIndex = -1;
+      createReverseTargetMap();
+
+      setupElement.style.display = "none";
+      draftAreaElement.style.display = "block";
+
+      updatePlayerLists();
+
+      if (isMarketMode()) {
+        startNewRound();
+      } else {
+        displayChoices();
+      }
+    }
+
+
+    
+    // ===== SPRITES =====
+
+    function getPokemonSpriteFilename(pokemon) {
+      const specialCases = {
+        "Farfetch'd": "farfetchd",
+        "Urshifu-Single-Strike": "urshifu",
+        "Urshifu-Rapid-Strike": "urshifu-rapidstrike",
+        "Darmanitan-Zen": "darmanitan-zen",
+        "Darmanitan-Galar-Zen": "darmanitan-galarzen",
+        "Wishiwashi-School": "wishiwashi-school",
+        "Minior-Meteor": "minior-meteor",
+        "Mimikyu-Busted": "mimikyu-busted",
+        "Palafin-Hero": "palafin-hero",
+        "Groudon-Primal": "groudon-primal",
+        "Kyogre-Primal": "kyogre-primal",
+        "Dialga-Origin": "dialga-origin",
+        "Palkia-Origin": "palkia-origin",
+        "Giratina-Origin": "giratina-origin",
+        "Zacian-Crowned": "zacian-crowned",
+        "Zamazenta-Crowned": "zamazenta-crowned",
+        "Ogerpon-Wellspring": "ogerpon-wellspring",
+        "Ogerpon-Hearthflame": "ogerpon-hearthflame",
+        "Ogerpon-Cornerstone": "ogerpon-cornerstone",
+        "Farfetchd": "farfetchd",
+        "Sirfetch'd": "sirfetchd",
+        "Farfetch'd-Galar": "farfetchd-galar",
+        "Mime Jr.": "mimejr",
+        "Mr. Mime": "mrmime",
+        "Mr. Mime-Galar": "mrmime-galar",
+        "Mr. Rime": "mrrime",
+        "Type: Null": "typenull",
+        "Ho-Oh": "hooh",
+        "Ho-oh": "hooh",
+        "Porygon-Z": "porygonz",
+        "Flabébé": "flabebe",
+
+        "Venusaur-Mega": "venusaur-mega",
+        "Charizard-Mega-X": "charizard-megax",
+        "Charizard-Mega-Y": "charizard-megay",
+        "Blastoise-Mega": "blastoise-mega",
+        "Beedrill-Mega": "beedrill-mega",
+        "Pidgeot-Mega": "pidgeot-mega",
+        "Alakazam-Mega": "alakazam-mega",
+        "Slowbro-Mega": "slowbro-mega",
+        "Gengar-Mega": "gengar-mega",
+        "Kangaskhan-Mega": "kangaskhan-mega",
+        "Pinsir-Mega": "pinsir-mega",
+        "Gyarados-Mega": "gyarados-mega",
+        "Aerodactyl-Mega": "aerodactyl-mega",
+        "Mewtwo-Mega-X": "mewtwo-megax",
+        "Mewtwo-Mega-Y": "mewtwo-megay",
+        "Ampharos-Mega": "ampharos-mega",
+        "Steelix-Mega": "steelix-mega",
+        "Scizor-Mega": "scizor-mega",
+        "Heracross-Mega": "heracross-mega",
+        "Houndoom-Mega": "houndoom-mega",
+        "Tyranitar-Mega": "tyranitar-mega",
+        "Sceptile-Mega": "sceptile-mega",
+        "Blaziken-Mega": "blaziken-mega",
+        "Swampert-Mega": "swampert-mega",
+        "Gardevoir-Mega": "gardevoir-mega",
+        "Sableye-Mega": "sableye-mega",
+        "Mawile-Mega": "mawile-mega",
+        "Aggron-Mega": "aggron-mega",
+        "Medicham-Mega": "medicham-mega",
+        "Manectric-Mega": "manectric-mega",
+        "Sharpedo-Mega": "sharpedo-mega",
+        "Camerupt-Mega": "camerupt-mega",
+        "Altaria-Mega": "altaria-mega",
+        "Banette-Mega": "banette-mega",
+        "Absol-Mega": "absol-mega",
+        "Glalie-Mega": "glalie-mega",
+        "Salamence-Mega": "salamence-mega",
+        "Metagross-Mega": "metagross-mega",
+        "Latias-Mega": "latias-mega",
+        "Latios-Mega": "latios-mega",
+        "Rayquaza-Mega": "rayquaza-mega",
+        "Lopunny-Mega": "lopunny-mega",
+        "Garchomp-Mega": "garchomp-mega",
+        "Lucario-Mega": "lucario-mega",
+        "Abomasnow-Mega": "abomasnow-mega",
+        "Gallade-Mega": "gallade-mega",
+        "Audino-Mega": "audino-mega",
+        "Diancie-Mega": "diancie-mega",
+        "Giratina-Origin": "giratina-origin",
+        "Dialga-Origin": "dialga-origin",
+        "Palkia-Origin": "palkia-origin",
+        "Shaymin-Sky": "shaymin-sky",
+        "Hoopa-Unbound": "hoopa-unbound",
+        "Deoxys-Attack": "deoxys-attack",
+        "Deoxys-Defense": "deoxys-defense",
+        "Deoxys-Speed": "deoxys-speed",
+        "Zacian-Crowned": "zacian-crowned",
+        "Zamazenta-Crowned": "zamazenta-crowned",
+        "Arceus-Fighting": "arceus-fighting",
+        "Arceus-Flying": "arceus-flying",
+        "Arceus-Poison": "arceus-poison",
+        "Arceus-Ground": "arceus-ground",
+        "Arceus-Rock": "arceus-rock",
+        "Arceus-Bug": "arceus-bug",
+        "Arceus-Ghost": "arceus-ghost",
+        "Arceus-Steel": "arceus-steel",
+        "Arceus-Fire": "arceus-fire",
+        "Arceus-Water": "arceus-water",
+        "Arceus-Grass": "arceus-grass",
+        "Arceus-Electric": "arceus-electric",
+        "Arceus-Psychic": "arceus-psychic",
+        "Arceus-Ice": "arceus-ice",
+        "Arceus-Dragon": "arceus-dragon",
+        "Arceus-Dark": "arceus-dark",
+        "Arceus-Fairy": "arceus-fairy",
+        "Silvally-Fighting": "silvally-fighting",
+        "Silvally-Flying": "silvally-flying",
+        "Silvally-Poison": "silvally-poison",
+        "Silvally-Ground": "silvally-ground",
+        "Silvally-Rock": "silvally-rock",
+        "Silvally-Bug": "silvally-bug",
+        "Silvally-Ghost": "silvally-ghost",
+        "Silvally-Steel": "silvally-steel",
+        "Silvally-Fire": "silvally-fire",
+        "Silvally-Water": "silvally-water",
+        "Silvally-Grass": "silvally-grass",
+        "Silvally-Electric": "silvally-electric",
+        "Silvally-Psychic": "silvally-psychic",
+        "Silvally-Ice": "silvally-ice",
+        "Silvally-Dragon": "silvally-dragon",
+        "Silvally-Dark": "silvally-dark",
+        "Silvally-Fairy": "silvally-fairy",
+        "Genesect-Douse": "genesect-douse",
+        "Genesect-Shock": "genesect-shock",
+        "Genesect-Burn": "genesect-burn",
+        "Genesect-Chill": "genesect-chill",
+        "Raichu-Mega-X": "raichu-megax",
+        "Raichu-Mega-Y": "raichu-megay",
+        "Clefable-Mega": "clefable-mega",
+        "Victreebel-Mega": "victreebel-mega",
+        "Starmie-Mega": "starmie-mega",
+        "Dragonite-Mega": "dragonite-mega",
+        "Meganium-Mega": "meganium-mega",
+        "Feraligatr-Mega": "feraligatr-mega",
+        "Skarmory-Mega": "skarmory-mega",
+        "Chimecho-Mega": "chimecho-mega",
+        "Absol-Mega-Z": "absol-megaz",
+        "Staraptor-Mega": "staraptor-mega",
+        "Garchomp-Mega-Z": "garchomp-megaz",
+        "Lucario-Mega-Z": "lucario-megaz",
+        "Froslass-Mega": "froslass-mega",
+        "Heatran-Mega": "heatran-mega",
+        "Darkrai-Mega": "darkrai-mega",
+        "Emboar-Mega": "emboar-mega",
+        "Excadrill-Mega": "excadrill-mega",
+        "Scolipede-Mega": "scolipede-mega",
+        "Scrafty-Mega": "scrafty-mega",
+        "Eelektross-Mega": "eelektross-mega",
+        "Chandelure-Mega": "chandelure-mega",
+        "Golurk-Mega": "golurk-mega",
+        "Chesnaught-Mega": "chesnaught-mega",
+        "Delphox-Mega": "delphox-mega",
+        "Greninja-Mega": "greninja-mega",
+        "Pyroar-Mega": "pyroar-mega",
+        "Floette-Mega": "floette-mega",
+        "Meowstic-Mega": "meowstic-mega",
+        "Malamar-Mega": "malamar-mega",
+        "Barbaracle-Mega": "barbaracle-mega",
+        "Dragalge-Mega": "dragalge-mega",
+        "Hawlucha-Mega": "hawlucha-mega",
+        "Zygarde-Mega": "zygarde-mega",
+        "Crabominable-Mega": "crabominable-mega",
+        "Golisopod-Mega": "golisopod-mega",
+        "Drampa-Mega": "drampa-mega",
+        "Magearna-Mega": "magearna-mega",
+        "Zeraora-Mega": "zeraora-mega",
+        "Falinks-Mega": "falinks-mega",
+        "Scovillain-Mega": "scovillain-mega",
+        "Glimmora-Mega": "glimmora-mega",
+        "Tatsugiri-Mega": "tatsugiri-mega",
+        "Baxcalibur-Mega": "baxcalibur-mega",
+        "nidoran♂": "nidoranm",
+        "nidoran♀": "nidoranf",
+        "Calyrex-Ice": "calyrex-ice",
+        "Calyrex-Shadow": "calyrex-shadow",
+        "Kyurem-Black": "kyurem-black",
+        "Kyurem-White": "kyurem-white",
+        "Rotom-Heat": "rotom-heat",
+        "Rotom-Wash": "rotom-wash",
+        "Rotom-Frost": "rotom-frost",
+        "Rotom-Fan": "rotom-fan",
+        "Rotom-Mow": "rotom-mow",
+        "Jangmo-o": "jangmoo",
+        "Hakamo-o": "hakamoo",
+        "Kommo-o": "kommoo",
+        "Tauros-Paldea-Combat": "tauros-paldeacombat",
+        "Tauros-Paldea-Blaze": "tauros-paldeablaze",
+        "Tauros-Paldea-Aqua": "tauros-paldeaaqua",
+        "Tauros": "tauros",
+        "Zygarde-10%": "zygarde-10",
+        "Zygarde-Complete": "zygarde-complete",
+        "Oricorio-Baile": "oricorio",
+        "Oricorio-Pom-Pom": "oricorio-pompom",
+        "Oricorio-Pa'u": "oricorio-pau",
+        "Oricorio-Sensu": "oricorio-sensu",
+        "Wo-Chien": "wochien",
+        "Chien-Pao": "chienpao",
+        "Ting-Lu": "tinglu",
+        "Chi-Yu": "chiyu",
+        "Tornadus-Therian": "tornadus-therian",
+        "Thundurus-Therian": "thundurus-therian",
+        "Landorus-Therian": "landorus-therian",
+        "Enamorus-Therian": "enamorus-therian",
+        "Squawkabilly-Yellow/White": "squawkabilly-yellow",
+        "Poltchageist": "poltchageist-artisan",
+        "Necrozma-Dusk-Mane": "necrozma-duskmane",
+        "Necrozma-Dawn-Wings": "necrozma-dawnwings",
+        "Necrozma-Ultra": "necrozma-ultra",
+        "Chillet": "chillet",
+        "Wishiwashi-School-Sevii": "wishiwashi-school-sevii",
+        "Centiskorch-Sevii-Mega": "centiskorch-seviimega",
+        "Sizzlipede-Sevii": "sizzlepede-sevii"
+      };
+
+      if (specialCases[pokemon]) {
+        return specialCases[pokemon];
+      }
+
+      if (pokemon.endsWith("-f")) {
+        const baseName = pokemon.slice(0, -2);
+        return `${getPokemonSpriteFilename(baseName)}-f`;
+      }
+
+      return pokemon
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/\s+/g, "")
+        .replace(/\./g, "")
+        .replace(/'/g, "")
+        .replace(/♀/g, "f")
+        .replace(/♂/g, "m")
+        .replace(/:/g, "")
+        .replace(/[^a-z0-9-]/g, "");
+    }
+
+    function getPokemonSpriteFilenames(pokemon) {
+      const alwaysCyclingSprites = {
+        "Squawkabilly": ["squawkabilly", "squawkabilly-blue"],
+        "Squawkabilly-Yellow/White": ["squawkabilly-yellow", "squawkabilly-white"]
+      };
+
+      const groupedSpritesWhenAlternateFormsHidden = {
+        "Rattata": ["rattata", "rattata-alola"],
+        "Raticate": ["raticate", "raticate-alola"],
+        "Raichu": ["raichu", "raichu-alola"],
+        "Sandshrew": ["sandshrew", "sandshrew-alola"],
+        "Sandslash": ["sandslash", "sandslash-alola"],
+        "Vulpix": ["vulpix", "vulpix-alola"],
+        "Ninetales": ["ninetales", "ninetales-alola"],
+        "Diglett": ["diglett", "diglett-alola"],
+        "Dugtrio": ["dugtrio", "dugtrio-alola"],
+        "Meowth": ["meowth", "meowth-alola", "meowth-galar"],
+        "Persian": ["persian", "persian-alola"],
+        "Geodude": ["geodude", "geodude-alola"],
+        "Graveler": ["graveler", "graveler-alola"],
+        "Golem": ["golem", "golem-alola"],
+        "Grimer": ["grimer", "grimer-alola"],
+        "Muk": ["muk", "muk-alola"],
+        "Exeggutor": ["exeggutor", "exeggutor-alola"],
+        "Marowak": ["marowak", "marowak-alola"],
+        "Ponyta": ["ponyta", "ponyta-galar"],
+        "Rapidash": ["rapidash", "rapidash-galar"],
+        "Slowpoke": ["slowpoke", "slowpoke-galar"],
+        "Slowbro": ["slowbro", "slowbro-galar"],
+        "Farfetch'd": ["farfetchd", "farfetchd-galar"],
+        "Weezing": ["weezing", "weezing-galar"],
+        "Mr. Mime": ["mrmime", "mrmime-galar"],
+        "Articuno": ["articuno", "articuno-galar"],
+        "Zapdos": ["zapdos", "zapdos-galar"],
+        "Moltres": ["moltres", "moltres-galar"],
+        "Slowking": ["slowking", "slowking-galar"],
+        "Corsola": ["corsola", "corsola-galar"],
+        "Zigzagoon": ["zigzagoon", "zigzagoon-galar"],
+        "Linoone": ["linoone", "linoone-galar"],
+        "Darumaka": ["darumaka", "darumaka-galar"],
+        "Darmanitan": ["darmanitan", "darmanitan-galar"],
+        "Yamask": ["yamask", "yamask-galar"],
+        "Stunfisk": ["stunfisk", "stunfisk-galar"],
+        "Growlithe": ["growlithe", "growlithe-hisui"],
+        "Arcanine": ["arcanine", "arcanine-hisui"],
+        "Voltorb": ["voltorb", "voltorb-hisui"],
+        "Electrode": ["electrode", "electrode-hisui"],
+        "Typhlosion": ["typhlosion", "typhlosion-hisui"],
+        "Qwilfish": ["qwilfish", "qwilfish-hisui"],
+        "Sneasel": ["sneasel", "sneasel-hisui"],
+        "Samurott": ["samurott", "samurott-hisui"],
+        "Lilligant": ["lilligant", "lilligant-hisui"],
+        "Zorua": ["zorua", "zorua-hisui"],
+        "Zoroark": ["zoroark", "zoroark-hisui"],
+        "Braviary": ["braviary", "braviary-hisui"],
+        "Sliggoo": ["sliggoo", "sliggoo-hisui"],
+        "Goodra": ["goodra", "goodra-hisui"],
+        "Avalugg": ["avalugg", "avalugg-hisui"],
+        "Decidueye": ["decidueye", "decidueye-hisui"],
+        "Wooper": ["wooper", "wooper-paldea"],
+        "Tauros": ["tauros", "tauros-paldeacombat", "tauros-paldeablaze", "tauros-paldeaaqua"],
+        "Deoxys": ["deoxys", "deoxys-attack", "deoxys-defense", "deoxys-speed"],
+        "Shaymin": ["shaymin", "shaymin-sky"],
+        "Squawkabilly": ["squawkabilly", "squawkabilly-blue", "squawkabilly-yellow", "squawkabilly-white"],
+        "Oricorio-Baile": ["oricorio", "oricorio-pompom", "oricorio-pau", "oricorio-sensu"],
+        "Tornadus": ["tornadus", "tornadus-therian"],
+        "Thundurus": ["thundurus", "thundurus-therian"],
+        "Landorus": ["landorus", "landorus-therian"],
+        "Enamorus": ["enamorus", "enamorus-therian"],
+        "Urshifu-Single-Strike": ["urshifu", "urshifu-rapidstrike"],
+        "Basculegion": ["basculegion", "basculegion-f"],
+        "Indeedee": ["indeedee", "indeedee-f"],
+        "Meowstic": ["meowstic", "meowstic-f"],
+        "Oinkologne": ["oinkologne", "oinkologne-f"]
+      };
+
+      const groupedSeviiSpritesWhenAlternateFormsHidden = {
+        "Doduo": ["doduo", {"filename": "doduo-sevii", "source": "radicalRed"}],
+        "Dodrio": ["dodrio", {"filename": "dodrio-sevii", "source": "radicalRed"}],
+        "Teddiursa": ["teddiursa", {"filename": "teddiursa-sevii", "source": "radicalRed"}],
+        "Ursaring": ["ursaring", {"filename": "ursaring-sevii", "source": "radicalRed"}],
+        "Mantine": ["mantine", {"filename": "mantine-sevii", "source": "radicalRed"}],
+        "Feebas": ["feebas", {"filename": "feebas-sevii", "source": "radicalRed"}],
+        "Milotic": ["milotic", {"filename": "milotic-sevii", "source": "radicalRed"}],
+        "Carnivine": ["carnivine", {"filename": "carnivine-sevii", "source": "radicalRed"}],
+        "Mantyke": ["mantyke", {"filename": "mantyke-sevii", "source": "radicalRed"}],
+        "Blitzle": ["blitzle", {"filename": "blitzle-sevii", "source": "radicalRed"}],
+        "Zebstrika": ["zebstrika", {"filename": "zebstrika-sevii", "source": "radicalRed"}],
+        "Clauncher": ["clauncher", {"filename": "clauncher-sevii", "source": "radicalRed"}],
+        "Clawitzer": ["clawitzer", {"filename": "clawitzer-sevii", "source": "radicalRed"}],
+        "Noibat": ["noibat", {"filename": "noibat-sevii", "source": "radicalRed"}],
+        "Noivern": ["noivern", {"filename": "noivern-sevii", "source": "radicalRed"}],
+        "Wishiwashi": ["wishiwashi", {"filename": "wishiwashi-sevii", "source": "radicalRed"}],
+        "Dhelmise": ["dhelmise", {"filename": "dhelmise-sevii", "source": "radicalRed"}],
+        "Sizzlipede": ["sizzlipede", {"filename": "sizzlepede-sevii", "source": "radicalRed"}],
+        "Centiskorch": ["centiskorch", {"filename": "centiskorch-sevii", "source": "radicalRed"}],
+        "Nymble": ["nymble", {"filename": "nymble-sevii", "source": "radicalRed"}],
+        "Lokix": ["lokix", {"filename": "lokix-sevii", "source": "radicalRed"}]
+      };
+
+      const groupedSpritesWhenAbilityFormsHidden = {};
+
+      const groupedSpritesWhenItemFormsHidden = {};
+
+      if (alwaysCyclingSprites[pokemon]) {
+        return alwaysCyclingSprites[pokemon];
+      }
+
+      if (!includeAlternateFormsElement.checked && groupedSpritesWhenAlternateFormsHidden[pokemon]) {
+        return groupedSpritesWhenAlternateFormsHidden[pokemon];
+      }
+
+      if (
+        !includeAlternateFormsElement.checked &&
+        isRadicalRedSelected() &&
+        groupedSeviiSpritesWhenAlternateFormsHidden[pokemon]
+      ) {
+        return groupedSeviiSpritesWhenAlternateFormsHidden[pokemon];
+      }
+
+      if (!includeItemFormsElement.checked && groupedSpritesWhenItemFormsHidden[pokemon]) {
+        return groupedSpritesWhenItemFormsHidden[pokemon];
+      }
+
+      return [getPokemonSpriteFilename(pokemon)];
+    }
+
+    function getSpriteFilenameValue(spriteEntry) {
+      return typeof spriteEntry === "string" ? spriteEntry : spriteEntry.filename;
+    }
+
+    function getSpriteEntrySource(spriteEntry, fallbackPokemon) {
+      if (typeof spriteEntry === "string") return getPokemonSpriteSource(fallbackPokemon);
+      return spriteEntry.source || getPokemonSpriteSource(fallbackPokemon);
+    }
+
+    function getPokemonSpriteUrl(pokemon, isShiny = false, spriteIndex = 0) {
+      const folder = isShiny ? "gen5-shiny" : "gen5";
+      const filenames = getPokemonSpriteFilenames(pokemon);
+      const spriteEntry = filenames[spriteIndex % filenames.length];
+      const filename = getSpriteFilenameValue(spriteEntry);
+      const spriteSource = getSpriteEntrySource(spriteEntry, pokemon);
+      const baseUrl = spriteSource === "radicalRed"
+        ? "https://play.radicalred.net/sprites"
+        : "https://play.pokemonshowdown.com/sprites";
+
+      return `${baseUrl}/${folder}/${filename}.png`;
+    }
+
+    function setupCyclingSprite(sprite, pokemon, isShinyGetter) {
+      const filenames = getPokemonSpriteFilenames(pokemon);
+      if (filenames.length <= 1) return;
+
+      let spriteIndex = 0;
+      setInterval(() => {
+        spriteIndex = (spriteIndex + 1) % getPokemonSpriteFilenames(pokemon).length;
+        sprite.src = getPokemonSpriteUrl(pokemon, isShinyGetter(), spriteIndex);
+      }, 1000);
+    }
+
+    function createPokemonSprite(pokemon, className, isShiny = false) {
+      const img = document.createElement("img");
+      img.src = getPokemonSpriteUrl(pokemon, isShiny);
+      img.alt = isShiny ? "Shiny Pokémon sprite" : "Pokémon sprite";
+      img.className = className;
+      img.loading = "lazy";
+      img.onerror = () => {
+        img.style.display = "none";
+      };
+      return img;
+    }
+
+    function rollShiny() {
+      return Math.floor(Math.random() * 100) === 0;
+    }
+
+    function getRandomChoices(count) {
+      const shuffled = [...availablePokemon].sort(() => Math.random() - 0.5);
+      return shuffled.slice(0, Math.min(count, availablePokemon.length));
+    }
+
+    function getChoiceColumnCount(choiceCount) {
+      if (choiceCount <= 1) return 1;
+      if (choiceCount <= 4) return choiceCount;
+      if (choiceCount === 5 || choiceCount === 6) return 3;
+      if (choiceCount <= 8) return 4;
+      if (choiceCount <= 10) return 5;
+      return Math.ceil(Math.sqrt(choiceCount));
+    }
+
+    function updateChoiceGridColumns(choiceCount) {
+      choicesElement.style.setProperty("--choice-columns", getChoiceColumnCount(choiceCount));
+    }
+
+    
+    // ===== CLASSIC DRAFT MODE =====
+
+    function displayChoices() {
+      choicesElement.innerHTML = "";
+
+      if (availablePokemon.length === 0 || allPlayersFull()) {
+        currentPlayerElement.textContent = "Draft complete";
+        statusElement.textContent = "";
+        updatePlayerLists();
+        return;
+      }
+
+      while (!actorCanDraft(currentPlayerIndex)) {
+        currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+      }
+
+      reverseCurrentTargetIndex = getReverseTargetIndex(currentPlayerIndex, reverseFullRandomElement.checked);
+      currentPlayerElement.textContent = getDraftTurnText(currentPlayerIndex, reverseCurrentTargetIndex);
+
+      const classicChoices = getRandomChoices(classicChoiceCount);
+      updateChoiceGridColumns(classicChoices.length);
+
+      classicChoices.forEach((pokemon) => {
+        const shiny = rollShiny();
+
+        const button = createPokemonChoiceButton(pokemon, shiny, () => pickPokemon(pokemon, shiny));
+        choicesElement.appendChild(button);
+      });
+
+      statusElement.textContent = `${availablePokemon.length} Pokémon remaining.`;
+      updatePlayerLists();
+    }
+
+    function createPokemonChoiceButton(pokemon, shiny, onClick, unavailable = false, pickedBy = "") {
+      const button = document.createElement("button");
+      button.className = "pokemon-button" + (shiny ? " shiny-choice" : "") + (unavailable ? " unavailable" : "");
+
+      const sprite = createPokemonSprite(pokemon, "choice-sprite", shiny);
+      const name = document.createElement("span");
+      name.textContent = getPokemonDisplayName(pokemon);
+
+      setupCyclingSprite(sprite, pokemon, () => button.classList.contains("shiny-choice"));
+      button.appendChild(sprite);
+      button.appendChild(name);
+
+      if (shiny) {
+        const badge = document.createElement("div");
+        badge.className = "shiny-badge";
+        badge.textContent = "✨ SHINY!";
+        button.appendChild(badge);
+      }
+
+      if (pickedBy) {
+        const pickedByLabel = document.createElement("div");
+        pickedByLabel.className = "picked-by-label";
+        pickedByLabel.textContent = `${pickedBy}`;
+        button.appendChild(pickedByLabel);
+      }
+
+      if (unavailable) {
+        button.disabled = true;
+      } else {
+        button.addEventListener("click", onClick);
+      }
+
+      return button;
+    }
+
+    function pickPokemon(pokemon, shiny = false) {
+      const index = availablePokemon.indexOf(pokemon);
+      const targetIndex = isReverseMode() ? reverseCurrentTargetIndex : currentPlayerIndex;
+
+      if (index === -1 || targetIndex === -1 || !playerCanPick(targetIndex)) return;
+
+      availablePokemon.splice(index, 1);
+      players[targetIndex].picks.push({
+        name: pokemon,
+        shiny: shiny
+      });
+
+      if (!allPlayersFull() && players.length > 1) {
+        do {
+          if (snakeDirection === 1) {
+            if (currentPlayerIndex === players.length - 1) {
+              snakeDirection = -1;
+            } else {
+              currentPlayerIndex++;
+            }
+          } else {
+            if (currentPlayerIndex === 0) {
+              snakeDirection = 1;
+            } else {
+              currentPlayerIndex--;
+            }
+          }
+        } while (!actorCanDraft(currentPlayerIndex) && !allPlayersFull());
+      }
+
+      displayChoices();
+    }
+
+    function buildRoundOrder() {
+      const playerCount = players.length;
+      const startIndex = (playerCount - ((roundNumber - 1) % playerCount)) % playerCount;
+      return players
+        .map((_, offset) => (startIndex + offset) % playerCount)
+        .filter(index => actorCanDraft(index));
+    }
+
+    
+    // ===== MARKET DRAFT MODE =====
+
+    function startNewRound() {
+      if (availablePokemon.length === 0 || allPlayersFull()) {
+        choicesElement.innerHTML = "";
+        currentPlayerElement.textContent = "Draft complete";
+        statusElement.textContent = "";
+        updatePlayerLists();
+        return;
+      }
+
+      currentRoundOrder = buildRoundOrder();
+      currentRoundPickIndex = 0;
+
+      const roundChoiceCount = Math.min((currentRoundOrder.length * marketPokemonPerPlayerInPool) + marketBonusCount, availablePokemon.length);
+      currentRoundChoices = getRandomChoices(roundChoiceCount).map((pokemon) => ({
+        name: pokemon,
+        shiny: rollShiny(),
+        picked: false,
+        pickedBy: ""
+      }));
+
+      displayRoundChoices();
+    }
+
+    function displayRoundChoices() {
+      choicesElement.innerHTML = "";
+
+      if (availablePokemon.length === 0 || allPlayersFull()) {
+        currentPlayerElement.textContent = "Draft complete";
+        statusElement.textContent = "";
+        updatePlayerLists();
+        return;
+      }
+
+      if (currentRoundPickIndex >= currentRoundOrder.length || currentRoundChoices.every(choice => choice.picked)) {
+        roundNumber++;
+        startNewRound();
+        return;
+      }
+
+      currentPlayerIndex = currentRoundOrder[currentRoundPickIndex];
+      reverseCurrentTargetIndex = getReverseTargetIndex(currentPlayerIndex, reverseFullRandomElement.checked);
+      currentPlayerElement.textContent = getDraftTurnText(currentPlayerIndex, reverseCurrentTargetIndex, `Round ${roundNumber}: `);
+
+      updateChoiceGridColumns(currentRoundChoices.length);
+
+      currentRoundChoices.forEach((choice) => {
+        const button = createPokemonChoiceButton(
+          choice.name,
+          choice.shiny,
+          () => pickRoundPokemon(choice),
+          choice.picked,
+          choice.pickedBy
+        );
+        choicesElement.appendChild(button);
+      });
+
+      const availableInRound = currentRoundChoices.filter(choice => !choice.picked).length;
+      statusElement.textContent = `${availablePokemon.length} Pokémon remaining. ${availableInRound} still available this round.`;
+      updatePlayerLists();
+    }
+
+    function pickRoundPokemon(choice) {
+      const targetIndex = isReverseMode() ? reverseCurrentTargetIndex : currentPlayerIndex;
+
+      if (choice.picked || targetIndex === -1 || !playerCanPick(targetIndex)) return;
+
+      const index = availablePokemon.indexOf(choice.name);
+      if (index === -1) return;
+
+      availablePokemon.splice(index, 1);
+      choice.picked = true;
+      choice.pickedBy = isReverseMode()
+        ? `${players[currentPlayerIndex].name} for ${players[targetIndex].name}`
+        : players[currentPlayerIndex].name;
+
+      players[targetIndex].picks.push({
+        name: choice.name,
+        shiny: choice.shiny
+      });
+
+      currentRoundPickIndex++;
+
+      if (currentRoundPickIndex >= currentRoundOrder.length) {
+        roundNumber++;
+        startNewRound();
+      } else {
+        displayRoundChoices();
+      }
+    }
+
+    
+    // ===== PLAYER DISPLAY =====
+
+    function updatePlayerLists() {
+      playerListsElement.innerHTML = "";
+
+      players.forEach((player, index) => {
+        const card = document.createElement("div");
+        card.className = "player-card" + (index === currentPlayerIndex ? " active" : "");
+
+        const heading = document.createElement("h2");
+        heading.textContent = `${player.name} (${player.picks.length})`;
+
+        const list = document.createElement("ol");
+        player.picks.forEach((pick) => {
+          const item = document.createElement("li");
+          item.className = "picked-pokemon";
+
+          const sprite = createPokemonSprite(pick.name, "picked-sprite", pick.shiny);
+          const name = document.createElement("span");
+          name.textContent = getPokemonDisplayName(pick.name);
+          if (pick.shiny) {
+            name.className = "shiny-pick";
+          }
+
+          item.appendChild(sprite);
+          item.appendChild(name);
+          list.appendChild(item);
+        });
+
+        card.appendChild(heading);
+        card.appendChild(list);
+        playerListsElement.appendChild(card);
+      });
+    }
+
+    playerCountElement.addEventListener("input", () => {
+      resizeNumberInput(playerCountElement);
+      
+    // ===== PAGE INITIALIZATION =====
+
+    createPlayerInputs();
+    });
+    draftAllPossibleElement.addEventListener("change", () => {
+      pokemonPerPlayerElement.disabled = draftAllPossibleElement.checked;
+      validateSetup();
+    });
+
+    pokemonPerPlayerElement.addEventListener("input", () => {
+      resizeNumberInput(pokemonPerPlayerElement);
+      validateSetup();
+    });
+    draftModeElement.addEventListener("change", updateModeSettings);
+    reverseFullRandomElement.addEventListener("change", validateSetup);
+    classicChoiceCountElement.addEventListener("input", () => {
+      resizeNumberInput(classicChoiceCountElement);
+      validateSetup();
+    });
+    marketBonusCountElement.addEventListener("input", () => {
+      resizeNumberInput(marketBonusCountElement);
+      validateSetup();
+    });
+    marketPokemonPerPlayerInPoolElement.addEventListener("input", () => {
+      resizeNumberInput(marketPokemonPerPlayerInPoolElement);
+      validateSetup();
+    });
+    pokemonGameSelectElement.addEventListener("change", updatePokemonList);
+    pokemonDexSelectElement.addEventListener("change", updatePokemonList);
+    tagFilterElements.forEach((checkbox) => {
+      checkbox.addEventListener("change", updatePokemonList);
+    });
+    includeAlternateFormsElement.addEventListener("change", updatePokemonList);
+    includeAbilityFormsElement.addEventListener("change", updatePokemonList);
+    includeItemFormsElement.addEventListener("change", updatePokemonList);
+    startDraftButton.addEventListener("click", startDraft);
+    viewListButton.addEventListener("click", showListViewer);
+    listSearchInputElement.addEventListener("input", renderListViewer);
+    backToSetupButton.addEventListener("click", returnToSetup);
+    backFromListButton.addEventListener("click", returnToSetup);
+
+    // ===== PAGE INITIALIZATION =====
+
+    createPlayerInputs();
+    pokemonPerPlayerElement.disabled = draftAllPossibleElement.checked;
+    updatePokemonList();
+    updateModeSettings();
+    validateSetup();
+    resizeAllNumberInputs();
+  </script>
+</body>
+</html>
