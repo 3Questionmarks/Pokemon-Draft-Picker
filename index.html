@@ -166,9 +166,9 @@
     }
 
     .number-input {
-      width: 6ch;
-      max-width: 10ch;
-      min-width: 5ch;
+      width: 9ch;
+      max-width: 12ch;
+      min-width: 8ch;
       text-align: center;
     }
 
@@ -566,8 +566,9 @@
       }
 
       .number-input {
-        width: 7ch;
-        max-width: 9ch;
+        width: 9ch;
+        max-width: 12ch;
+        min-width: 8ch;
       }
 
       .dex-selection-row,
@@ -1050,7 +1051,7 @@
 
     function resizeNumberInput(input) {
       const length = Math.max(1, input.value.length);
-      input.style.width = `${Math.min(Math.max(length + 3, 5), 10)}ch`;
+      input.style.width = `${Math.min(Math.max(length + 4, 8), 12)}ch`;
     }
 
     function resizeAllNumberInputs() {
