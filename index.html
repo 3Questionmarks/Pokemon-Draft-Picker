@@ -1718,6 +1718,7 @@
         "Decidueye": ["decidueye", "decidueye-hisui"],
         "Wooper": ["wooper", "wooper-paldea"],
         "Tauros": ["tauros", "tauros-paldeacombat", "tauros-paldeablaze", "tauros-paldeaaqua"],
+        "Rotom": ["rotom", "rotom-heat", "rotom-wash", "rotom-frost", "rotom-fan", "rotom-mow"],
         "Deoxys": ["deoxys", "deoxys-attack", "deoxys-defense", "deoxys-speed"],
         "Shaymin": ["shaymin", "shaymin-sky"],
         "Squawkabilly": ["squawkabilly", "squawkabilly-blue", "squawkabilly-yellow", "squawkabilly-white"],
@@ -1761,12 +1762,12 @@
 
       const groupedSpritesWhenItemFormsHidden = {};
 
-      if (alwaysCyclingSprites[pokemon]) {
-        return alwaysCyclingSprites[pokemon];
-      }
-
       if (!includeAlternateFormsElement.checked && groupedSpritesWhenAlternateFormsHidden[pokemon]) {
         return groupedSpritesWhenAlternateFormsHidden[pokemon];
+      }
+
+      if (alwaysCyclingSprites[pokemon]) {
+        return alwaysCyclingSprites[pokemon];
       }
 
       if (
