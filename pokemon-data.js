@@ -903,10 +903,28 @@ const PokemonDraftData = {
       "evolutionStage": 2
     },
     {
+      "name": "Pikachu-Starter",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 25,
+      "formOrder": 1,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
+    },
+    {
       "name": "Pikachu-Cosplay",
       "games": {
         "natDex": {
-          "stage1": false,
+          "stage1": true,
           "fullyEvolved": true
         }
       },
@@ -4993,7 +5011,7 @@ const PokemonDraftData = {
       "games": {
         "natDex": {
           "stage1": true,
-          "fullyEvolved": false
+          "fullyEvolved": true
         }
       },
       "natDexId": 133,

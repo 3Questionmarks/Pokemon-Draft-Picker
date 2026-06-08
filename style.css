@@ -1,0 +1,1007 @@
+/* =========================
+       STYLING
+       Edit colours, spacing, sizes, and layout here.
+       ========================= */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 32px auto;
+      padding: 0 20px;
+      background: linear-gradient(135deg, #e8f3ff 0%, #fff7cc 100%);
+      color: #1f2a44;
+    }
+
+    h1, .intro, #setup, #draftArea, #status {
+      text-align: center;
+    }
+
+    h1 {
+      color: #e3350d;
+      text-shadow: 2px 2px 0 #ffcb05;
+      letter-spacing: 1px;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      margin-bottom: 24px;
+      color: #3b4cca;
+      font-weight: 600;
+    }
+
+    #setup, .player-card {
+      background: #ffffff;
+      border: 3px solid #ffcb05;
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 6px 14px rgba(59, 76, 202, 0.18);
+    }
+
+    #setup {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .setup-section {
+      border: 2px solid #e8eefc;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+      background: #fafdff;
+    }
+
+    .setup-section h2 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+      color: #e3350d;
+      border-bottom: 2px solid #ffcb05;
+      padding-bottom: 6px;
+    }
+
+    .mode-settings {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #dbe5ff;
+    }
+
+    
+    .dex-selection-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .dex-selection-row > div {
+      min-width: 180px;
+    }
+
+    .tag-filter-section {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #dbe5ff;
+    }
+
+    .filter-heading {
+      margin: 0 0 8px;
+      font-weight: bold;
+      color: #3b4cca;
+    }
+
+    .tag-filter-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px 16px;
+      flex-wrap: wrap;
+    }
+
+    .checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0;
+      color: #1f2a44;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .checkbox-label input {
+      margin: 0;
+      width: auto;
+    }
+
+    .alternate-form-row {
+      margin-top: 10px;
+    }
+
+    .draft-all-label {
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+.mode-setting-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .mode-setting-row > div {
+      min-width: 190px;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #3b4cca;
+    }
+
+    input, select {
+      font-size: 1rem;
+      padding: 10px;
+      border: 2px solid #3b4cca;
+      border-radius: 10px;
+      margin: 6px;
+      background: #fafdff;
+    }
+
+    input:focus, select:focus {
+      outline: 3px solid #ffcb05;
+    }
+
+    select {
+      max-width: 100%;
+    }
+
+    .number-input {
+      width: 9ch;
+      max-width: 12ch;
+      min-width: 8ch;
+      text-align: center;
+    }
+
+    #playerNameInputs {
+      margin: 16px 0;
+    }
+
+    .main-button {
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 12px 22px;
+      border: 2px solid #2a2a2a;
+      border-radius: 999px;
+      background: #e3350d;
+      color: white;
+      cursor: pointer;
+      margin-top: 8px;
+      box-shadow: 0 4px 0 #9d2209;
+    }
+
+    .main-button:hover, .pokemon-button:hover {
+      background: #ffcb05;
+      color: #1f2a44;
+    }
+
+    .main-button:active, .pokemon-button:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+
+    .setup-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .custom-list-manager {
+      max-width: 760px;
+      margin: 16px auto 0;
+      padding: 12px;
+      border: 2px solid #3b4cca;
+      border-radius: 14px;
+      background: #f7f9ff;
+      text-align: center;
+    }
+
+    .custom-list-manager .filter-heading {
+      margin: 0 0 4px;
+    }
+
+    .custom-list-help {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      color: #4c5a88;
+    }
+
+    .custom-list-storage-note {
+      margin: 6px 0 0;
+      font-size: 0.78rem;
+      color: #667;
+    }
+
+    .custom-list-import-row,
+    .imported-list-row {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .imported-list-select-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imported-list-row label {
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    .imported-list-row select {
+      min-width: 220px;
+    }
+
+    .save-button {
+      background: #2f8f46;
+      box-shadow: 0 4px 0 #1f5f31;
+    }
+
+    .danger-button {
+      background: #b23b3b;
+      box-shadow: 0 4px 0 #792525;
+    }
+
+    .custom-list-locked-control {
+      opacity: 0.55;
+      filter: grayscale(0.6);
+    }
+
+    .custom-list-locked-control label,
+    .custom-list-locked-control .checkbox-label {
+      cursor: not-allowed;
+    }
+
+    .secondary-button {
+      background: #3b4cca;
+      box-shadow: 0 4px 0 #1f2a8a;
+    }
+
+    #draftArea, #listViewerArea {
+      display: none;
+    }
+
+    .draft-controls {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .custom-list-bulk-controls {
+      margin-top: -8px;
+      margin-bottom: 18px;
+      padding-top: 10px;
+      border-top: 2px dashed rgba(59, 76, 202, 0.35);
+    }
+
+    .list-mode-saved-list-row {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: -6px 0 18px;
+      padding: 10px 0 12px;
+      border-bottom: 2px dashed rgba(59, 76, 202, 0.25);
+    }
+
+    .list-mode-saved-list-row select {
+      min-width: 220px;
+    }
+
+    #currentPlayer {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 20px 0;
+      padding: 10px 18px;
+      background: #3b4cca;
+      color: white;
+      border-radius: 999px;
+      border: 3px solid #ffcb05;
+    }
+
+    #pokemonChoices {
+      display: grid;
+      grid-template-columns: repeat(var(--choice-columns, 3), minmax(160px, 220px));
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #pokemonListViewer {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 760px) {
+      #pokemonChoices {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+
+    #listViewerTitle {
+      display: block;
+      width: fit-content;
+      max-width: 90%;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 20px auto 8px;
+      padding: 10px 18px;
+      background: #3b4cca;
+      color: white;
+      border-radius: 999px;
+      border: 3px solid #ffcb05;
+      text-align: center;
+    }
+
+    #listViewerFilters {
+      text-align: center;
+      color: #3b4cca;
+      font-weight: bold;
+      margin: 0 auto 14px;
+      max-width: 760px;
+      line-height: 1.5;
+    }
+
+    #listViewerInstruction,
+    #listViewerStatus {
+      color: #3b4cca;
+      font-weight: bold;
+      margin: 0 auto 18px;
+      max-width: 760px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .list-search-row {
+      max-width: 420px;
+      margin: 0 auto 18px;
+      text-align: center;
+    }
+
+    .list-search-row input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .list-viewer-controls {
+      max-width: 860px;
+      margin: 0 auto 18px;
+      padding: 14px;
+      background: #ffffff;
+      border: 2px solid #ffcb05;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(59, 76, 202, 0.12);
+    }
+
+    .list-viewer-controls h2 {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      color: #e3350d;
+      border-bottom: 2px solid #ffcb05;
+      padding-bottom: 6px;
+      text-align: center;
+    }
+
+    .list-viewer-controls .dex-selection-row {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .list-viewer-controls .dex-selection-row > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .list-viewer-controls .tag-filter-section,
+    .list-viewer-controls .filter-heading {
+      text-align: center;
+    }
+
+    .list-viewer-controls .tag-filter-row {
+      justify-content: center;
+    }
+
+    .list-extra-filter-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px 18px;
+      margin-top: 14px;
+      text-align: center;
+    }
+
+    .list-extra-filter-grid > div {
+      flex: 0 1 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .type-filter-pair {
+      flex-basis: 320px;
+    }
+
+    .evolution-stage-filter {
+      margin-left: 22px;
+    }
+
+    .type-filter-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .list-extra-filter-grid label {
+      display: block;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .list-extra-filter-grid > div:not(.type-filter-pair) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .type-filter-controls select {
+      min-width: 120px;
+      max-width: 135px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .type-filter-plus {
+      color: #3b4cca;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .filter-note {
+      margin: 10px auto 0;
+      color: #e3350d;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    #listViewerInstruction {
+      margin-bottom: 10px;
+    }
+
+    #listViewerStatus {
+      margin-top: -4px;
+    }
+
+    .pokemon-button {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 18px 28px;
+      border: 3px solid #2a2a2a;
+      border-radius: 18px;
+      background: white;
+      cursor: pointer;
+      width: 190px;
+      height: 190px;
+      box-sizing: border-box;
+      transition: transform 0.1s ease, background 0.1s ease;
+      overflow: hidden;
+      box-shadow: 0 5px 0 #d5d5d5;
+    }
+
+    .pokemon-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .pokemon-button.unavailable {
+      opacity: 0.45;
+      cursor: not-allowed;
+      filter: grayscale(1);
+      transform: none;
+    }
+
+    .pokemon-button.unavailable:hover {
+      background: white;
+      color: #1f2a44;
+      transform: none;
+    }
+
+    .picked-by-label {
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #e3350d;
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ffcb05;
+      border-radius: 999px;
+      padding: 3px 9px;
+      margin-top: 2px;
+    }
+
+    #status, #setupStatus, #marketPoolStatus, #customListSetupStatus, #customListEditorStatus {
+      color: #3b4cca;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #customListEditorStatus {
+      margin-top: -8px;
+      margin-bottom: 14px;
+    }
+
+    #exportCustomListButton[hidden],
+    #exitCustomListModeButton[hidden],
+    #discardCustomListChangesButton[hidden],
+    #clearCustomListFromListButton[hidden] {
+      display: none;
+    }
+
+    .custom-list-card-disabled {
+      opacity: 0.38;
+      filter: grayscale(0.9);
+      box-shadow: none;
+    }
+
+    .custom-list-card-selected {
+      outline: 4px solid #3b4cca;
+      background: #eef3ff;
+    }
+
+    .custom-list-card-marker {
+      font-size: 0.75rem;
+      font-weight: bold;
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: #3b4cca;
+      color: white;
+    }
+
+    #marketPoolStatus {
+      margin: 10px 0 0;
+    }
+
+    #setupStatus.error {
+      color: #e3350d;
+    }
+
+    #playerLists {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .player-card {
+      width: 220px;
+      border-color: #3b4cca;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    .player-card.active {
+      outline: 4px solid #e3350d;
+      background: #fff7cc;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(227, 53, 13, 0.25);
+    }
+
+    .player-card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #e3350d;
+      border-bottom: 2px solid #ffcb05;
+      padding-bottom: 8px;
+    }
+
+    .player-card ol {
+      text-align: left;
+      min-height: 24px;
+      padding-left: 24px;
+    }
+
+    .player-card li {
+      margin: 4px 0;
+    }
+
+    .pokemon-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 150px;
+    }
+
+    .choice-sprite {
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      flex: 0 0 auto;
+    }
+
+    .pokemon-button span {
+      max-width: 100%;
+      text-align: center;
+      overflow-wrap: anywhere;
+      line-height: 1.15;
+    }
+
+    .picked-pokemon {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 4px 0;
+    }
+
+    .picked-sprite {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      flex: 0 0 auto;
+    }
+
+    .shiny-pick {
+      color: #b8860b;
+      font-weight: bold;
+    }
+
+    .shiny-pick::after {
+      content: " ✨";
+    }
+
+    .pokemon-button.shiny-choice,
+    .list-viewer-card.shiny-choice {
+      background: linear-gradient(135deg, #fff8c6 0%, #ffe066 100%);
+      border-color: #d4a017;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+      animation: shinyPulse 1.5s infinite;
+    }
+
+
+    .list-viewer-card {
+      position: relative;
+      height: 230px;
+      width: 210px;
+      padding: 14px 10px;
+      gap: 6px;
+    }
+
+    .list-viewer-card .choice-sprite {
+      width: 88px;
+      height: 88px;
+    }
+
+    .natdex-label {
+      font-size: 0.85rem;
+      color: #3b4cca;
+      font-weight: bold;
+    }
+
+    .type-badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+
+    .type-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.1rem;
+      padding: 2px 6px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: bold;
+      line-height: 1.1;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(0, 0, 0, 0.18);
+    }
+
+    .type-normal { background: #a8a77a; }
+    .type-fire { background: #ee8130; }
+    .type-water { background: #6390f0; }
+    .type-electric { background: #f7d02c; color: #1f2a44; text-shadow: none; }
+    .type-grass { background: #7ac74c; }
+    .type-ice { background: #96d9d6; color: #1f2a44; text-shadow: none; }
+    .type-fighting { background: #c22e28; }
+    .type-poison { background: #a33ea1; }
+    .type-ground { background: #e2bf65; color: #1f2a44; text-shadow: none; }
+    .type-flying { background: #a98ff3; }
+    .type-psychic { background: #f95587; }
+    .type-bug { background: #a6b91a; }
+    .type-rock { background: #b6a136; }
+    .type-ghost { background: #735797; }
+    .type-dragon { background: #6f35fc; }
+    .type-dark { background: #705746; }
+    .type-steel { background: #b7b7ce; color: #1f2a44; text-shadow: none; }
+    .type-fairy { background: #d685ad; }
+
+
+    .shiny-badge {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #8b6508;
+      background: rgba(255,255,255,0.8);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    @keyframes shinyPulse {
+      0% { box-shadow: 0 0 10px rgba(255,215,0,0.5); }
+      50% { box-shadow: 0 0 25px rgba(255,215,0,1); }
+      100% { box-shadow: 0 0 10px rgba(255,215,0,0.5); }
+    }
+
+    /* =========================
+       RESPONSIVE / MOBILE LAYOUT
+       Keeps the page usable on narrow screens.
+       ========================= */
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        max-width: 100%;
+        margin: 18px auto;
+        padding: 0 14px;
+      }
+
+      #setup {
+        max-width: 100%;
+      }
+
+      .setup-section {
+        padding: 14px;
+      }
+
+      .dex-selection-row,
+      .mode-setting-row,
+      .tag-filter-row,
+      .setup-actions {
+        gap: 10px;
+      }
+
+      .player-card {
+        width: min(220px, calc(50vw - 28px));
+      }
+
+      #pokemonChoices {
+        grid-template-columns: repeat(var(--choice-columns, 2), minmax(140px, 1fr));
+        gap: 12px;
+      }
+
+      .pokemon-button {
+        width: 100%;
+        max-width: 210px;
+        height: clamp(150px, 28vw, 190px);
+        padding: 12px;
+        font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+      }
+
+      .choice-sprite {
+        width: clamp(72px, 16vw, 96px);
+        height: clamp(72px, 16vw, 96px);
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        margin: 12px auto;
+        padding: 0 10px;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+        margin-bottom: 18px;
+      }
+
+      .setup-section h2 {
+        font-size: 1rem;
+      }
+
+      input,
+      select {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0;
+      }
+
+      .number-input {
+        width: 9ch;
+        max-width: 12ch;
+        min-width: 8ch;
+      }
+
+      .dex-selection-row,
+      .mode-setting-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .dex-selection-row > div,
+      .mode-setting-row > div {
+        min-width: 0;
+        width: 100%;
+      }
+
+      .tag-filter-row {
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+
+      .checkbox-label {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 8px 10px;
+        border: 1px solid #dbe5ff;
+        border-radius: 10px;
+        background: #ffffff;
+      }
+
+      .setup-actions {
+        flex-direction: column;
+      }
+
+      .main-button {
+        width: 100%;
+        margin-top: 6px;
+      }
+
+      #currentPlayer,
+      #listViewerTitle {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.05rem;
+        border-radius: 14px;
+      }
+
+      #pokemonChoices {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .pokemon-button {
+        max-width: none;
+        min-height: 132px;
+        height: clamp(132px, 42vw, 168px);
+        border-radius: 14px;
+        padding: 10px 6px;
+        font-size: 0.9rem;
+      }
+
+      .choice-sprite {
+        width: clamp(64px, 22vw, 84px);
+        height: clamp(64px, 22vw, 84px);
+      }
+
+      #pokemonListViewer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      #pokemonListViewer .pokemon-button {
+        width: 100%;
+      }
+
+      #pokemonListViewer .list-viewer-card {
+        height: 215px;
+        min-height: 215px;
+        padding: 12px 8px;
+      }
+
+      #pokemonListViewer .list-viewer-card .choice-sprite {
+        width: 78px;
+        height: 78px;
+      }
+
+      #playerLists {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .player-card {
+        width: 100%;
+        padding: 12px;
+      }
+
+      .player-card h2 {
+        font-size: 0.95rem;
+      }
+
+      .player-card ol {
+        padding-left: 18px;
+      }
+
+      .picked-pokemon {
+        gap: 5px;
+        font-size: 0.9rem;
+      }
+
+      .picked-sprite {
+        width: 36px;
+        height: 36px;
+      }
+
+      .list-search-row,
+      .list-viewer-controls {
+        max-width: 100%;
+      }
+
+      .list-extra-filter-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .list-extra-filter-grid > div,
+      .type-filter-pair {
+        flex-basis: auto;
+        width: 100%;
+      }
+
+      .type-filter-controls {
+        gap: 8px;
+      }
+
+      .type-filter-controls select {
+        min-width: 0;
+        max-width: none;
+        flex: 1;
+      }
+
+      .evolution-stage-filter {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 390px) {
+      #pokemonChoices,
+      #pokemonListViewer,
+      #playerLists {
+        grid-template-columns: 1fr;
+      }
+
+      .pokemon-button {
+        height: auto;
+        min-height: 132px;
+      }
+
+      #pokemonListViewer .list-viewer-card {
+        min-height: 215px;
+      }
+    }
