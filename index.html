@@ -206,6 +206,24 @@
       flex-wrap: wrap;
     }
 
+    .custom-list-import-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .custom-list-locked-control {
+      opacity: 0.55;
+      filter: grayscale(0.6);
+    }
+
+    .custom-list-locked-control label,
+    .custom-list-locked-control .checkbox-label {
+      cursor: not-allowed;
+    }
+
     .secondary-button {
       background: #3b4cca;
       box-shadow: 0 4px 0 #1f2a8a;
@@ -454,9 +472,45 @@
       margin-top: 2px;
     }
 
-    #status, #setupStatus, #marketPoolStatus {
+    #status, #setupStatus, #marketPoolStatus, #customListSetupStatus, #customListEditorStatus {
       color: #3b4cca;
       font-weight: bold;
+      text-align: center;
+    }
+
+    #customListEditorStatus {
+      margin-top: -8px;
+      margin-bottom: 14px;
+    }
+
+    #clearCustomListButton[hidden],
+    #selectAllCustomListButton[hidden],
+    #deselectAllCustomListButton[hidden],
+    #exportCustomListButton[hidden],
+    #exitCustomListModeButton[hidden],
+    #discardCustomListChangesButton[hidden],
+    #clearCustomListFromListButton[hidden] {
+      display: none;
+    }
+
+    .custom-list-card-disabled {
+      opacity: 0.38;
+      filter: grayscale(0.9);
+      box-shadow: none;
+    }
+
+    .custom-list-card-selected {
+      outline: 4px solid #3b4cca;
+      background: #eef3ff;
+    }
+
+    .custom-list-card-marker {
+      font-size: 0.75rem;
+      font-weight: bold;
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: #3b4cca;
+      color: white;
     }
 
     #marketPoolStatus {
@@ -910,7 +964,8 @@
         <div>
           <label for="pokemonGameSelect">Game</label>
           <select id="pokemonGameSelect">
-            <option value="natDex" selected>NatDex</option>
+            <option value="all" selected>All</option>
+            <option value="natDex">NatDex</option>
             <option value="infiniteFusion">Infinite Fusion</option>
             <option value="radicalRed">Radical Red</option>
           </select>
@@ -924,10 +979,17 @@
           <select id="pokemonDexSelect">
             <option value="stage1">Stage 1 Dex</option>
             <option value="fullyEvolved">Fully Evolved Dex</option>
-            <option value="full">Full Dex</option>
+            <option value="full" selected>All Pokémon</option>
           </select>
         </div>
       </div>
+
+      <div class="custom-list-import-row">
+        <button class="main-button secondary-button" id="importCustomListButton" type="button" title="To make a custom list: open View list, choose Create custom list, click Pokémon to include or exclude them, then export the custom list file. Import that file here to use it for a draft.">Import custom list</button>
+        <input id="importCustomListInput" type="file" accept=".txt,.json" hidden />
+        <button class="main-button secondary-button" id="clearCustomListButton" type="button" hidden>Clear custom list</button>
+      </div>
+      <p id="customListSetupStatus"></p>
 
       <div class="tag-filter-section">
         <p class="filter-heading">Include categories</p>
@@ -1023,10 +1085,11 @@
 
     <div class="setup-actions">
       <button class="main-button" id="startDraftButton">Start draft</button>
-      <button class="main-button secondary-button" id="viewListButton">View list</button>
       <button class="main-button secondary-button" id="importDraftButton" type="button">Import draft</button>
+      <button class="main-button secondary-button" id="viewListButton">View list</button>
       <input id="importDraftInput" type="file" accept=".txt,.json" hidden />
     </div>
+    
   </section>
 
   <!-- =========================
@@ -1052,7 +1115,16 @@
   <section id="listViewerArea">
     <div class="draft-controls">
       <button class="main-button" id="backFromListButton">Back to Setup</button>
+      <button class="main-button secondary-button" id="enterCustomListModeButton" type="button" title="Create or edit a custom list by clicking Pokémon to include or exclude them, then saving or exporting the list.">Custom List</button>
+      <button class="main-button secondary-button" id="importCustomListFromListButton" type="button" title="Import a custom list file and open it here for editing.">Import custom list</button>
+      <button class="main-button secondary-button" id="clearCustomListFromListButton" type="button" hidden>Clear custom list</button>
+      <button class="main-button secondary-button" id="selectAllCustomListButton" type="button" hidden>Select all shown</button>
+      <button class="main-button secondary-button" id="deselectAllCustomListButton" type="button" hidden>Deselect all shown</button>
+      <button class="main-button secondary-button" id="exportCustomListButton" type="button" hidden>Export custom list</button>
+      <button class="main-button secondary-button" id="exitCustomListModeButton" type="button" hidden>Save changes</button>
+      <button class="main-button secondary-button" id="discardCustomListChangesButton" type="button" hidden>Discard changes</button>
     </div>
+    <p id="customListEditorStatus"></p>
 
 
     <div id="listViewerControls" class="list-viewer-controls">
@@ -1062,6 +1134,7 @@
         <div>
           <label for="listGameSelect">Game</label>
           <select id="listGameSelect">
+            <option value="all">All</option>
             <option value="natDex">NatDex</option>
             <option value="infiniteFusion">Infinite Fusion</option>
             <option value="radicalRed">Radical Red</option>
@@ -1073,7 +1146,7 @@
           <select id="listDexSelect">
             <option value="stage1">Stage 1 Dex</option>
             <option value="fullyEvolved">Fully Evolved Dex</option>
-            <option value="full">Full Dex</option>
+            <option value="full" selected>All Pokémon</option>
           </select>
         </div>
       </div>
@@ -1238,7 +1311,9 @@
     function getPokemonNamesForDex(gameKey, dexKey) {
       return PokemonDraftData.pokemon
         .filter((pokemon) => {
-          const gameInfo = pokemon.games[gameKey];
+          const gameInfo = gameKey === "all"
+            ? Object.values(pokemon.games || {})[0]
+            : pokemon.games[gameKey];
           if (!gameInfo) return false;
 
           if (!pokemonPassesTagFilters(pokemon)) return false;
@@ -1270,6 +1345,358 @@
       return getPokemonNamesForDex(selectedPokemonGame, selectedPokemonDex);
     }
 
+    function getCurrentListViewerPokemonList() {
+      if (customDraftList) {
+        return customListEditMode ? getPokemonNamesForDex("all", "full") : [...customDraftList.pokemon];
+      }
+
+      return getPokemonNamesForDex(selectedPokemonGame, selectedPokemonDex);
+    }
+
+    function getFilteredListViewerPokemon() {
+      const pokemonList = getCurrentListViewerPokemonList();
+      const searchTerm = listSearchInputElement.value.trim().toLowerCase();
+      const searchedPokemonList = searchTerm
+        ? pokemonList.filter((pokemon) => getPokemonDisplayName(pokemon).toLowerCase().includes(searchTerm) || pokemon.toLowerCase().includes(searchTerm))
+        : pokemonList;
+
+      return searchedPokemonList.filter(pokemonMatchesListExtraFilters);
+    }
+
+    function updateCustomListSetupStatus() {
+      if (!customListSetupStatusElement) return;
+
+      if (customDraftList) {
+        const label = customDraftList.name || "Custom list";
+        customListSetupStatusElement.textContent = `${label}: ${customDraftList.pokemon.length} Pokémon loaded. This custom list will be used for the draft.`;
+        clearCustomListButton.hidden = false;
+        clearCustomListFromListButton.hidden = false;
+      } else {
+        customListSetupStatusElement.textContent = "";
+        clearCustomListButton.hidden = true;
+        clearCustomListFromListButton.hidden = true;
+      }
+
+      updatePremadeListControlsLock();
+    }
+
+    function updatePremadeListControlsLock() {
+      const locked = !!customDraftList;
+      const controls = [
+        pokemonGameSelectElement,
+        pokemonDexSelectElement,
+        ...tagFilterElements
+      ];
+
+      controls.forEach((control) => {
+        control.disabled = locked;
+        const wrapper = control.closest("label") || control.closest("div");
+        if (wrapper) {
+          wrapper.classList.toggle("custom-list-locked-control", locked);
+        }
+      });
+
+      pokemonGameSelectElement.title = locked ? "Custom lists define their own Pokémon pool. Clear the custom list to change game selection." : "";
+      pokemonDexSelectElement.title = locked ? "Custom lists define their own Pokémon pool. Clear the custom list to change the Pokémon list." : "";
+
+      updateListViewerPresetControlsLock();
+    }
+
+    function updateListViewerPresetControlsLock() {
+      const locked = !!customDraftList;
+      const controls = [
+        listGameSelectElement,
+        listDexSelectElement,
+        ...listTagFilterElements
+      ];
+
+      controls.forEach((control) => {
+        if (!control) return;
+        control.disabled = locked;
+        const wrapper = control.closest("label") || control.closest("div");
+        if (wrapper) {
+          wrapper.classList.toggle("custom-list-locked-control", locked);
+        }
+        control.title = locked
+          ? "This is locked while viewing a custom list. Form toggles and list-view filters can still be used."
+          : "";
+      });
+    }
+
+    function updateCustomListEditorControls() {
+      enterCustomListModeButton.hidden = customListEditMode;
+      selectAllCustomListButton.hidden = !customListEditMode;
+      deselectAllCustomListButton.hidden = !customListEditMode;
+      exportCustomListButton.hidden = !customListEditMode;
+      exitCustomListModeButton.hidden = !customListEditMode;
+      discardCustomListChangesButton.hidden = !customListEditMode;
+
+      customListEditorStatusElement.textContent = "";
+      updateListViewerInstruction();
+    }
+
+    function enterCustomListMode() {
+      customListEditMode = true;
+      customListSelectedPokemon = customDraftList
+        ? new Set(customDraftList.pokemon)
+        : new Set(getFilteredListViewerPokemon());
+      customListEditBackup = {
+        pokemon: new Set(customListSelectedPokemon),
+        settings: {
+          includeAlternateForms: listIncludeAlternateFormsElement.checked,
+          includeAbilityForms: listIncludeAbilityFormsElement.checked,
+          includeItemForms: listIncludeItemFormsElement.checked
+        }
+      };
+      updateCustomListEditorControls();
+      renderListViewer();
+    }
+
+    function exitCustomListMode() {
+      const sortedPokemon = sortPokemonNamesByDexOrder([...customListSelectedPokemon]);
+      const settings = {
+        includeAlternateForms: listIncludeAlternateFormsElement.checked,
+        includeAbilityForms: listIncludeAbilityFormsElement.checked,
+        includeItemForms: listIncludeItemFormsElement.checked
+      };
+
+      if (customDraftList) {
+        customDraftList.pokemon = sortedPokemon;
+        customDraftList.settings = settings;
+      } else {
+        customDraftList = {
+          name: "Custom Draft List",
+          pokemon: sortedPokemon,
+          excludedPokemon: getPokemonNamesForDex("all", "full").filter((pokemon) => !sortedPokemon.includes(pokemon)),
+          settings
+        };
+      }
+
+      includeAlternateFormsElement.checked = settings.includeAlternateForms;
+      includeAbilityFormsElement.checked = settings.includeAbilityForms;
+      includeItemFormsElement.checked = settings.includeItemForms;
+
+      updateCustomListSetupStatus();
+      updatePokemonList();
+      updateListViewerPresetControlsLock();
+
+      customListEditBackup = null;
+      customListEditMode = false;
+      updateCustomListEditorControls();
+      renderListViewer();
+    }
+
+    function discardCustomListChanges() {
+      if (customListEditBackup) {
+        customListSelectedPokemon = new Set(customListEditBackup.pokemon);
+
+        listIncludeAlternateFormsElement.checked = customListEditBackup.settings.includeAlternateForms;
+        listIncludeAbilityFormsElement.checked = customListEditBackup.settings.includeAbilityForms;
+        listIncludeItemFormsElement.checked = customListEditBackup.settings.includeItemForms;
+
+        includeAlternateFormsElement.checked = customListEditBackup.settings.includeAlternateForms;
+        includeAbilityFormsElement.checked = customListEditBackup.settings.includeAbilityForms;
+        includeItemFormsElement.checked = customListEditBackup.settings.includeItemForms;
+      }
+
+      customListEditBackup = null;
+      customListEditMode = false;
+      updateCustomListEditorControls();
+      updatePokemonList();
+      renderListViewer();
+    }
+
+    function togglePokemonInCustomList(button, pokemon) {
+      if (customListSelectedPokemon.has(pokemon)) {
+        customListSelectedPokemon.delete(pokemon);
+      } else {
+        customListSelectedPokemon.add(pokemon);
+      }
+
+      updateCustomListCardState(button, pokemon);
+      updateCustomListEditorControls();
+      updateListViewerInstruction();
+    }
+
+    function updateCustomListCardState(button, pokemon) {
+      const selected = customListSelectedPokemon.has(pokemon);
+      button.classList.toggle("custom-list-card-selected", selected);
+      button.classList.toggle("custom-list-card-disabled", !selected);
+
+      let marker = button.querySelector(".custom-list-card-marker");
+      if (!marker) {
+        marker = document.createElement("div");
+        marker.className = "custom-list-card-marker";
+        button.appendChild(marker);
+      }
+      marker.textContent = selected ? "Included" : "Excluded";
+    }
+
+    function selectAllShownCustomListPokemon() {
+      getFilteredListViewerPokemon().forEach((pokemon) => customListSelectedPokemon.add(pokemon));
+      updateCustomListEditorControls();
+      renderListViewer();
+    }
+
+    function deselectAllShownCustomListPokemon() {
+      getFilteredListViewerPokemon().forEach((pokemon) => customListSelectedPokemon.delete(pokemon));
+      updateCustomListEditorControls();
+      renderListViewer();
+    }
+
+    function buildCustomListSaveData(name = "Custom Draft List") {
+      const pokemon = sortPokemonNamesByDexOrder([...customListSelectedPokemon]);
+
+      const allPokemon = getPokemonNamesForDex("all", "full");
+      return {
+        version: 1,
+        kind: "pokemon-draft-custom-list",
+        name,
+        createdAt: new Date().toISOString(),
+        settings: {
+          includeAlternateForms: listIncludeAlternateFormsElement.checked,
+          includeAbilityForms: listIncludeAbilityFormsElement.checked,
+          includeItemForms: listIncludeItemFormsElement.checked
+        },
+        pokemon,
+        excludedPokemon: allPokemon.filter((p) => !pokemon.includes(p))
+      };
+    }
+
+    function createHumanReadableCustomListExport(saveData) {
+      const lines = [];
+      lines.push("Pokémon Draft Custom List");
+      lines.push("=========================");
+      lines.push("");
+      lines.push(`Name: ${saveData.name}`);
+      lines.push(`Created: ${new Date(saveData.createdAt).toLocaleString()}`);
+      lines.push(`Pokémon Count: ${saveData.pokemon.length}`);
+      lines.push(`Mechanically Different Forms: ${saveData.settings?.includeAlternateForms ? "On" : "Off"}`);
+      lines.push(`Ability-Based Forms: ${saveData.settings?.includeAbilityForms ? "On" : "Off"}`);
+      lines.push(`Item-Based Forms: ${saveData.settings?.includeItemForms ? "On" : "Off"}`);
+      lines.push("");
+      lines.push("Pokémon");
+      lines.push("-------");
+      saveData.pokemon.forEach((pokemon, index) => {
+        const dexLabel = getPokemonDexLabel(getPokemonDataByName(pokemon));
+        lines.push(`${String(index + 1).padStart(3, " ")}. ${dexLabel ? dexLabel + " " : ""}${getPokemonDisplayName(pokemon)}`);
+      });
+      lines.push("");
+      lines.push("Import Data");
+      lines.push("-----------");
+      lines.push("Leave everything below this line unchanged if you want to import this list back into the site.");
+      lines.push("===POKEMON_DRAFT_CUSTOM_LIST===");
+      lines.push(JSON.stringify(saveData, null, 2));
+      lines.push("===END_POKEMON_DRAFT_CUSTOM_LIST===");
+      return lines.join("\n");
+    }
+
+    function exportCustomList() {
+      if (!customListEditMode) return;
+
+      const listName = (prompt("Name this custom draft list:", "Custom Draft List") || "Custom Draft List").trim() || "Custom Draft List";
+      const saveData = buildCustomListSaveData(listName);
+      if (!saveData.pokemon.length) {
+        alert("Select at least one Pokémon before exporting a custom list.");
+        return;
+      }
+
+      const safeDate = new Date().toISOString().slice(0, 10);
+      const safeName = saveData.name.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").toLowerCase() || "custom-draft-list";
+      downloadTextFile(`pokemon-custom-list-${safeName}-${safeDate}.txt`, createHumanReadableCustomListExport(saveData));
+    }
+
+    function extractCustomListSaveData(text) {
+      const match = text.match(/===POKEMON_DRAFT_CUSTOM_LIST===\s*([\s\S]*?)\s*===END_POKEMON_DRAFT_CUSTOM_LIST===/);
+      const jsonText = match ? match[1] : text;
+      return JSON.parse(jsonText);
+    }
+
+    function applyImportedCustomList(saveData) {
+      if (!saveData || saveData.kind !== "pokemon-draft-custom-list" || !Array.isArray(saveData.pokemon)) {
+        throw new Error("This file does not look like a Pokémon Draft Picker custom list.");
+      }
+
+      const validPokemon = saveData.pokemon.filter((name) => getPokemonDataByName(name));
+      if (!validPokemon.length) {
+        throw new Error("This custom list does not contain any Pokémon that exist in the current data file.");
+      }
+
+      const settings = {
+        includeAlternateForms: saveData.settings?.includeAlternateForms ?? includeAlternateFormsElement.checked,
+        includeAbilityForms: saveData.settings?.includeAbilityForms ?? includeAbilityFormsElement.checked,
+        includeItemForms: saveData.settings?.includeItemForms ?? includeItemFormsElement.checked
+      };
+
+      includeAlternateFormsElement.checked = settings.includeAlternateForms;
+      includeAbilityFormsElement.checked = settings.includeAbilityForms;
+      includeItemFormsElement.checked = settings.includeItemForms;
+      listIncludeAlternateFormsElement.checked = settings.includeAlternateForms;
+      listIncludeAbilityFormsElement.checked = settings.includeAbilityForms;
+      listIncludeItemFormsElement.checked = settings.includeItemForms;
+
+      customDraftList = {
+        name: saveData.name || "Custom list",
+        pokemon: sortPokemonNamesByDexOrder(validPokemon),
+        excludedPokemon: saveData.excludedPokemon || [],
+        settings
+      };
+
+      updatePokemonList();
+      updateListViewerPresetControlsLock();
+
+      if (listViewerAreaElement.style.display === "block") {
+        customListEditMode = true;
+        customListSelectedPokemon = new Set(customDraftList.pokemon);
+        customListEditBackup = {
+          pokemon: new Set(customListSelectedPokemon),
+          settings: {
+            includeAlternateForms: listIncludeAlternateFormsElement.checked,
+            includeAbilityForms: listIncludeAbilityFormsElement.checked,
+            includeItemForms: listIncludeItemFormsElement.checked
+          }
+        };
+        updateCustomListEditorControls();
+        renderListViewer();
+      }
+    }
+
+    function importCustomListFile(file) {
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const saveData = extractCustomListSaveData(String(reader.result || ""));
+          applyImportedCustomList(saveData);
+        } catch (error) {
+          alert(`Could not import custom list: ${error.message}`);
+        } finally {
+          importCustomListInput.value = "";
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function clearCustomList() {
+      if (customListEditMode && customDraftList) {
+        const confirmed = confirm("Clear the current custom list and discard all unsaved changes?");
+        if (!confirmed) return;
+      }
+
+      customDraftList = null;
+      customListEditMode = false;
+      customListSelectedPokemon = new Set();
+      customListEditBackup = null;
+      updatePokemonList();
+      updateListViewerPresetControlsLock();
+      updateCustomListEditorControls();
+      updateCustomListSetupStatus();
+      if (listViewerAreaElement.style.display === "block") {
+        renderListViewer();
+      }
+    }
+
     function getPokemonDataByName(name) {
       return PokemonDraftData.pokemon.find((pokemon) => pokemon.name === name);
     }
@@ -1290,6 +1717,23 @@
       if (pokemonData?.customDexId) return pokemonData.customDexId;
       if (pokemonData?.natDexId) return formatNatDexId(pokemonData.natDexId);
       return "";
+    }
+
+    function sortPokemonNamesByDexOrder(pokemonNames) {
+      return [...new Set(pokemonNames)]
+        .filter((name) => getPokemonDataByName(name))
+        .sort((a, b) => {
+          const dataA = getPokemonDataByName(a);
+          const dataB = getPokemonDataByName(b);
+          const idA = dataA?.natDexId ?? 999999;
+          const idB = dataB?.natDexId ?? 999999;
+          const formA = dataA?.formOrder ?? 0;
+          const formB = dataB?.formOrder ?? 0;
+
+          if (idA !== idB) return idA - idB;
+          if (formA !== formB) return formA - formB;
+          return a.localeCompare(b);
+        });
     }
 
     function getPokemonDisplayName(name) {
@@ -1315,7 +1759,7 @@
 
     // ===== GLOBAL DRAFT STATE =====
 
-    let selectedPokemonGame = "natDex";
+    let selectedPokemonGame = "all";
     let selectedPokemonDex = "stage1";
     let originalPokemon = [];
     let availablePokemon = [...originalPokemon];
@@ -1333,6 +1777,10 @@
     let classicChoiceCount = 3;
     let marketBonusCount = 2;
     let marketPokemonPerPlayerInPool = 1;
+    let customDraftList = null;
+    let customListEditMode = false;
+    let customListSelectedPokemon = new Set();
+    let customListEditBackup = null;
 
     const setupElement = document.getElementById("setup");
     const pokemonGameSelectElement = document.getElementById("pokemonGameSelect");
@@ -1357,12 +1805,25 @@
     const marketPoolStatusElement = document.getElementById("marketPoolStatus");
     const startDraftButton = document.getElementById("startDraftButton");
     const viewListButton = document.getElementById("viewListButton");
+    const importCustomListButton = document.getElementById("importCustomListButton");
+    const importCustomListInput = document.getElementById("importCustomListInput");
+    const clearCustomListButton = document.getElementById("clearCustomListButton");
+    const customListSetupStatusElement = document.getElementById("customListSetupStatus");
     const importDraftButton = document.getElementById("importDraftButton");
     const importDraftInput = document.getElementById("importDraftInput");
     const exportDraftButton = document.getElementById("exportDraftButton");
     const draftAreaElement = document.getElementById("draftArea");
     const listViewerAreaElement = document.getElementById("listViewerArea");
     const backFromListButton = document.getElementById("backFromListButton");
+    const enterCustomListModeButton = document.getElementById("enterCustomListModeButton");
+    const importCustomListFromListButton = document.getElementById("importCustomListFromListButton");
+    const clearCustomListFromListButton = document.getElementById("clearCustomListFromListButton");
+    const selectAllCustomListButton = document.getElementById("selectAllCustomListButton");
+    const deselectAllCustomListButton = document.getElementById("deselectAllCustomListButton");
+    const exportCustomListButton = document.getElementById("exportCustomListButton");
+    const exitCustomListModeButton = document.getElementById("exitCustomListModeButton");
+    const discardCustomListChangesButton = document.getElementById("discardCustomListChangesButton");
+    const customListEditorStatusElement = document.getElementById("customListEditorStatus");
     const listViewerStatusElement = document.getElementById("listViewerStatus");
     const listSearchInputElement = document.getElementById("listSearchInput");
     const listGameSelectElement = document.getElementById("listGameSelect");
@@ -1391,8 +1852,9 @@
       selectedPokemonGame = pokemonGameSelectElement.value;
       selectedPokemonDex = pokemonDexSelectElement.value;
 
-      originalPokemon = getSelectedPokemonList();
+      originalPokemon = customDraftList ? [...customDraftList.pokemon] : getSelectedPokemonList();
 
+      updateCustomListSetupStatus();
       validateSetup();
     }
 
@@ -1640,6 +2102,20 @@
     }
 
     function syncSetupControlsFromList() {
+      if (customDraftList) {
+        includeAlternateFormsElement.checked = listIncludeAlternateFormsElement.checked;
+        includeAbilityFormsElement.checked = listIncludeAbilityFormsElement.checked;
+        includeItemFormsElement.checked = listIncludeItemFormsElement.checked;
+        customDraftList.settings = {
+          includeAlternateForms: listIncludeAlternateFormsElement.checked,
+          includeAbilityForms: listIncludeAbilityFormsElement.checked,
+          includeItemForms: listIncludeItemFormsElement.checked
+        };
+        updateListViewerPresetControlsLock();
+        updatePokemonList();
+        return;
+      }
+
       pokemonGameSelectElement.value = listGameSelectElement.value;
       pokemonDexSelectElement.value = listDexSelectElement.value;
 
@@ -1765,13 +2241,30 @@
 
     function showListViewer() {
       syncListControlsFromSetup();
-      syncSetupControlsFromList();
+
+      if (customDraftList) {
+        customListEditMode = true;
+        customListSelectedPokemon = new Set(customDraftList.pokemon);
+        customListEditBackup = {
+          pokemon: new Set(customListSelectedPokemon),
+          settings: {
+            includeAlternateForms: listIncludeAlternateFormsElement.checked,
+            includeAbilityForms: listIncludeAbilityFormsElement.checked,
+            includeItemForms: listIncludeItemFormsElement.checked
+          }
+        };
+      } else {
+        syncSetupControlsFromList();
+      }
+
+      updateListViewerPresetControlsLock();
 
       setupElement.style.display = "none";
       draftAreaElement.style.display = "none";
       listViewerAreaElement.style.display = "block";
 
       listSearchInputElement.value = "";
+      updateCustomListEditorControls();
       renderListViewer();
     }
 
@@ -1822,17 +2315,26 @@
       return row;
     }
 
+    function updateListViewerInstruction() {
+      const instruction = document.getElementById("listViewerInstruction");
+      if (!instruction) return;
+
+      if (customListEditMode) {
+        instruction.textContent = `${customListSelectedPokemon.size} Pokémon selected for custom list. Click cards to enable or disable them.`;
+      } else {
+        instruction.textContent = "Click a Pokémon to toggle it shiny.";
+      }
+    }
+
     function renderListViewer() {
+      updateListViewerInstruction();
       pokemonListViewerElement.innerHTML = "";
 
-      const pokemonList = getSelectedPokemonList();
-      const searchTerm = listSearchInputElement.value.trim().toLowerCase();
-      const searchedPokemonList = searchTerm
-        ? pokemonList.filter((pokemon) => getPokemonDisplayName(pokemon).toLowerCase().includes(searchTerm) || pokemon.toLowerCase().includes(searchTerm))
-        : pokemonList;
-      const filteredPokemonList = searchedPokemonList.filter(pokemonMatchesListExtraFilters);
+      const pokemonList = getCurrentListViewerPokemonList();
+      const filteredPokemonList = getFilteredListViewerPokemon();
 
       updateTypeFilterNote();
+      const searchTerm = listSearchInputElement.value.trim().toLowerCase();
       listViewerStatusElement.textContent = (searchTerm || Object.values(getListExtraFilters()).some(Boolean))
         ? `${filteredPokemonList.length} of ${pokemonList.length} Pokémon shown.`
         : `${pokemonList.length} Pokémon shown.`;
@@ -1841,7 +2343,13 @@
         const button = createPokemonChoiceButton(
           pokemon,
           false,
-          () => toggleListViewerShiny(button, pokemon)
+          () => {
+            if (customListEditMode) {
+              togglePokemonInCustomList(button, pokemon);
+            } else {
+              toggleListViewerShiny(button, pokemon);
+            }
+          }
         );
 
         const pokemonData = getPokemonDataByName(pokemon);
@@ -1859,6 +2367,9 @@
         }
 
         button.classList.add("list-viewer-card");
+        if (customListEditMode) {
+          updateCustomListCardState(button, pokemon);
+        }
         pokemonListViewerElement.appendChild(button);
       });
     }
@@ -3128,10 +3639,27 @@
       ...listTagFilterElements
     ].forEach((control) => {
       control.addEventListener("change", () => {
-        syncSetupControlsFromList();
+        if (!customDraftList) {
+          syncSetupControlsFromList();
+        } else {
+          updateListViewerPresetControlsLock();
+        }
         renderListViewer();
       });
     });
+    importCustomListButton.addEventListener("click", () => importCustomListInput.click());
+    importCustomListFromListButton.addEventListener("click", () => importCustomListInput.click());
+    importCustomListInput.addEventListener("change", () => importCustomListFile(importCustomListInput.files[0]));
+    clearCustomListButton.addEventListener("click", clearCustomList);
+    clearCustomListFromListButton.addEventListener("click", clearCustomList);
+
+    enterCustomListModeButton.addEventListener("click", enterCustomListMode);
+    selectAllCustomListButton.addEventListener("click", selectAllShownCustomListPokemon);
+    deselectAllCustomListButton.addEventListener("click", deselectAllShownCustomListPokemon);
+    exportCustomListButton.addEventListener("click", exportCustomList);
+    exitCustomListModeButton.addEventListener("click", exitCustomListMode);
+    discardCustomListChangesButton.addEventListener("click", discardCustomListChanges);
+
     importDraftButton.addEventListener("click", () => importDraftInput.click());
     importDraftInput.addEventListener("change", () => importDraftFile(importDraftInput.files[0]));
     exportDraftButton.addEventListener("click", exportDraft);
@@ -3144,6 +3672,8 @@
     pokemonPerPlayerElement.disabled = draftAllPossibleElement.checked;
     updatePokemonList();
     updateModeSettings();
+    updateCustomListSetupStatus();
+    updateCustomListEditorControls();
     validateSetup();
     resizeAllNumberInputs();
   </script>
