@@ -22,7 +22,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 1,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ivysaur",
@@ -41,7 +46,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 2,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Venusaur",
@@ -60,7 +70,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 3,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Venusaur-Mega",
@@ -78,7 +93,39 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Venusaur-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 3,
+      "formOrder": 70,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Charmander",
@@ -97,7 +144,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 4,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Charmeleon",
@@ -116,7 +167,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 5,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Charizard",
@@ -135,7 +190,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 6,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Charizard-Mega-X",
@@ -153,7 +213,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Charizard-Mega-Y",
@@ -171,7 +236,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Squirtle",
@@ -190,7 +260,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 7,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wartortle",
@@ -209,7 +283,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 8,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Blastoise",
@@ -228,7 +306,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 9,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Blastoise-Mega",
@@ -246,7 +328,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Caterpie",
@@ -265,7 +351,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 10,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Metapod",
@@ -284,7 +374,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 11,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Butterfree",
@@ -303,7 +397,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 12,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Butterfree-Mega",
@@ -318,7 +417,39 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Butterfree-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 12,
+      "formOrder": 71,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Weedle",
@@ -337,7 +468,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 13,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kakuna",
@@ -356,7 +492,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 14,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Beedrill",
@@ -375,7 +516,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 15,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Beedrill-Mega",
@@ -393,7 +539,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Pidgey",
@@ -412,7 +563,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 16,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pidgeotto",
@@ -431,7 +587,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 17,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pidgeot",
@@ -450,7 +611,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 18,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Pidgeot-Mega",
@@ -468,7 +634,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Rattata",
@@ -487,7 +658,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 19,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rattata-Alola",
@@ -505,7 +680,38 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 19,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark",
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Rattata-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 19,
+      "formOrder": 72,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Raticate",
@@ -524,7 +730,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 20,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Raticate-Alola",
@@ -542,7 +752,38 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 20,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark",
+        "Normal"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Raticate-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 20,
+      "formOrder": 73,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Spearow",
@@ -561,7 +802,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 21,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Fearow",
@@ -580,7 +826,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 22,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ekans",
@@ -599,7 +850,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 23,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arbok",
@@ -618,7 +873,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 24,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pikachu",
@@ -637,7 +896,87 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 25,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Pikachu-Cosplay",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 25,
+      "formOrder": 2,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2,
+      "cosplayFormTypes": {
+        "Pikachu-Cosplay": [
+          "Electric"
+        ],
+        "Pikachu-Rock-Star": [
+          "Electric",
+          "Steel"
+        ],
+        "Pikachu-Belle": [
+          "Electric",
+          "Ice"
+        ],
+        "Pikachu-Pop-Star": [
+          "Electric",
+          "Fairy"
+        ],
+        "Pikachu-PhD": [
+          "Electric"
+        ],
+        "Pikachu-Libre": [
+          "Electric",
+          "Fighting"
+        ]
+      }
+    },
+    {
+      "name": "Pikachu-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 25,
+      "formOrder": 74,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Raichu",
@@ -656,7 +995,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 26,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Raichu-Alola",
@@ -674,7 +1017,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 26,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Electric",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Raichu-Mega-X",
@@ -692,7 +1040,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Raichu-Mega-Y",
@@ -710,7 +1062,37 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Raichu-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 26,
+      "formOrder": 75,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Sandshrew",
@@ -729,7 +1111,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 27,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sandshrew-Alola",
@@ -747,7 +1133,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 27,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sandslash",
@@ -766,7 +1157,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 28,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sandslash-Alola",
@@ -784,7 +1179,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 28,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "nidoran♀",
@@ -803,7 +1203,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 29,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Nidorina",
@@ -822,7 +1226,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 30,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Nidoqueen",
@@ -841,7 +1249,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 31,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "nidoran♂",
@@ -860,7 +1273,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 32,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Nidorino",
@@ -879,7 +1296,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 33,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Nidoking",
@@ -898,7 +1319,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 34,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Clefairy",
@@ -917,7 +1343,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 35,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Clefable",
@@ -936,7 +1366,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 36,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Clefable-Mega",
@@ -954,7 +1388,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Vulpix",
@@ -973,7 +1412,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 37,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Vulpix-Alola",
@@ -991,7 +1434,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 37,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ninetales",
@@ -1010,7 +1457,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 38,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ninetales-Alola",
@@ -1028,7 +1479,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 38,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Jigglypuff",
@@ -1047,7 +1503,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 39,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wigglytuff",
@@ -1066,7 +1527,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 40,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Zubat",
@@ -1085,7 +1551,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 41,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Zubat-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 41,
+      "formOrder": 76,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Golbat",
@@ -1104,7 +1602,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 42,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Golbat-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 42,
+      "formOrder": 77,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Oddish",
@@ -1123,7 +1653,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 43,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gloom",
@@ -1142,7 +1677,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 44,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Gloom-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 44,
+      "formOrder": 78,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Vileplume",
@@ -1161,7 +1728,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 45,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vileplume-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 45,
+      "formOrder": 79,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Paras",
@@ -1180,7 +1779,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 46,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Parasect",
@@ -1199,7 +1803,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 47,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Venonat",
@@ -1218,7 +1827,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 48,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Venomoth",
@@ -1237,7 +1851,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 49,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Diglett",
@@ -1256,7 +1875,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 50,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Diglett-Alola",
@@ -1274,7 +1897,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 50,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dugtrio",
@@ -1293,7 +1921,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 51,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dugtrio-Alola",
@@ -1311,7 +1943,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 51,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Meowth",
@@ -1330,7 +1967,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 52,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Meowth-Alola",
@@ -1348,7 +1989,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 52,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Meowth-Galar",
@@ -1366,7 +2011,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 52,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Persian",
@@ -1385,7 +2034,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 53,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Persian-Alola",
@@ -1403,7 +2056,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 53,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Psyduck",
@@ -1422,7 +2079,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 54,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Golduck",
@@ -1441,7 +2102,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 55,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mankey",
@@ -1460,7 +2125,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 56,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Primeape",
@@ -1479,7 +2148,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 57,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Growlithe",
@@ -1498,7 +2171,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 58,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Growlithe-Hisui",
@@ -1516,7 +2193,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 58,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fire",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arcanine",
@@ -1535,7 +2217,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 59,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Arcanine-Hisui",
@@ -1553,7 +2239,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 59,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fire",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Poliwag",
@@ -1572,7 +2263,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 60,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Poliwhirl",
@@ -1591,7 +2286,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 61,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Poliwrath",
@@ -1610,7 +2309,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 62,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Abra",
@@ -1629,7 +2333,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 63,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kadabra",
@@ -1648,7 +2356,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 64,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Kadabra-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 64,
+      "formOrder": 80,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Alakazam",
@@ -1667,7 +2405,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 65,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Alakazam-Mega",
@@ -1685,7 +2427,37 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Alakazam-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 65,
+      "formOrder": 81,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Machop",
@@ -1704,7 +2476,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 66,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Machoke",
@@ -1723,7 +2499,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 67,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Machamp",
@@ -1742,7 +2522,30 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 68,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Machamp-Mega",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 68,
+      "formOrder": 10,
+      "tags": [
+        "itemForm"
+      ],
+      "spriteSource": "radicalRed",
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Bellsprout",
@@ -1761,7 +2564,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 69,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Weepinbell",
@@ -1780,7 +2588,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 70,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Victreebel",
@@ -1799,7 +2612,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 71,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Victreebel-Mega",
@@ -1817,7 +2635,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tentacool",
@@ -1836,7 +2659,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 72,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tentacruel",
@@ -1855,7 +2683,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 73,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Geodude",
@@ -1874,7 +2707,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 74,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Geodude-Alola",
@@ -1892,7 +2730,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 74,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Rock",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Graveler",
@@ -1911,7 +2754,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 75,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Graveler-Alola",
@@ -1929,7 +2777,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 75,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Rock",
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Golem",
@@ -1948,7 +2801,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 76,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Golem-Alola",
@@ -1966,7 +2824,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 76,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Rock",
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Ponyta",
@@ -1985,7 +2848,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 77,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ponyta-Galar",
@@ -2003,7 +2870,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 77,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rapidash",
@@ -2022,7 +2893,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 78,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rapidash-Galar",
@@ -2040,7 +2915,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 78,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Slowpoke",
@@ -2059,7 +2939,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 79,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Slowpoke-Galar",
@@ -2077,7 +2962,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 79,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Slowbro",
@@ -2096,7 +2985,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 80,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Slowbro-Galar",
@@ -2114,7 +3008,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 80,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Poison",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Slowbro-Mega",
@@ -2132,7 +3031,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Magnemite",
@@ -2151,7 +3055,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 81,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Magneton",
@@ -2170,7 +3079,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 82,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Farfetch'd",
@@ -2189,7 +3103,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 83,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Farfetch'd-Galar",
@@ -2207,7 +3126,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 83,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Doduo",
@@ -2226,7 +3149,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 84,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Doduo-Sevii",
@@ -2241,7 +3169,39 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Doduo-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 84,
+      "formOrder": 82,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dodrio",
@@ -2260,7 +3220,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 85,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dodrio-Sevii",
@@ -2275,7 +3240,39 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Dodrio-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 85,
+      "formOrder": 83,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Seel",
@@ -2294,7 +3291,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 86,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dewgong",
@@ -2313,7 +3314,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 87,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Grimer",
@@ -2332,7 +3338,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 88,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Grimer-Alola",
@@ -2350,7 +3360,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 88,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Poison",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Muk",
@@ -2369,7 +3384,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 89,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Muk-Alola",
@@ -2387,7 +3406,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 89,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Poison",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shellder",
@@ -2406,7 +3430,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 90,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cloyster",
@@ -2425,7 +3453,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 91,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gastly",
@@ -2444,7 +3477,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 92,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Haunter",
@@ -2463,7 +3501,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 93,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gengar",
@@ -2482,7 +3525,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 94,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Gengar-Mega",
@@ -2500,7 +3548,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Onix",
@@ -2519,7 +3572,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 95,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drowzee",
@@ -2534,7 +3592,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 96,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hypno",
@@ -2549,7 +3611,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 97,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Hypno-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 97,
+      "formOrder": 84,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Krabby",
@@ -2568,7 +3656,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 98,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kingler",
@@ -2587,7 +3679,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 99,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Kingler-Mega",
@@ -2602,7 +3698,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Water",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Voltorb",
@@ -2621,7 +3722,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 100,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Voltorb-Hisui",
@@ -2639,7 +3744,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 100,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Electric",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Electrode",
@@ -2658,7 +3768,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 101,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Electrode-Hisui",
@@ -2676,7 +3790,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 101,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Electric",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Exeggcute",
@@ -2695,7 +3814,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 102,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Exeggutor",
@@ -2714,7 +3838,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 103,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Exeggutor-Alola",
@@ -2732,7 +3861,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 103,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cubone",
@@ -2751,7 +3885,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 104,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Marowak",
@@ -2770,7 +3908,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 105,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Marowak-Alola",
@@ -2788,7 +3930,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 105,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hitmonlee",
@@ -2807,7 +3954,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 106,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hitmonchan",
@@ -2826,7 +3977,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 107,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lickitung",
@@ -2845,7 +4000,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 108,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Koffing",
@@ -2864,7 +4023,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 109,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Weezing",
@@ -2883,7 +4046,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 110,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Weezing-Galar",
@@ -2901,7 +4068,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 110,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Poison",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rhyhorn",
@@ -2920,7 +4092,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 111,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Rhyhorn-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 111,
+      "formOrder": 85,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rhydon",
@@ -2939,7 +4143,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 112,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Rhydon-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 112,
+      "formOrder": 86,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Chansey",
@@ -2958,7 +4194,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 113,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tangela",
@@ -2977,7 +4217,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 114,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kangaskhan",
@@ -2992,7 +4236,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 115,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kangaskhan-Mega",
@@ -3010,7 +4258,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Horsea",
@@ -3029,7 +4281,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 116,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Seadra",
@@ -3048,7 +4304,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 117,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Goldeen",
@@ -3067,7 +4327,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 118,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Goldeen-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 118,
+      "formOrder": 87,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Seaking",
@@ -3086,7 +4376,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 119,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Seaking-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 119,
+      "formOrder": 88,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Staryu",
@@ -3105,7 +4425,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 120,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Starmie",
@@ -3124,7 +4448,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 121,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Starmie-Mega",
@@ -3142,7 +4471,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mr. Mime",
@@ -3161,7 +4495,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 122,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mr. Mime-Galar",
@@ -3179,7 +4518,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 122,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Scyther",
@@ -3198,7 +4542,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 123,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Scyther-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 123,
+      "formOrder": 89,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Jynx",
@@ -3217,7 +4593,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 124,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Electabuzz",
@@ -3236,7 +4617,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 125,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Magmar",
@@ -3255,7 +4640,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 126,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pinsir",
@@ -3274,7 +4663,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 127,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pinsir-Mega",
@@ -3292,7 +4685,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tauros",
@@ -3311,7 +4709,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 128,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tauros-Paldea-Aqua",
@@ -3329,7 +4731,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 128,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fighting",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tauros-Paldea-Blaze",
@@ -3347,7 +4754,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 128,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fighting",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tauros-Paldea-Combat",
@@ -3365,7 +4777,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 128,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Magikarp",
@@ -3384,7 +4800,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 129,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Magikarp-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 129,
+      "formOrder": 90,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gyarados",
@@ -3403,7 +4849,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 130,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gyarados-Mega",
@@ -3421,7 +4872,39 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Gyarados-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 130,
+      "formOrder": 91,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lapras",
@@ -3440,7 +4923,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 131,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lapras-Mega",
@@ -3455,7 +4943,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ditto",
@@ -3474,7 +4967,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 132,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Eevee",
@@ -3493,7 +4990,63 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 133,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Eevee-Starter",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 133,
+      "formOrder": 1,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Eevee-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 133,
+      "formOrder": 92,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Vaporeon",
@@ -3512,7 +5065,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 134,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Jolteon",
@@ -3531,7 +5088,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 135,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Flareon",
@@ -3550,7 +5111,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 136,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Porygon",
@@ -3565,7 +5130,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 137,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Omanyte",
@@ -3584,7 +5153,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 138,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Omastar",
@@ -3603,7 +5177,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 139,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Kabuto",
@@ -3622,7 +5201,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 140,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kabutops",
@@ -3641,7 +5225,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 141,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Aerodactyl",
@@ -3660,7 +5249,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 142,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Aerodactyl-Mega",
@@ -3678,7 +5272,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Snorlax",
@@ -3697,7 +5296,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 143,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Snorlax-Mega",
@@ -3712,7 +5315,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Articuno",
@@ -3734,7 +5342,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 144,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Articuno-Galar",
@@ -3753,7 +5366,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 144,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zapdos",
@@ -3775,7 +5393,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 145,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zapdos-Galar",
@@ -3794,7 +5417,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 145,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Moltres",
@@ -3816,7 +5444,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 146,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Moltres-Galar",
@@ -3835,7 +5468,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 146,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dratini",
@@ -3857,7 +5495,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 147,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dragonair",
@@ -3879,7 +5521,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 148,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dragonite",
@@ -3901,7 +5547,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 149,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Dragonite-Mega",
@@ -3920,7 +5571,12 @@ const PokemonDraftData = {
       "tags": [
         "pseudoLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Mewtwo",
@@ -3942,7 +5598,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 150,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mewtwo-Mega-X",
@@ -3961,7 +5621,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mewtwo-Mega-Y",
@@ -3980,7 +5645,11 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mew",
@@ -4002,7 +5671,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 151,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Chikorita",
@@ -4021,7 +5694,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 152,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bayleef",
@@ -4040,7 +5717,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 153,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Meganium",
@@ -4059,7 +5740,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 154,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Meganium-Mega",
@@ -4077,7 +5762,38 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Meganium-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 154,
+      "formOrder": 93,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Cyndaquil",
@@ -4096,7 +5812,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 155,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Quilava",
@@ -4115,7 +5835,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 156,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Typhlosion",
@@ -4134,7 +5858,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 157,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Typhlosion-Hisui",
@@ -4152,7 +5880,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 157,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Totodile",
@@ -4171,7 +5904,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 158,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Croconaw",
@@ -4190,7 +5927,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 159,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Feraligatr",
@@ -4209,7 +5950,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 160,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Feraligatr-Mega",
@@ -4227,7 +5972,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Sentret",
@@ -4246,7 +5996,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 161,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Furret",
@@ -4265,7 +6019,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 162,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hoothoot",
@@ -4284,7 +6042,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 163,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Noctowl",
@@ -4303,7 +6066,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 164,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ledyba",
@@ -4322,7 +6090,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 165,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Ledyba-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 165,
+      "formOrder": 94,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ledian",
@@ -4341,7 +6141,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 166,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Ledian-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 166,
+      "formOrder": 95,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Spinarak",
@@ -4360,7 +6192,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 167,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ariados",
@@ -4379,7 +6216,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 168,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Crobat",
@@ -4398,7 +6240,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 169,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Chinchou",
@@ -4417,7 +6264,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 170,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lanturn",
@@ -4436,7 +6288,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 171,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pichu",
@@ -4455,7 +6312,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 172,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cleffa",
@@ -4474,7 +6335,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 173,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Igglybuff",
@@ -4493,7 +6358,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 174,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Togepi",
@@ -4512,7 +6382,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 175,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Togetic",
@@ -4531,7 +6405,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 176,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Natu",
@@ -4550,7 +6429,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 177,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Xatu",
@@ -4569,7 +6453,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 178,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Xatu-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 178,
+      "formOrder": 96,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mareep",
@@ -4588,7 +6504,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 179,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Flaaffy",
@@ -4607,7 +6527,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 180,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ampharos",
@@ -4626,7 +6550,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 181,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Ampharos-Mega",
@@ -4644,7 +6572,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Bellossom",
@@ -4663,7 +6596,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 182,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Marill",
@@ -4682,7 +6619,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 183,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Azumarill",
@@ -4701,7 +6643,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 184,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Sudowoodo",
@@ -4720,7 +6667,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 185,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Sudowoodo-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 185,
+      "formOrder": 97,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Politoed",
@@ -4739,7 +6716,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 186,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Politoed-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 186,
+      "formOrder": 98,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Hoppip",
@@ -4758,7 +6765,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 187,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Skiploom",
@@ -4777,7 +6789,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 188,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Jumpluff",
@@ -4796,7 +6813,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 189,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Aipom",
@@ -4815,7 +6837,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 190,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Aipom-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 190,
+      "formOrder": 99,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sunkern",
@@ -4834,7 +6886,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 191,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sunflora",
@@ -4853,7 +6909,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 192,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Yanma",
@@ -4872,7 +6932,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 193,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wooper",
@@ -4891,7 +6956,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 194,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wooper-Paldea",
@@ -4909,7 +6979,39 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 194,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Poison",
+        "Ground"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Wooper-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 194,
+      "formOrder": 100,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Quagsire",
@@ -4928,7 +7030,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 195,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Quagsire-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 195,
+      "formOrder": 101,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Espeon",
@@ -4947,7 +7081,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 196,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Umbreon",
@@ -4966,7 +7104,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 197,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Murkrow",
@@ -4985,7 +7127,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 198,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Murkrow-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 198,
+      "formOrder": 102,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Slowking",
@@ -5004,7 +7178,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 199,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Slowking-Galar",
@@ -5022,7 +7201,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 199,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Poison",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Misdreavus",
@@ -5041,7 +7225,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 200,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Unown",
@@ -5060,7 +7248,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 201,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wobbuffet",
@@ -5079,7 +7271,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 202,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Wobbuffet-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 202,
+      "formOrder": 103,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Girafarig",
@@ -5098,7 +7320,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 203,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Girafarig-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 203,
+      "formOrder": 104,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pineco",
@@ -5117,7 +7371,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 204,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Forretress",
@@ -5136,7 +7394,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 205,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dunsparce",
@@ -5155,7 +7418,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 206,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gligar",
@@ -5174,7 +7441,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 207,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Gligar-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 207,
+      "formOrder": 105,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Steelix",
@@ -5193,7 +7492,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 208,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Steelix-Mega",
@@ -5211,7 +7515,39 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Steelix-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 208,
+      "formOrder": 106,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Steel",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Snubbull",
@@ -5230,7 +7566,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 209,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Granbull",
@@ -5249,7 +7589,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 210,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Qwilfish",
@@ -5268,7 +7612,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 211,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Qwilfish-Hisui",
@@ -5286,7 +7635,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 211,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Scizor",
@@ -5305,7 +7659,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 212,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Scizor-Mega",
@@ -5323,7 +7682,39 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Scizor-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 212,
+      "formOrder": 107,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shuckle",
@@ -5342,7 +7733,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 213,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Heracross",
@@ -5357,7 +7753,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 214,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Heracross-Mega",
@@ -5375,7 +7776,35 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Heracross-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 214,
+      "formOrder": 108,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sneasel",
@@ -5394,7 +7823,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 215,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sneasel-Hisui",
@@ -5412,7 +7846,39 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 215,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Fighting",
+        "Poison"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Sneasel-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 215,
+      "formOrder": 109,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dark",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Teddiursa",
@@ -5431,7 +7897,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 216,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Teddiursa-Sevii",
@@ -5446,7 +7916,11 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ursaring",
@@ -5465,7 +7939,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 217,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ursaring-Sevii",
@@ -5480,7 +7958,38 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ghost",
+        "Fighting"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Ursaring-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 217,
+      "formOrder": 110,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Slugma",
@@ -5499,7 +8008,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 218,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Magcargo",
@@ -5518,7 +8031,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 219,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Swinub",
@@ -5537,7 +8055,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 220,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Piloswine",
@@ -5556,7 +8079,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 221,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Piloswine-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 221,
+      "formOrder": 111,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Corsola",
@@ -5575,7 +8130,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 222,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Corsola-Galar",
@@ -5593,7 +8153,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 222,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Remoraid",
@@ -5612,7 +8176,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 223,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Octillery",
@@ -5631,7 +8199,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 224,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Octillery-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 224,
+      "formOrder": 112,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Delibird",
@@ -5650,7 +8248,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 225,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mantine",
@@ -5669,7 +8272,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 226,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mantine-Sevii",
@@ -5684,7 +8292,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Skarmory",
@@ -5703,7 +8316,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 227,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Skarmory-Mega",
@@ -5721,7 +8339,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Houndour",
@@ -5740,7 +8363,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 228,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Houndoom",
@@ -5759,7 +8387,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 229,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Houndoom-Mega",
@@ -5777,7 +8410,39 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Houndoom-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 229,
+      "formOrder": 113,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Kingdra",
@@ -5796,7 +8461,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 230,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Phanpy",
@@ -5815,7 +8485,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 231,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Donphan",
@@ -5834,7 +8508,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 232,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Donphan-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 232,
+      "formOrder": 114,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Porygon2",
@@ -5849,7 +8553,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 233,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Stantler",
@@ -5868,7 +8576,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 234,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Smeargle",
@@ -5887,7 +8599,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 235,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tyrogue",
@@ -5906,7 +8622,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 236,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hitmontop",
@@ -5925,7 +8645,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 237,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Smoochum",
@@ -5944,7 +8668,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 238,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Elekid",
@@ -5963,7 +8692,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 239,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Magby",
@@ -5982,7 +8715,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 240,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Miltank",
@@ -6001,7 +8738,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 241,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Blissey",
@@ -6020,7 +8761,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 242,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Raikou",
@@ -6042,7 +8787,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 243,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Entei",
@@ -6064,7 +8813,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 244,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Suicune",
@@ -6086,7 +8839,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 245,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Larvitar",
@@ -6108,7 +8865,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 246,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pupitar",
@@ -6130,7 +8892,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 247,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tyranitar",
@@ -6152,7 +8919,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 248,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tyranitar-Mega",
@@ -6170,7 +8942,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Rock",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Lugia",
@@ -6192,7 +8969,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 249,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ho-Oh",
@@ -6214,7 +8996,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 250,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Celebi",
@@ -6236,7 +9023,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 251,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Treecko",
@@ -6255,7 +9047,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 252,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Grovyle",
@@ -6274,7 +9070,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 253,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sceptile",
@@ -6293,7 +9093,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 254,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Sceptile-Mega",
@@ -6311,7 +9115,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Torchic",
@@ -6330,7 +9139,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 255,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Torchic-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 255,
+      "formOrder": 115,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Combusken",
@@ -6349,7 +9188,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 256,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Combusken-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 256,
+      "formOrder": 116,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Blaziken",
@@ -6368,7 +9239,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 257,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Blaziken-Mega",
@@ -6386,7 +9262,39 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Blaziken-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 257,
+      "formOrder": 117,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Mudkip",
@@ -6405,7 +9313,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 258,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Marshtomp",
@@ -6424,7 +9336,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 259,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Swampert",
@@ -6443,7 +9360,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 260,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Swampert-Mega",
@@ -6461,7 +9383,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Poochyena",
@@ -6476,7 +9403,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 261,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mightyena",
@@ -6491,7 +9422,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 262,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Zigzagoon",
@@ -6506,7 +9441,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 263,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zigzagoon-Galar",
@@ -6524,7 +9463,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 263,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Linoone",
@@ -6539,7 +9483,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 264,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Linoone-Galar",
@@ -6557,7 +9505,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 264,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dark",
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wurmple",
@@ -6572,7 +9525,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 265,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Silcoon",
@@ -6587,7 +9544,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 266,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Beautifly",
@@ -6602,7 +9563,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 267,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Beautifly-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 267,
+      "formOrder": 118,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Cascoon",
@@ -6617,7 +9606,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 268,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dustox",
@@ -6632,7 +9625,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 269,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Dustox-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 269,
+      "formOrder": 119,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Lotad",
@@ -6651,7 +9672,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 270,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lombre",
@@ -6670,7 +9696,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 271,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ludicolo",
@@ -6689,7 +9720,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 272,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Grass"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Ludicolo-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 272,
+      "formOrder": 120,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Seedot",
@@ -6704,7 +9767,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 273,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Nuzleaf",
@@ -6719,7 +9786,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 274,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Nuzleaf-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 274,
+      "formOrder": 121,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shiftry",
@@ -6734,7 +9829,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 275,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Shiftry-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 275,
+      "formOrder": 122,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Taillow",
@@ -6749,7 +9872,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 276,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Swellow",
@@ -6764,7 +9892,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 277,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wingull",
@@ -6779,7 +9912,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 278,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pelipper",
@@ -6794,7 +9932,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 279,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ralts",
@@ -6813,7 +9956,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 280,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kirlia",
@@ -6832,7 +9980,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 281,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gardevoir",
@@ -6851,7 +10004,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 282,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Gardevoir-Mega",
@@ -6869,7 +10027,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Surskit",
@@ -6884,7 +10047,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 283,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Masquerain",
@@ -6899,7 +10067,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 284,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shroomish",
@@ -6918,7 +10091,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 285,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Breloom",
@@ -6937,7 +10114,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 286,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Slakoth",
@@ -6956,7 +10138,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 287,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Vigoroth",
@@ -6975,7 +10161,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 288,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Slaking",
@@ -6994,7 +10184,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 289,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Nincada",
@@ -7013,7 +10207,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 290,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ninjask",
@@ -7032,7 +10231,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 291,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shedinja",
@@ -7051,7 +10255,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 292,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Whismur",
@@ -7066,7 +10275,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 293,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Loudred",
@@ -7081,7 +10294,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 294,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Exploud",
@@ -7096,7 +10313,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 295,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Makuhita",
@@ -7111,7 +10332,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 296,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hariyama",
@@ -7126,7 +10351,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 297,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Azurill",
@@ -7145,7 +10374,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 298,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Nosepass",
@@ -7164,7 +10398,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 299,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Skitty",
@@ -7179,7 +10417,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 300,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Delcatty",
@@ -7194,7 +10436,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 301,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sableye",
@@ -7213,7 +10459,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 302,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sableye-Mega",
@@ -7231,7 +10482,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mawile",
@@ -7250,7 +10506,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 303,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mawile-Mega",
@@ -7268,7 +10529,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Aron",
@@ -7287,7 +10553,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 304,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lairon",
@@ -7306,7 +10577,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 305,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Aggron",
@@ -7325,7 +10601,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 306,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Rock"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Aggron-Mega",
@@ -7343,7 +10624,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Meditite",
@@ -7358,7 +10643,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 307,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Meditite-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 307,
+      "formOrder": 123,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Medicham",
@@ -7373,7 +10686,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 308,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Medicham-Mega",
@@ -7391,7 +10709,35 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Medicham-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 308,
+      "formOrder": 124,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fighting",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Electrike",
@@ -7406,7 +10752,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 309,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Manectric",
@@ -7421,7 +10771,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 310,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Manectric-Mega",
@@ -7439,7 +10793,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Plusle",
@@ -7454,7 +10812,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 311,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Minun",
@@ -7469,7 +10831,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 312,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Volbeat",
@@ -7484,7 +10850,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 313,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Illumise",
@@ -7499,7 +10869,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 314,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Roselia",
@@ -7518,7 +10892,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 315,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Roselia-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 315,
+      "formOrder": 125,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gulpin",
@@ -7533,7 +10939,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 316,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Gulpin-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 316,
+      "formOrder": 126,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Swalot",
@@ -7548,7 +10980,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 317,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Swalot-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 317,
+      "formOrder": 127,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Carvanha",
@@ -7567,7 +11025,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 318,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sharpedo",
@@ -7586,7 +11049,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 319,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sharpedo-Mega",
@@ -7604,7 +11072,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wailmer",
@@ -7623,7 +11096,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 320,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wailord",
@@ -7642,7 +11119,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 321,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Numel",
@@ -7657,7 +11138,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 322,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Numel-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 322,
+      "formOrder": 128,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Camerupt",
@@ -7672,7 +11181,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 323,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Camerupt-Mega",
@@ -7690,7 +11204,35 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Camerupt-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 323,
+      "formOrder": 129,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Torkoal",
@@ -7709,7 +11251,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 324,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Spoink",
@@ -7724,7 +11270,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 325,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Grumpig",
@@ -7739,7 +11289,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 326,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Spinda",
@@ -7754,7 +11308,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 327,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Trapinch",
@@ -7773,7 +11331,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 328,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Vibrava",
@@ -7792,7 +11354,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 329,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Flygon",
@@ -7811,7 +11378,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 330,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Cacnea",
@@ -7830,7 +11402,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 331,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cacturne",
@@ -7849,7 +11425,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 332,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Cacturne-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 332,
+      "formOrder": 130,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Swablu",
@@ -7868,7 +11476,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 333,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Altaria",
@@ -7887,7 +11500,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 334,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Altaria-Mega",
@@ -7905,7 +11523,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Zangoose",
@@ -7920,7 +11543,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 335,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Seviper",
@@ -7935,7 +11562,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 336,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lunatone",
@@ -7950,7 +11581,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 337,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Solrock",
@@ -7965,7 +11601,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 338,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Barboach",
@@ -7980,7 +11621,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 339,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Whiscash",
@@ -7995,7 +11641,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 340,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Corphish",
@@ -8010,7 +11661,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 341,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Crawdaunt",
@@ -8025,7 +11680,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 342,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Baltoy",
@@ -8040,7 +11700,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 343,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Claydol",
@@ -8055,7 +11720,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 344,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lileep",
@@ -8074,7 +11744,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 345,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cradily",
@@ -8093,7 +11768,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 346,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Anorith",
@@ -8112,7 +11792,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 347,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Armaldo",
@@ -8131,7 +11816,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 348,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Feebas",
@@ -8150,7 +11840,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 349,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Feebas-Sevii",
@@ -8165,7 +11859,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Milotic",
@@ -8184,7 +11883,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 350,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Milotic-Sevii",
@@ -8199,7 +11902,38 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Fairy",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Milotic-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 350,
+      "formOrder": 131,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Castform",
@@ -8214,7 +11948,77 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 351,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Castform-Rainy",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 351,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Castform-Snowy",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 351,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Castform-Sunny",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 351,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kecleon",
@@ -8233,7 +12037,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 352,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Shuppet",
@@ -8252,7 +12060,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 353,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Banette",
@@ -8271,7 +12083,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 354,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Banette-Mega",
@@ -8289,7 +12105,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Duskull",
@@ -8304,7 +12124,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 355,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dusclops",
@@ -8319,7 +12143,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 356,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tropius",
@@ -8334,7 +12162,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 357,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Chimecho",
@@ -8349,7 +12182,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 358,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Chimecho-Mega",
@@ -8363,7 +12200,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Absol",
@@ -8382,7 +12224,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 359,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Absol-Mega",
@@ -8400,7 +12246,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Absol-Mega-Z",
@@ -8418,7 +12268,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wynaut",
@@ -8437,7 +12292,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 360,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Snorunt",
@@ -8456,7 +12315,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 361,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Glalie",
@@ -8475,7 +12338,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 362,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Glalie-Mega",
@@ -8493,7 +12360,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Spheal",
@@ -8508,7 +12379,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 363,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sealeo",
@@ -8523,7 +12399,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 364,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Walrein",
@@ -8538,7 +12419,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 365,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Water"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Clamperl",
@@ -8553,7 +12439,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 366,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Huntail",
@@ -8568,7 +12458,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 367,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gorebyss",
@@ -8583,7 +12477,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 368,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Relicanth",
@@ -8598,7 +12496,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 369,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Relicanth-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 369,
+      "formOrder": 132,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Luvdisc",
@@ -8617,7 +12543,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 370,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bagon",
@@ -8639,7 +12569,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 371,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Shelgon",
@@ -8661,7 +12595,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 372,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Salamence",
@@ -8683,7 +12621,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 373,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Salamence-Mega",
@@ -8701,7 +12644,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Beldum",
@@ -8723,7 +12671,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 374,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Metang",
@@ -8745,7 +12698,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 375,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Metagross",
@@ -8767,7 +12725,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 376,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Metagross-Mega",
@@ -8785,7 +12748,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Regirock",
@@ -8807,7 +12775,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 377,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Regice",
@@ -8829,7 +12801,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 378,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Registeel",
@@ -8851,7 +12827,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 379,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Latias",
@@ -8873,7 +12853,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 380,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Latias-Mega",
@@ -8892,7 +12877,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Latios",
@@ -8914,7 +12904,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 381,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Latios-Mega",
@@ -8933,7 +12928,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kyogre",
@@ -8955,7 +12955,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 382,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kyogre-Primal",
@@ -8978,7 +12982,11 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Groudon",
@@ -9000,7 +13008,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 383,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Groudon-Primal",
@@ -9023,7 +13035,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ground",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rayquaza",
@@ -9045,7 +13062,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 384,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rayquaza-Mega",
@@ -9064,7 +13086,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Jirachi",
@@ -9086,7 +13113,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 385,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Deoxys",
@@ -9108,7 +13140,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 386,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Deoxys-Attack",
@@ -9127,7 +13163,11 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Deoxys-Defense",
@@ -9146,7 +13186,11 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Deoxys-Speed",
@@ -9165,7 +13209,11 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Turtwig",
@@ -9184,7 +13232,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 387,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Grotle",
@@ -9203,7 +13255,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 388,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Torterra",
@@ -9222,7 +13278,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 389,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Chimchar",
@@ -9241,7 +13302,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 390,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Monferno",
@@ -9260,7 +13325,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 391,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Infernape",
@@ -9279,7 +13349,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 392,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Piplup",
@@ -9298,7 +13373,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 393,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Prinplup",
@@ -9317,7 +13396,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 394,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Empoleon",
@@ -9336,7 +13419,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 395,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Starly",
@@ -9351,7 +13439,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 396,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Starly-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 396,
+      "formOrder": 133,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Staravia",
@@ -9366,7 +13482,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 397,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Staravia-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 397,
+      "formOrder": 134,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Staraptor",
@@ -9381,7 +13525,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 398,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Staraptor-Mega",
@@ -9395,7 +13544,35 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Staraptor-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 398,
+      "formOrder": 135,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Bidoof",
@@ -9414,7 +13591,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 399,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Bidoof-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 399,
+      "formOrder": 136,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bibarel",
@@ -9433,7 +13640,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 400,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Water"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Bibarel-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 400,
+      "formOrder": 137,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Kricketot",
@@ -9448,7 +13687,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 401,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Kricketot-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 401,
+      "formOrder": 138,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kricketune",
@@ -9463,7 +13728,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 402,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Kricketune-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 402,
+      "formOrder": 139,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shinx",
@@ -9482,7 +13773,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 403,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Shinx-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 403,
+      "formOrder": 140,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Luxio",
@@ -9501,7 +13822,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 404,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Luxio-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 404,
+      "formOrder": 141,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Luxray",
@@ -9520,7 +13871,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 405,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Luxray-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 405,
+      "formOrder": 142,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Budew",
@@ -9539,7 +13920,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 406,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Roserade",
@@ -9558,7 +13944,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 407,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Roserade-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 407,
+      "formOrder": 143,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Cranidos",
@@ -9577,7 +13995,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 408,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rampardos",
@@ -9596,7 +14018,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 409,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shieldon",
@@ -9615,7 +14041,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 410,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bastiodon",
@@ -9634,7 +14065,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 411,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Burmy",
@@ -9649,7 +14085,55 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 412,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Burmy-Sandy",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 412,
+      "formOrder": 1,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Burmy-Trash",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 412,
+      "formOrder": 2,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wormadam",
@@ -9664,7 +14148,58 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 413,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Wormadam-Sandy",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 413,
+      "formOrder": 1,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Bug",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Wormadam-Trash",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 413,
+      "formOrder": 2,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mothim",
@@ -9679,7 +14214,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 414,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Combee",
@@ -9694,7 +14234,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 415,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Combee-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 415,
+      "formOrder": 144,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Vespiquen",
@@ -9709,7 +14277,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 416,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pachirisu",
@@ -9724,7 +14297,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 417,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Pachirisu-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 417,
+      "formOrder": 145,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Buizel",
@@ -9739,7 +14338,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 418,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Buizel-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 418,
+      "formOrder": 146,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Floatzel",
@@ -9754,7 +14379,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 419,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Floatzel-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 419,
+      "formOrder": 147,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cherubi",
@@ -9769,7 +14420,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 420,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cherrim",
@@ -9784,7 +14439,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 421,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Cherrim-Sunshine",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 421,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shellos",
@@ -9799,7 +14480,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 422,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Shellos-East",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 422,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gastrodon",
@@ -9814,7 +14521,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 423,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Gastrodon-East",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 423,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ambipom",
@@ -9833,7 +14568,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 424,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Drifloon",
@@ -9852,7 +14591,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 425,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drifblim",
@@ -9871,7 +14615,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 426,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Buneary",
@@ -9890,7 +14639,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 427,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lopunny",
@@ -9909,7 +14662,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 428,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lopunny-Mega",
@@ -9927,7 +14684,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Normal",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mismagius",
@@ -9946,7 +14708,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 429,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Honchkrow",
@@ -9965,7 +14731,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 430,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Glameow",
@@ -9980,7 +14751,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 431,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Purugly",
@@ -9995,7 +14770,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 432,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Chingling",
@@ -10010,7 +14789,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 433,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Stunky",
@@ -10025,7 +14808,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 434,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Skuntank",
@@ -10040,7 +14828,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 435,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Bronzor",
@@ -10055,7 +14848,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 436,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bronzong",
@@ -10070,7 +14868,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 437,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Bonsly",
@@ -10089,7 +14892,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 438,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mime Jr.",
@@ -10108,7 +14915,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 439,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Happiny",
@@ -10127,7 +14939,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 440,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Chatot",
@@ -10142,7 +14958,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 441,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Spiritomb",
@@ -10161,7 +14982,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 442,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gible",
@@ -10183,7 +15009,40 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 443,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Gible-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 443,
+      "formOrder": 148,
+      "tags": [
+        "pseudoLegendary",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gabite",
@@ -10205,7 +15064,40 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 444,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Gabite-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 444,
+      "formOrder": 149,
+      "tags": [
+        "pseudoLegendary",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Garchomp",
@@ -10227,7 +15119,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 445,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Garchomp-Mega",
@@ -10245,7 +15142,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Garchomp-Mega-Z",
@@ -10264,7 +15166,39 @@ const PokemonDraftData = {
       "tags": [
         "pseudoLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Garchomp-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 445,
+      "formOrder": 150,
+      "tags": [
+        "pseudoLegendary",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Munchlax",
@@ -10283,7 +15217,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 446,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Riolu",
@@ -10302,7 +15240,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 447,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lucario",
@@ -10321,7 +15263,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 448,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lucario-Mega",
@@ -10339,7 +15286,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lucario-Mega-Z",
@@ -10357,7 +15309,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hippopotas",
@@ -10372,7 +15329,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 449,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Hippopotas-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 449,
+      "formOrder": 151,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hippowdon",
@@ -10387,7 +15370,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 450,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Hippowdon-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 450,
+      "formOrder": 152,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Skorupi",
@@ -10402,7 +15411,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 451,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drapion",
@@ -10417,7 +15431,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 452,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Croagunk",
@@ -10432,7 +15451,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 453,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Fighting"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Croagunk-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 453,
+      "formOrder": 153,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Poison",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Toxicroak",
@@ -10447,7 +15494,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 454,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Fighting"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Toxicroak-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 454,
+      "formOrder": 154,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Poison",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Carnivine",
@@ -10462,7 +15537,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 455,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Carnivine-Sevii",
@@ -10477,7 +15556,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Poison",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Finneon",
@@ -10492,7 +15576,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 456,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Finneon-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 456,
+      "formOrder": 155,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lumineon",
@@ -10507,7 +15617,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 457,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Lumineon-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 457,
+      "formOrder": 156,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mantyke",
@@ -10526,7 +15662,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 458,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mantyke-Sevii",
@@ -10541,7 +15682,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Snover",
@@ -10556,7 +15702,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 459,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Ice"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Snover-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 459,
+      "formOrder": 157,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Abomasnow",
@@ -10571,7 +15745,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 460,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Abomasnow-Mega",
@@ -10589,7 +15768,35 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Ice"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Abomasnow-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 460,
+      "formOrder": 158,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Weavile",
@@ -10608,7 +15815,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 461,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Ice"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Weavile-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 461,
+      "formOrder": 159,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dark",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Magnezone",
@@ -10627,7 +15866,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 462,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Lickilicky",
@@ -10646,7 +15890,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 463,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rhyperior",
@@ -10665,7 +15913,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 464,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Rhyperior-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 464,
+      "formOrder": 160,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tangrowth",
@@ -10684,7 +15964,37 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 465,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Tangrowth-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 465,
+      "formOrder": 161,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Electivire",
@@ -10703,7 +16013,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 466,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Magmortar",
@@ -10722,7 +16036,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 467,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Togekiss",
@@ -10741,7 +16059,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 468,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Yanmega",
@@ -10760,7 +16083,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 469,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Leafeon",
@@ -10779,7 +16107,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 470,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Glaceon",
@@ -10798,7 +16130,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 471,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gliscor",
@@ -10817,7 +16153,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 472,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mamoswine",
@@ -10836,7 +16177,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 473,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Mamoswine-f",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 473,
+      "formOrder": 162,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Porygon-Z",
@@ -10851,7 +16224,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 474,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Gallade",
@@ -10870,7 +16247,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 475,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Gallade-Mega",
@@ -10888,7 +16270,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Probopass",
@@ -10907,7 +16294,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 476,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dusknoir",
@@ -10926,7 +16318,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 477,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Froslass",
@@ -10945,7 +16341,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 478,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Froslass-Mega",
@@ -10963,7 +16364,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ice",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rotom",
@@ -10982,7 +16388,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 479,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rotom-Heat",
@@ -11000,7 +16411,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 479,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Electric",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rotom-Wash",
@@ -11018,7 +16434,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 479,
-      "formOrder": 2
+      "formOrder": 2,
+      "types": [
+        "Electric",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rotom-Frost",
@@ -11036,7 +16457,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 479,
-      "formOrder": 3
+      "formOrder": 3,
+      "types": [
+        "Electric",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rotom-Fan",
@@ -11054,7 +16480,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 479,
-      "formOrder": 4
+      "formOrder": 4,
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rotom-Mow",
@@ -11072,7 +16503,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 479,
-      "formOrder": 5
+      "formOrder": 5,
+      "types": [
+        "Electric",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Uxie",
@@ -11090,7 +16526,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 480,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mesprit",
@@ -11108,7 +16548,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 481,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Azelf",
@@ -11126,7 +16570,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 482,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dialga",
@@ -11148,7 +16596,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 483,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dialga-Origin",
@@ -11167,7 +16620,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Palkia",
@@ -11189,7 +16647,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 484,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Palkia-Origin",
@@ -11208,7 +16671,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Heatran",
@@ -11226,7 +16694,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 485,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Heatran-Mega",
@@ -11241,7 +16714,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Regigigas",
@@ -11263,7 +16741,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 486,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Giratina",
@@ -11285,7 +16767,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 487,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Giratina-Origin",
@@ -11304,7 +16791,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ghost",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cresselia",
@@ -11326,7 +16818,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 488,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Phione",
@@ -11344,7 +16840,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 489,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Manaphy",
@@ -11362,7 +16862,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 490,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Darkrai",
@@ -11384,7 +16888,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 491,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Darkrai-Mega",
@@ -11403,7 +16911,11 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Shaymin",
@@ -11421,7 +16933,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 492,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Shaymin-Sky",
@@ -11440,7 +16956,12 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus",
@@ -11463,7 +16984,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 493,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Fighting",
@@ -11483,7 +17008,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Flying",
@@ -11503,7 +17032,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Poison",
@@ -11523,7 +17056,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Ground",
@@ -11543,7 +17080,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Rock",
@@ -11563,7 +17104,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Bug",
@@ -11583,7 +17128,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Ghost",
@@ -11603,7 +17152,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Steel",
@@ -11623,7 +17176,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Fire",
@@ -11643,7 +17200,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Water",
@@ -11663,7 +17224,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Grass",
@@ -11683,7 +17248,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Electric",
@@ -11703,7 +17272,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Psychic",
@@ -11723,7 +17296,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Ice",
@@ -11743,7 +17320,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Dragon",
@@ -11763,7 +17344,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Dark",
@@ -11783,7 +17368,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arceus-Fairy",
@@ -11803,7 +17392,11 @@ const PokemonDraftData = {
         "legendary",
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Victini",
@@ -11821,7 +17414,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 494,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Snivy",
@@ -11836,7 +17434,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 495,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Servine",
@@ -11851,7 +17453,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 496,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Serperior",
@@ -11866,7 +17472,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 497,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tepig",
@@ -11881,7 +17491,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 498,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pignite",
@@ -11896,7 +17510,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 499,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Emboar",
@@ -11911,7 +17530,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 500,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Emboar-Mega",
@@ -11925,7 +17549,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Oshawott",
@@ -11940,7 +17569,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 501,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dewott",
@@ -11955,7 +17588,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 502,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Samurott",
@@ -11970,7 +17607,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 503,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Samurott-Hisui",
@@ -11988,7 +17629,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 503,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Patrat",
@@ -12003,7 +17649,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 504,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Watchog",
@@ -12018,7 +17668,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 505,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lillipup",
@@ -12033,7 +17687,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 506,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Herdier",
@@ -12048,7 +17706,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 507,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Stoutland",
@@ -12063,7 +17725,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 508,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Purrloin",
@@ -12078,7 +17744,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 509,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Liepard",
@@ -12093,7 +17763,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 510,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pansage",
@@ -12108,7 +17782,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 511,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Simisage",
@@ -12123,7 +17801,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 512,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pansear",
@@ -12138,7 +17820,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 513,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Simisear",
@@ -12153,7 +17839,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 514,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Panpour",
@@ -12168,7 +17858,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 515,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Simipour",
@@ -12183,7 +17877,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 516,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Munna",
@@ -12198,7 +17896,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 517,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Musharna",
@@ -12213,7 +17915,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 518,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pidove",
@@ -12228,7 +17934,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 519,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tranquill",
@@ -12243,7 +17954,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 520,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Unfezant",
@@ -12258,7 +17974,58 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 521,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Unfezant-F",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 521,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Unfezant-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 521,
+      "formOrder": 163,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Blitzle",
@@ -12273,7 +18040,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 522,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Blitzle-Sevii",
@@ -12288,7 +18059,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ice",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zebstrika",
@@ -12303,7 +18079,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 523,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Zebstrika-Sevii",
@@ -12318,7 +18098,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ice",
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Roggenrola",
@@ -12333,7 +18118,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 524,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Boldore",
@@ -12348,7 +18137,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 525,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gigalith",
@@ -12363,7 +18156,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 526,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Woobat",
@@ -12378,7 +18175,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 527,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Swoobat",
@@ -12393,7 +18195,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 528,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Drilbur",
@@ -12408,7 +18215,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 529,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Excadrill",
@@ -12423,7 +18234,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 530,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Excadrill-Mega",
@@ -12437,7 +18253,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Audino",
@@ -12452,7 +18273,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 531,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Audino-Mega",
@@ -12470,7 +18295,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Timburr",
@@ -12485,7 +18315,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 532,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gurdurr",
@@ -12500,7 +18334,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 533,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Conkeldurr",
@@ -12515,7 +18353,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 534,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tympole",
@@ -12530,7 +18372,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 535,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Palpitoad",
@@ -12545,7 +18391,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 536,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Seismitoad",
@@ -12560,7 +18411,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 537,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Throh",
@@ -12575,7 +18431,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 538,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sawk",
@@ -12590,7 +18450,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 539,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sewaddle",
@@ -12605,7 +18469,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 540,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Swadloon",
@@ -12620,7 +18489,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 541,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Leavanny",
@@ -12635,7 +18509,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 542,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Venipede",
@@ -12654,7 +18533,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 543,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Whirlipede",
@@ -12673,7 +18557,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 544,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Scolipede",
@@ -12692,7 +18581,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 545,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Scolipede-Mega",
@@ -12710,7 +18604,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Cottonee",
@@ -12729,7 +18628,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 546,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Whimsicott",
@@ -12748,7 +18652,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 547,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Petilil",
@@ -12763,7 +18672,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 548,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lilligant",
@@ -12778,7 +18691,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 549,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lilligant-Hisui",
@@ -12796,7 +18713,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 549,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Basculin",
@@ -12811,7 +18733,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 550,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sandile",
@@ -12830,7 +18756,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 551,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Krokorok",
@@ -12849,7 +18780,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 552,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Krookodile",
@@ -12868,7 +18804,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 553,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Darumaka",
@@ -12883,7 +18824,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 554,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Darumaka-Galar",
@@ -12901,7 +18846,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 554,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Darmanitan",
@@ -12916,7 +18865,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 555,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Darmanitan-Galar",
@@ -12934,7 +18887,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 555,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Darmanitan-Zen",
@@ -12952,7 +18909,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "abilityForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Darmanitan-Galar-Zen",
@@ -12970,7 +18932,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "abilityForm"
-      ]
+      ],
+      "types": [
+        "Ice",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Maractus",
@@ -12985,7 +18952,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 556,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dwebble",
@@ -13000,7 +18971,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 557,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Crustle",
@@ -13015,7 +18991,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 558,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Scraggy",
@@ -13034,7 +19015,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 559,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Scrafty",
@@ -13053,7 +19039,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 560,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Scrafty-Mega",
@@ -13071,7 +19062,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sigilyph",
@@ -13086,7 +19082,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 561,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Yamask",
@@ -13105,7 +19106,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 562,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Yamask-Galar",
@@ -13123,7 +19128,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 562,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cofagrigus",
@@ -13142,7 +19152,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 563,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tirtouga",
@@ -13157,7 +19171,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 564,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Carracosta",
@@ -13172,7 +19191,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 565,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Archen",
@@ -13187,7 +19211,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 566,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Archeops",
@@ -13202,7 +19231,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 567,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Trubbish",
@@ -13221,7 +19255,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 568,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Garbodor",
@@ -13240,7 +19278,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 569,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Garbodor-Mega",
@@ -13255,7 +19297,11 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Zorua",
@@ -13274,7 +19320,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 570,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zorua-Hisui",
@@ -13292,7 +19342,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 570,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Normal",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zoroark",
@@ -13311,7 +19366,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 571,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Zoroark-Hisui",
@@ -13329,7 +19388,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 571,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Normal",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Minccino",
@@ -13344,7 +19408,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 572,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cinccino",
@@ -13359,7 +19427,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 573,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gothita",
@@ -13374,7 +19446,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 574,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gothorita",
@@ -13389,7 +19465,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 575,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gothitelle",
@@ -13404,7 +19484,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 576,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Solosis",
@@ -13423,7 +19507,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 577,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Duosion",
@@ -13442,7 +19530,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 578,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Reuniclus",
@@ -13461,7 +19553,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 579,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Ducklett",
@@ -13476,7 +19572,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 580,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Swanna",
@@ -13491,7 +19592,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 581,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Vanillite",
@@ -13506,7 +19612,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 582,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Vanillish",
@@ -13521,7 +19631,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 583,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Vanilluxe",
@@ -13536,7 +19650,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 584,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Deerling",
@@ -13551,7 +19669,81 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 585,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Deerling-Autumn",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 585,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Deerling-Summer",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 585,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Deerling-Winter",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 585,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sawsbuck",
@@ -13566,7 +19758,81 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 586,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Sawsbuck-Autumn",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 586,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Sawsbuck-Summer",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 586,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Sawsbuck-Winter",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 586,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Emolga",
@@ -13581,7 +19847,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 587,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Karrablast",
@@ -13596,7 +19867,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 588,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Escavalier",
@@ -13611,7 +19886,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 589,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Foongus",
@@ -13626,7 +19906,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 590,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Amoonguss",
@@ -13641,7 +19926,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 591,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Frillish",
@@ -13656,7 +19946,58 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 592,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Frillish-F",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 592,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Frillish-f",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 592,
+      "formOrder": 164,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Jellicent",
@@ -13671,7 +20012,58 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 593,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Jellicent-F",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 593,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Jellicent-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 593,
+      "formOrder": 165,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Alomomola",
@@ -13686,7 +20078,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 594,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Joltik",
@@ -13705,7 +20101,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 595,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Galvantula",
@@ -13724,7 +20125,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 596,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ferroseed",
@@ -13743,7 +20149,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 597,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ferrothorn",
@@ -13762,7 +20173,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 598,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Klink",
@@ -13781,7 +20197,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 599,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Klang",
@@ -13800,7 +20220,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 600,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Klinklang",
@@ -13819,7 +20243,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 601,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tynamo",
@@ -13834,7 +20262,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 602,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Eelektrik",
@@ -13849,7 +20281,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 603,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Eelektross",
@@ -13864,7 +20300,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 604,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Eelektross-Mega",
@@ -13878,7 +20318,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Elgyem",
@@ -13893,7 +20337,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 605,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Beheeyem",
@@ -13908,7 +20356,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 606,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Litwick",
@@ -13927,7 +20379,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 607,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lampent",
@@ -13946,7 +20403,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 608,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Chandelure",
@@ -13965,7 +20427,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 609,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Chandelure-Mega",
@@ -13983,7 +20450,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Axew",
@@ -14002,7 +20474,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 610,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Fraxure",
@@ -14021,7 +20497,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 611,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Haxorus",
@@ -14040,7 +20520,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 612,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Cubchoo",
@@ -14055,7 +20539,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 613,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Beartic",
@@ -14070,7 +20558,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 614,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cryogonal",
@@ -14085,7 +20577,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 615,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Shelmet",
@@ -14100,7 +20596,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 616,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Accelgor",
@@ -14115,7 +20615,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 617,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Stunfisk",
@@ -14134,7 +20638,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 618,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Stunfisk-Galar",
@@ -14152,7 +20661,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 618,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mienfoo",
@@ -14167,7 +20681,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 619,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mienshao",
@@ -14182,7 +20700,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 620,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Druddigon",
@@ -14197,7 +20719,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 621,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Golett",
@@ -14216,7 +20742,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 622,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Golurk",
@@ -14235,7 +20766,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 623,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Golurk-Mega",
@@ -14253,7 +20789,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pawniard",
@@ -14272,7 +20813,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 624,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bisharp",
@@ -14291,7 +20837,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 625,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Bouffalant",
@@ -14306,7 +20857,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 626,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rufflet",
@@ -14321,7 +20876,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 627,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Braviary",
@@ -14336,7 +20896,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 628,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Braviary-Hisui",
@@ -14354,7 +20919,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 628,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Vullaby",
@@ -14369,7 +20939,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 629,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mandibuzz",
@@ -14384,7 +20959,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 630,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Heatmor",
@@ -14399,7 +20979,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 631,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Durant",
@@ -14414,7 +20998,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 632,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Deino",
@@ -14436,7 +21025,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 633,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zweilous",
@@ -14458,7 +21052,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 634,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hydreigon",
@@ -14480,7 +21079,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 635,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Larvesta",
@@ -14499,7 +21103,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 636,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Volcarona",
@@ -14518,7 +21127,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 637,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cobalion",
@@ -14536,7 +21150,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 638,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Terrakion",
@@ -14554,7 +21173,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 639,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Virizion",
@@ -14572,7 +21196,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 640,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tornadus",
@@ -14590,7 +21219,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 641,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tornadus-Therian",
@@ -14609,7 +21242,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Thundurus",
@@ -14627,7 +21264,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 642,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Thundurus-Therian",
@@ -14646,7 +21288,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Reshiram",
@@ -14668,7 +21315,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 643,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zekrom",
@@ -14690,7 +21342,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 644,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Landorus",
@@ -14708,7 +21365,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 645,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Landorus-Therian",
@@ -14727,7 +21389,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kyurem",
@@ -14749,7 +21416,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 646,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kyurem-Black",
@@ -14768,7 +21440,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 646,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kyurem-White",
@@ -14787,7 +21464,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 646,
-      "formOrder": 2
+      "formOrder": 2,
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Keldeo",
@@ -14805,7 +21487,36 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 647,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Fighting"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Keldeo-Resolute",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 647,
+      "formOrder": 60,
+      "tags": [
+        "mythical",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Water",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Meloetta",
@@ -14827,7 +21538,40 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 648,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Meloetta-Pirouette",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 648,
+      "formOrder": 50,
+      "tags": [
+        "mythical",
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Normal",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Genesect",
@@ -14849,7 +21593,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 649,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Genesect-Douse",
@@ -14868,7 +21617,12 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Genesect-Shock",
@@ -14887,7 +21641,12 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Genesect-Burn",
@@ -14906,7 +21665,12 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Genesect-Chill",
@@ -14925,7 +21689,12 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Chespin",
@@ -14944,7 +21713,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 650,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Quilladin",
@@ -14963,7 +21736,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 651,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Chesnaught",
@@ -14982,7 +21759,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 652,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Chesnaught-Mega",
@@ -15000,7 +21782,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Fennekin",
@@ -15019,7 +21806,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 653,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Braixen",
@@ -15038,7 +21829,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 654,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Delphox",
@@ -15057,7 +21852,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 655,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Delphox-Mega",
@@ -15075,7 +21875,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Froakie",
@@ -15094,7 +21899,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 656,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Frogadier",
@@ -15113,7 +21922,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 657,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Greninja",
@@ -15132,7 +21945,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 658,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Greninja-Mega",
@@ -15150,7 +21968,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Bunnelby",
@@ -15165,7 +21988,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 659,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Diggersby",
@@ -15180,7 +22007,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 660,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Fletchling",
@@ -15199,7 +22031,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 661,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Fletchinder",
@@ -15218,7 +22055,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 662,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Talonflame",
@@ -15237,7 +22079,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 663,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Scatterbug",
@@ -15252,7 +22099,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 664,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Spewpa",
@@ -15267,7 +22118,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 665,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Vivillon",
@@ -15282,7 +22137,472 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 666,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Fancy",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Pokeball",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Archipelago",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 61,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Continental",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 62,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Elegant",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 63,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Garden",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 64,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-High-Plains",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 65,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Icy-Snow",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 66,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Jungle",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 67,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Marine",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 68,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Meadow",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 69,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Modern",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 70,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Monsoon",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 71,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Ocean",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 72,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Polar",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 73,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-River",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 74,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Sandstorm",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 75,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Savanna",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 76,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Sun",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 77,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Vivillon-Tundra",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 666,
+      "formOrder": 78,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Litleo",
@@ -15297,7 +22617,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 667,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pyroar",
@@ -15312,7 +22637,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 668,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pyroar-Mega",
@@ -15326,7 +22656,35 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Normal"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Pyroar-f",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 668,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fire",
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Flabébé",
@@ -15341,7 +22699,99 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 669,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Flabebe-Blue",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 669,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Flabebe-Orange",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 669,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Flabebe-White",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 669,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Flabebe-Yellow",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 669,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Floette",
@@ -15356,7 +22806,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 670,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Floette-Eternal",
@@ -15364,28 +22818,124 @@ const PokemonDraftData = {
       "formOrder": 0,
       "games": {
         "natDex": {
-          "stage1": true,
+          "stage1": false,
           "fullyEvolved": true
         }
       },
       "tags": [
         "mythical",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
-      "name": "Floette-Mega",
+      "name": "Floette-Eternal-Mega",
       "natDexId": 670,
       "formOrder": 10,
       "games": {
         "natDex": {
           "stage1": false,
-          "fullyEvolved": false
+          "fullyEvolved": true
         }
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Floette-Blue",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 670,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Floette-Orange",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 670,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Floette-White",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 670,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Floette-Yellow",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 670,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Florges",
@@ -15400,7 +22950,99 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 671,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Florges-Blue",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 671,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Florges-Orange",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 671,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Florges-White",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 671,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Florges-Yellow",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 671,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Skiddo",
@@ -15415,7 +23057,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 672,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gogoat",
@@ -15430,7 +23076,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 673,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pancham",
@@ -15445,7 +23095,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 674,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pangoro",
@@ -15460,7 +23114,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 675,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Furfrou",
@@ -15475,7 +23134,209 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 676,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Dandy",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Debutante",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Diamond",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Heart",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Kabuki",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-La-Reine",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Matron",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Pharaoh",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Furfrou-Star",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 676,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Espurr",
@@ -15490,7 +23351,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 677,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Meowstic",
@@ -15505,7 +23370,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 678,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Meowstic-f",
@@ -15523,7 +23392,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 678,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Meowstic-Mega",
@@ -15537,7 +23410,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Honedge",
@@ -15556,7 +23433,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 680,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Doublade",
@@ -15575,7 +23457,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 681,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Aegislash",
@@ -15594,7 +23481,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 682,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "evolutionStage": 3
+    },
+    {
+      "name": "Aegislash-Blade",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 682,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Spritzee",
@@ -15609,7 +23528,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 683,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Aromatisse",
@@ -15624,7 +23547,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 684,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Swirlix",
@@ -15643,7 +23570,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 685,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Slurpuff",
@@ -15662,7 +23593,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 686,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Inkay",
@@ -15677,7 +23612,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 687,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Malamar",
@@ -15692,7 +23632,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 688,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Malamar-Mega",
@@ -15706,7 +23651,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Binacle",
@@ -15721,7 +23671,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 689,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Barbaracle",
@@ -15736,7 +23691,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 690,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Barbaracle-Mega",
@@ -15750,7 +23710,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Rock",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Skrelp",
@@ -15765,7 +23730,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 691,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dragalge",
@@ -15780,7 +23750,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 692,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dragalge-Mega",
@@ -15794,7 +23769,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Clauncher",
@@ -15809,7 +23789,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 693,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Clauncher-Sevii",
@@ -15824,7 +23808,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Bug",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Clawitzer",
@@ -15839,7 +23828,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 694,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Clawitzer-Sevii",
@@ -15854,7 +23847,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Bug",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Helioptile",
@@ -15869,7 +23867,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 695,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Heliolisk",
@@ -15884,7 +23887,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 696,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tyrunt",
@@ -15903,7 +23911,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 697,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tyrantrum",
@@ -15922,7 +23935,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 698,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Amaura",
@@ -15941,7 +23959,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 699,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Aurorus",
@@ -15960,7 +23983,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 700,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sylveon",
@@ -15979,7 +24007,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 701,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hawlucha",
@@ -15998,7 +24030,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 702,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hawlucha-Mega",
@@ -16016,7 +24053,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dedenne",
@@ -16031,7 +24073,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 703,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Carbink",
@@ -16050,7 +24097,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 704,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Goomy",
@@ -16072,7 +24124,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 705,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sliggoo",
@@ -16094,7 +24150,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 706,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sliggoo-Hisui",
@@ -16113,7 +24173,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 706,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Goodra",
@@ -16135,7 +24200,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 707,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Goodra-Hisui",
@@ -16154,7 +24223,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 707,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Klefki",
@@ -16173,7 +24247,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 708,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Phantump",
@@ -16192,7 +24271,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 709,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Trevenant",
@@ -16211,7 +24295,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 710,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pumpkaboo",
@@ -16230,7 +24319,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 711,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gourgeist",
@@ -16249,7 +24343,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 712,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Bergmite",
@@ -16264,7 +24363,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 713,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Avalugg",
@@ -16279,7 +24382,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 714,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Avalugg-Hisui",
@@ -16297,7 +24404,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 714,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Ice",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Noibat",
@@ -16316,7 +24428,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 715,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Noibat-Sevii",
@@ -16331,7 +24448,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Rock",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Noivern",
@@ -16350,7 +24472,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 716,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Xerneas",
@@ -16368,7 +24495,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 716,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Noivern-Sevii",
@@ -16383,7 +24514,35 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Rock",
+        "Ghost"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Xerneas-Neutral",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 716,
+      "formOrder": 50,
+      "tags": [
+        "legendary",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Yveltal",
@@ -16401,7 +24560,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 717,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zygarde",
@@ -16419,7 +24583,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 718,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zygarde-10%",
@@ -16438,7 +24607,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zygarde-Complete",
@@ -16457,7 +24631,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "abilityForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zygarde-Mega",
@@ -16472,7 +24651,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Diancie",
@@ -16494,7 +24678,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 719,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Diancie-Mega",
@@ -16513,7 +24702,12 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Rock",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hoopa",
@@ -16531,7 +24725,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 720,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hoopa-Unbound",
@@ -16550,7 +24749,12 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Volcanion",
@@ -16568,7 +24772,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 721,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rowlet",
@@ -16583,7 +24792,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 722,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dartrix",
@@ -16598,7 +24812,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 723,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Decidueye",
@@ -16613,7 +24832,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 724,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Decidueye-Hisui",
@@ -16631,7 +24855,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 724,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Grass",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Litten",
@@ -16646,7 +24875,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 725,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Torracat",
@@ -16661,7 +24894,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 726,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Incineroar",
@@ -16676,7 +24913,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 727,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Popplio",
@@ -16691,7 +24933,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 728,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Brionne",
@@ -16706,7 +24952,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 729,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Primarina",
@@ -16721,7 +24971,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 730,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Pikipek",
@@ -16736,7 +24991,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 731,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Trumbeak",
@@ -16751,7 +25011,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 732,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Toucannon",
@@ -16766,7 +25031,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 733,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Yungoos",
@@ -16781,7 +25051,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 734,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gumshoos",
@@ -16796,7 +25070,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 735,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Grubbin",
@@ -16811,7 +25089,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 736,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Charjabug",
@@ -16826,7 +25108,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 737,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Vikavolt",
@@ -16841,7 +25128,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 738,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Electric"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Crabrawler",
@@ -16856,7 +25148,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 739,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Crabominable",
@@ -16871,7 +25167,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 740,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Crabominable-Mega",
@@ -16885,7 +25186,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Oricorio-Baile",
@@ -16904,7 +25210,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 741,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Oricorio-Pom-Pom",
@@ -16922,7 +25233,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Oricorio-Pa'u",
@@ -16940,7 +25256,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Oricorio-Sensu",
@@ -16958,7 +25279,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Ghost",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cutiefly",
@@ -16973,7 +25299,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 742,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ribombee",
@@ -16988,7 +25319,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 743,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rockruff",
@@ -17007,7 +25343,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 744,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lycanroc",
@@ -17026,7 +25366,63 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 745,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Lycanroc-Midnight",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 745,
+      "formOrder": 1,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Lycanroc-Dusk",
+      "games": {
+        "infiniteFusion": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 745,
+      "formOrder": 2,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wishiwashi",
@@ -17041,7 +25437,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 746,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wishiwashi-Sevii",
@@ -17056,7 +25456,55 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Wishiwashi-School-Sevii",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 746,
+      "formOrder": 21,
+      "tags": [
+        "alternateForm",
+        "abilityForm",
+        "battleOnlyForm"
+      ],
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ghost",
+        "Dragon"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Wishiwashi-School",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 746,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mareanie",
@@ -17075,7 +25523,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 747,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Toxapex",
@@ -17094,7 +25547,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 748,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mudbray",
@@ -17109,7 +25567,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 749,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mudsdale",
@@ -17124,7 +25586,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 750,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dewpider",
@@ -17139,7 +25605,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 751,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Araquanid",
@@ -17154,7 +25625,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 752,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Fomantis",
@@ -17173,7 +25649,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 753,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lurantis",
@@ -17192,7 +25672,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 754,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Morelull",
@@ -17207,7 +25691,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 755,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Shiinotic",
@@ -17222,7 +25711,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 756,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Salandit",
@@ -17237,7 +25731,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 757,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Salazzle",
@@ -17252,7 +25751,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 758,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Stufful",
@@ -17271,7 +25775,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 759,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bewear",
@@ -17290,7 +25799,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 760,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Bounsweet",
@@ -17305,7 +25819,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 761,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Steenee",
@@ -17320,7 +25838,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 762,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tsareena",
@@ -17335,7 +25857,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 763,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Comfey",
@@ -17350,7 +25876,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 764,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Oranguru",
@@ -17365,7 +25895,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 765,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Passimian",
@@ -17380,7 +25915,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 766,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wimpod",
@@ -17399,7 +25938,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 767,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Golisopod",
@@ -17418,7 +25962,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 768,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Golisopod-Mega",
@@ -17436,7 +25985,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sandygast",
@@ -17455,7 +26009,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 769,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Palossand",
@@ -17474,7 +26033,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 770,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pyukumuku",
@@ -17493,7 +26057,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 771,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Type: Null",
@@ -17511,7 +26079,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 772,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Silvally",
@@ -17529,7 +26101,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 773,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Fighting",
@@ -17548,7 +26124,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Flying",
@@ -17567,7 +26147,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Poison",
@@ -17586,7 +26170,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Ground",
@@ -17605,7 +26193,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Rock",
@@ -17624,7 +26216,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Bug",
@@ -17643,7 +26239,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Ghost",
@@ -17662,7 +26262,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Steel",
@@ -17681,7 +26285,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Fire",
@@ -17700,7 +26308,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Water",
@@ -17719,7 +26331,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Grass",
@@ -17738,7 +26354,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Electric",
@@ -17757,7 +26377,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Psychic",
@@ -17776,7 +26400,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Ice",
@@ -17795,7 +26423,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Dragon",
@@ -17814,7 +26446,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Dark",
@@ -17833,7 +26469,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silvally-Fairy",
@@ -17852,7 +26492,11 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Minior",
@@ -17871,7 +26515,228 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 774,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Core",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Red",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 61,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Orange",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 62,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Yellow",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 63,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Green",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 64,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Blue",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 65,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Indigo",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 66,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Minior-Violet",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 774,
+      "formOrder": 67,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Komala",
@@ -17886,7 +26751,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 775,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Turtonator",
@@ -17901,7 +26770,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 776,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Togedemaru",
@@ -17916,7 +26790,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 777,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mimikyu",
@@ -17935,7 +26814,39 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 778,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Mimikyu-Busted",
+      "games": {
+        "infiniteFusion": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 778,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bruxish",
@@ -17954,7 +26865,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 779,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drampa",
@@ -17969,7 +26885,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 780,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drampa-Mega",
@@ -17983,7 +26904,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Normal",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dhelmise",
@@ -18002,7 +26928,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 781,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dhelmise-Sevii",
@@ -18017,7 +26948,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Water",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Jangmo-o",
@@ -18039,7 +26975,11 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 782,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hakamo-o",
@@ -18061,7 +27001,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 783,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Kommo-o",
@@ -18083,7 +27028,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 784,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tapu Koko",
@@ -18101,7 +27051,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 785,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tapu Lele",
@@ -18119,7 +27074,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 786,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tapu Bulu",
@@ -18137,7 +27097,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 787,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tapu Fini",
@@ -18155,7 +27120,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 788,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cosmog",
@@ -18173,7 +27143,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 789,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cosmoem",
@@ -18191,7 +27165,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 790,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Solgaleo",
@@ -18209,7 +27187,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 791,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Lunala",
@@ -18227,7 +27210,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 792,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Nihilego",
@@ -18245,7 +27233,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 793,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Buzzwole",
@@ -18263,7 +27256,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 794,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pheromosa",
@@ -18281,7 +27279,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 795,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Xurkitree",
@@ -18299,7 +27302,11 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 796,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Celesteela",
@@ -18317,7 +27324,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 797,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kartana",
@@ -18335,7 +27347,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 798,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Guzzlord",
@@ -18353,7 +27370,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 799,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Necrozma",
@@ -18375,7 +27397,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 800,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Necrozma-Dusk-Mane",
@@ -18394,7 +27420,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Necrozma-Dawn-Wings",
@@ -18413,7 +27444,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Necrozma-Ultra",
@@ -18432,7 +27468,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Psychic",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Magearna",
@@ -18450,7 +27491,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 801,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Magearna-Mega",
@@ -18465,7 +27511,57 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Magearna-Original",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 801,
+      "formOrder": 60,
+      "tags": [
+        "mythical",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Magearna-Original-Mega",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 801,
+      "formOrder": 70,
+      "tags": [
+        "mythical",
+        "itemForm",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Steel",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Marshadow",
@@ -18483,7 +27579,12 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 802,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Poipole",
@@ -18501,7 +27602,11 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 803,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Naganadel",
@@ -18519,7 +27624,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 804,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Stakataka",
@@ -18537,7 +27647,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 805,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Blacephalon",
@@ -18555,7 +27670,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 806,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zeraora",
@@ -18573,7 +27693,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 807,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zeraora-Mega",
@@ -18588,7 +27712,11 @@ const PokemonDraftData = {
       "tags": [
         "mythical",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Meltan",
@@ -18606,7 +27734,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 808,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Melmetal",
@@ -18624,7 +27756,11 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 809,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Grookey",
@@ -18639,7 +27775,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 810,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Thwackey",
@@ -18654,7 +27794,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 811,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rillaboom",
@@ -18669,7 +27813,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 812,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Scorbunny",
@@ -18684,7 +27832,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 813,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Raboot",
@@ -18699,7 +27851,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 814,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cinderace",
@@ -18714,7 +27870,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 815,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Sobble",
@@ -18729,7 +27889,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 816,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drizzile",
@@ -18744,7 +27908,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 817,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Inteleon",
@@ -18759,7 +27927,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 818,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Skwovet",
@@ -18774,7 +27946,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 819,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Greedent",
@@ -18789,7 +27965,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 820,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rookidee",
@@ -18804,7 +27984,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 821,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Corvisquire",
@@ -18819,7 +28003,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 822,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Corviknight",
@@ -18834,7 +28022,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 823,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying",
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Blipbug",
@@ -18849,7 +28042,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 824,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dottler",
@@ -18864,7 +28061,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 825,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Orbeetle",
@@ -18879,7 +28081,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 826,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Orbeetle-Mega",
@@ -18894,7 +28101,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Bug",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Nickit",
@@ -18909,7 +28121,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 827,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Thievul",
@@ -18924,7 +28140,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 828,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Gossifleur",
@@ -18939,7 +28159,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 829,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Eldegoss",
@@ -18954,7 +28178,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 830,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wooloo",
@@ -18969,7 +28197,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 831,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dubwool",
@@ -18984,7 +28216,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 832,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Chewtle",
@@ -18999,7 +28235,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 833,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drednaw",
@@ -19014,7 +28254,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 834,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Drednaw-Mega",
@@ -19029,7 +28274,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Water",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Yamper",
@@ -19044,7 +28294,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 835,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Boltund",
@@ -19059,7 +28313,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 836,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rolycoly",
@@ -19074,7 +28332,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 837,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Carkol",
@@ -19089,7 +28351,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 838,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Coalossal",
@@ -19104,7 +28371,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 839,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Fire"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Coalossal-Mega",
@@ -19119,7 +28391,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Steel",
+        "Fire"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Applin",
@@ -19134,7 +28411,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 840,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Flapple",
@@ -19149,7 +28431,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 841,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Flapple-Mega",
@@ -19164,7 +28451,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Appletun",
@@ -19179,7 +28471,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 842,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Appletun-Mega",
@@ -19194,7 +28491,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Silicobra",
@@ -19209,7 +28511,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 843,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sandaconda",
@@ -19224,7 +28530,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 844,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sandaconda-Mega",
@@ -19239,7 +28549,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cramorant",
@@ -19254,7 +28569,58 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 845,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Cramorant-Gorging",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 845,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Flying",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Cramorant-Gulping",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 845,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Flying",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arrokuda",
@@ -19269,7 +28635,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 846,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Barraskewda",
@@ -19284,7 +28654,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 847,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Toxel",
@@ -19299,7 +28673,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 848,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Toxtricity",
@@ -19314,7 +28693,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 849,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Toxtricity-Low-Key",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 849,
+      "formOrder": 1,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Toxtricity-Mega",
@@ -19329,7 +28736,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sizzlipede",
@@ -19344,7 +28756,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 850,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sizzlipede-Sevii",
@@ -19359,7 +28776,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ground",
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Centiskorch",
@@ -19374,7 +28796,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 851,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Centiskorch-Mega",
@@ -19389,7 +28816,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Fire",
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Centiskorch-Sevii",
@@ -19404,7 +28836,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ground",
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Centiskorch-Sevii-Mega",
@@ -19420,7 +28857,12 @@ const PokemonDraftData = {
         "alternateForm",
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Ground",
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Clobbopus",
@@ -19435,7 +28877,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 852,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Grapploct",
@@ -19450,7 +28896,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 853,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sinistea",
@@ -19465,7 +28915,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 854,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Polteageist",
@@ -19480,7 +28934,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 855,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hatenna",
@@ -19495,7 +28953,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 856,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Hattrem",
@@ -19510,7 +28972,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 857,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hatterene",
@@ -19525,7 +28991,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 858,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Impidimp",
@@ -19540,7 +29011,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 859,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Morgrem",
@@ -19555,7 +29031,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 860,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Grimmsnarl",
@@ -19570,7 +29051,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 861,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fairy"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Obstagoon",
@@ -19585,7 +29071,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 862,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Perrserker",
@@ -19600,7 +29091,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 863,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cursola",
@@ -19615,7 +29110,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 864,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sirfetch'd",
@@ -19630,7 +29129,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 865,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Mr. Rime",
@@ -19645,7 +29148,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 866,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Psychic"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Runerigus",
@@ -19660,7 +29168,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 867,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Milcery",
@@ -19675,7 +29188,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 868,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Alcremie",
@@ -19690,7 +29207,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 869,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Alcremie-Mega",
@@ -19705,7 +29226,187 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Caramel-Swirl",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Lemon-Cream",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Matcha-Cream",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Mint-Cream",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Rainbow-Swirl",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Ruby-Cream",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Ruby-Swirl",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Alcremie-Salted-Cream",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 869,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Falinks",
@@ -19720,7 +29421,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 870,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Falinks-Mega",
@@ -19734,7 +29439,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pincurchin",
@@ -19749,7 +29458,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 871,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Snom",
@@ -19764,7 +29477,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 872,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Frosmoth",
@@ -19779,7 +29497,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 873,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Stonjourner",
@@ -19794,7 +29517,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 874,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Eiscue",
@@ -19809,7 +29536,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 875,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Eiscue-Noice",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 875,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Indeedee",
@@ -19824,7 +29577,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 876,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Indeedee-f",
@@ -19842,7 +29600,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 876,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Morpeko",
@@ -19857,7 +29620,35 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 877,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Dark"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Morpeko-Hangry",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 877,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Electric",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cufant",
@@ -19872,7 +29663,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 878,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Copperajah",
@@ -19887,7 +29682,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 879,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Copperajah-Mega",
@@ -19902,7 +29701,12 @@ const PokemonDraftData = {
       "tags": [
         "itemForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Steel",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dracozolt",
@@ -19917,7 +29721,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 880,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arctozolt",
@@ -19932,7 +29741,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 881,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dracovish",
@@ -19947,7 +29761,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 882,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arctovish",
@@ -19962,7 +29781,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 883,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Duraludon",
@@ -19977,7 +29801,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 884,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dreepy",
@@ -19995,7 +29824,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 885,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Drakloak",
@@ -20013,7 +29847,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 886,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dragapult",
@@ -20031,7 +29870,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 887,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Zacian",
@@ -20049,7 +29893,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 888,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zacian-Crowned",
@@ -20068,7 +29916,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fairy",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zamazenta",
@@ -20086,7 +29939,11 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 889,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Zamazenta-Crowned",
@@ -20105,7 +29962,12 @@ const PokemonDraftData = {
       "tags": [
         "legendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Eternatus",
@@ -20123,7 +29985,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 890,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kubfu",
@@ -20141,7 +30008,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 891,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Urshifu-Single-Strike",
@@ -20159,7 +30030,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 892,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Urshifu-Rapid-Strike",
@@ -20178,7 +30054,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Fighting",
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Zarude",
@@ -20196,7 +30077,36 @@ const PokemonDraftData = {
         "mythical"
       ],
       "natDexId": 893,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Grass"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Zarude-Dada",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 893,
+      "formOrder": 60,
+      "tags": [
+        "mythical",
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Dark",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Regieleki",
@@ -20214,7 +30124,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 894,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Regidrago",
@@ -20232,7 +30146,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 895,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Glastrier",
@@ -20250,7 +30168,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 896,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Spectrier",
@@ -20268,7 +30190,11 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 897,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Calyrex",
@@ -20286,7 +30212,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 898,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Calyrex-Ice",
@@ -20305,7 +30236,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 898,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Psychic",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Calyrex-Shadow",
@@ -20324,7 +30260,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 898,
-      "formOrder": 2
+      "formOrder": 2,
+      "types": [
+        "Psychic",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wyrdeer",
@@ -20339,7 +30280,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 899,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Kleavor",
@@ -20354,7 +30300,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 900,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ursaluna",
@@ -20369,7 +30320,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 901,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Ursaluna-Bloodmoon",
@@ -20387,7 +30343,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Ground",
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Basculegion",
@@ -20402,7 +30363,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 902,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Basculegion-f",
@@ -20420,7 +30386,12 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 902,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Sneasler",
@@ -20435,7 +30406,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 903,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Overqwil",
@@ -20450,7 +30426,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 904,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Enamorus",
@@ -20468,7 +30449,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 905,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Enamorus-Therian",
@@ -20487,7 +30473,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sprigatito",
@@ -20502,7 +30493,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 906,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Floragato",
@@ -20517,7 +30512,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 907,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Meowscarada",
@@ -20532,7 +30531,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 908,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Fuecoco",
@@ -20547,7 +30551,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 909,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Crocalor",
@@ -20562,7 +30570,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 910,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Skeledirge",
@@ -20577,7 +30589,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 911,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Quaxly",
@@ -20592,7 +30609,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 912,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Quaxwell",
@@ -20607,7 +30628,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 913,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Quaquaval",
@@ -20622,7 +30647,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 914,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Lechonk",
@@ -20637,7 +30667,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 915,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Oinkologne",
@@ -20652,7 +30686,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 916,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Oinkologne-f",
@@ -20670,7 +30708,11 @@ const PokemonDraftData = {
         "alternateForm"
       ],
       "natDexId": 916,
-      "formOrder": 1
+      "formOrder": 1,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tarountula",
@@ -20685,7 +30727,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 917,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Spidops",
@@ -20700,7 +30746,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 918,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Nymble",
@@ -20715,7 +30765,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 919,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Nymble-Sevii",
@@ -20730,7 +30784,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Bug",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Lokix",
@@ -20745,7 +30804,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 920,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Lokix-Sevii",
@@ -20760,7 +30824,12 @@ const PokemonDraftData = {
       "tags": [
         "alternateForm"
       ],
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "types": [
+        "Bug",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pawmi",
@@ -20775,7 +30844,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 921,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pawmo",
@@ -20790,7 +30863,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 922,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Fighting"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Pawmot",
@@ -20805,7 +30883,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 923,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Fighting"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Tandemaus",
@@ -20820,7 +30903,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 924,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Maushold",
@@ -20835,7 +30922,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 925,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Maushold-Four",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 925,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Fidough",
@@ -20850,7 +30963,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 926,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dachsbun",
@@ -20865,7 +30982,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 927,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Smoliv",
@@ -20880,7 +31001,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 928,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dolliv",
@@ -20895,7 +31021,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 929,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Arboliva",
@@ -20910,7 +31041,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 930,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Normal"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Squawkabilly",
@@ -20925,7 +31061,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 931,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Squawkabilly-Yellow/White",
@@ -20943,7 +31084,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "alternateForm"
-      ]
+      ],
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Nacli",
@@ -20958,7 +31104,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 932,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Naclstack",
@@ -20973,7 +31123,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 933,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Garganacl",
@@ -20988,7 +31142,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 934,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Charcadet",
@@ -21003,7 +31161,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 935,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Armarouge",
@@ -21018,7 +31180,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 936,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Ceruledge",
@@ -21033,7 +31200,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 937,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tadbulb",
@@ -21048,7 +31220,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 938,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Bellibolt",
@@ -21063,7 +31239,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 939,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wattrel",
@@ -21078,7 +31258,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 940,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Kilowattrel",
@@ -21093,7 +31278,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 941,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Maschiff",
@@ -21108,7 +31298,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 942,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Mabosstiff",
@@ -21123,7 +31317,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 943,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Shroodle",
@@ -21138,7 +31336,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 944,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Grafaiai",
@@ -21153,7 +31356,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 945,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Bramblin",
@@ -21168,7 +31376,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 946,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Brambleghast",
@@ -21183,7 +31396,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 947,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Toedscool",
@@ -21198,7 +31416,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 948,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Toedscruel",
@@ -21213,7 +31436,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 949,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Grass"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Klawf",
@@ -21228,7 +31456,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 950,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Capsakid",
@@ -21243,7 +31475,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 951,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Scovillain",
@@ -21258,7 +31494,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 952,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Scovillain-Mega",
@@ -21272,7 +31513,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Rellor",
@@ -21287,7 +31533,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 953,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Rabsca",
@@ -21302,7 +31552,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 954,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Flittle",
@@ -21317,7 +31572,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 955,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Espathra",
@@ -21332,7 +31591,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 956,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tinkatink",
@@ -21347,7 +31610,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 957,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tinkatuff",
@@ -21362,7 +31630,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 958,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Steel"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Tinkaton",
@@ -21377,7 +31650,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 959,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Wiglett",
@@ -21392,7 +31670,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 960,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Wugtrio",
@@ -21407,7 +31689,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 961,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Bombirdier",
@@ -21422,7 +31708,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 962,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Finizen",
@@ -21437,7 +31728,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 963,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Palafin",
@@ -21452,7 +31747,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 964,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Palafin-Hero",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 964,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Varoom",
@@ -21467,7 +31788,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 965,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Revavroom",
@@ -21482,7 +31808,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 966,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Cyclizar",
@@ -21497,7 +31828,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 967,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Orthworm",
@@ -21512,7 +31848,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 968,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Glimmet",
@@ -21527,7 +31867,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 969,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Glimmora",
@@ -21542,7 +31887,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 970,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Glimmora-Mega",
@@ -21556,7 +31906,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Rock",
+        "Poison"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Greavard",
@@ -21571,7 +31926,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 971,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Houndstone",
@@ -21586,7 +31945,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 972,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Flamigo",
@@ -21601,7 +31964,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 973,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Flying",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cetoddle",
@@ -21616,7 +31984,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 974,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Cetitan",
@@ -21631,7 +32003,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 975,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Veluza",
@@ -21646,7 +32022,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 976,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dondozo",
@@ -21661,7 +32042,11 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 977,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tatsugiri",
@@ -21676,7 +32061,78 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 978,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Tatsugiri-Droopy",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 978,
+      "formOrder": 1,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Tatsugiri-Stretchy",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 978,
+      "formOrder": 2,
+      "tags": [
+        "alternateForm"
+      ],
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Tatsugiri-Curly-Mega",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 978,
+      "formOrder": 10,
+      "tags": [
+        "alternateForm",
+        "itemForm"
+      ],
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Tatsugiri-Mega",
@@ -21690,7 +32146,52 @@ const PokemonDraftData = {
       },
       "tags": [
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Tatsugiri-Droopy-Mega",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 978,
+      "formOrder": 11,
+      "tags": [
+        "alternateForm",
+        "itemForm"
+      ],
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Tatsugiri-Stretchy-Mega",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 978,
+      "formOrder": 12,
+      "tags": [
+        "alternateForm",
+        "itemForm"
+      ],
+      "types": [
+        "Dragon",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Annihilape",
@@ -21705,7 +32206,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 979,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Ghost"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Clodsire",
@@ -21724,7 +32230,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 980,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Poison",
+        "Ground"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Farigiraf",
@@ -21739,7 +32250,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 981,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Dudunsparce",
@@ -21754,7 +32270,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 982,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
+    },
+    {
+      "name": "Dudunsparce-Three-Segment",
+      "games": {
+        "radicalRed": {
+          "stage1": false,
+          "fullyEvolved": true
+        },
+        "natDex": {
+          "stage1": false,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 982,
+      "formOrder": 60,
+      "tags": [
+        "visualOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Kingambit",
@@ -21769,7 +32311,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 983,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Steel"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Great Tusk",
@@ -21787,7 +32334,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 984,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Scream Tail",
@@ -21805,7 +32357,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 985,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Brute Bonnet",
@@ -21823,7 +32380,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 986,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Flutter Mane",
@@ -21841,7 +32403,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 987,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Slither Wing",
@@ -21859,7 +32426,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 988,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sandy Shocks",
@@ -21877,7 +32449,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 989,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Treads",
@@ -21895,7 +32472,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 990,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Bundle",
@@ -21913,7 +32495,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 991,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ice",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Hands",
@@ -21931,7 +32518,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 992,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Jugulis",
@@ -21949,7 +32541,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 993,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Moth",
@@ -21967,7 +32564,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 994,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fire",
+        "Poison"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Thorns",
@@ -21985,7 +32587,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 995,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Rock",
+        "Electric"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Frigibax",
@@ -22003,7 +32610,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 996,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Arctibax",
@@ -22021,7 +32633,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 997,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Baxcalibur",
@@ -22039,7 +32656,12 @@ const PokemonDraftData = {
         "pseudoLegendary"
       ],
       "natDexId": 998,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Baxcalibur-Mega",
@@ -22054,7 +32676,12 @@ const PokemonDraftData = {
       "tags": [
         "pseudoLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Gimmighoul",
@@ -22069,7 +32696,33 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 999,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Gimmighoul-Roaming",
+      "games": {
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": false
+        },
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": false
+        }
+      },
+      "natDexId": 999,
+      "formOrder": 50,
+      "tags": [
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Gholdengo",
@@ -22084,7 +32737,12 @@ const PokemonDraftData = {
         }
       },
       "natDexId": 1000,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Wo-Chien",
@@ -22102,7 +32760,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 1001,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Chien-Pao",
@@ -22120,7 +32783,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 1002,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Ice"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ting-Lu",
@@ -22138,7 +32806,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 1003,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Ground"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Chi-Yu",
@@ -22156,7 +32829,12 @@ const PokemonDraftData = {
         "subLegendary"
       ],
       "natDexId": 1004,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Roaring Moon",
@@ -22174,7 +32852,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 1005,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Dragon",
+        "Dark"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Valiant",
@@ -22192,7 +32875,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 1006,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fairy",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Koraidon",
@@ -22210,7 +32898,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 1007,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Fighting",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Miraidon",
@@ -22228,7 +32921,12 @@ const PokemonDraftData = {
         "legendary"
       ],
       "natDexId": 1008,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Electric",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Walking Wake",
@@ -22246,7 +32944,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 1009,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Leaves",
@@ -22264,7 +32967,12 @@ const PokemonDraftData = {
         "paradoxUltraBeast"
       ],
       "natDexId": 1010,
-      "formOrder": 0
+      "formOrder": 0,
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Dipplin",
@@ -22279,7 +32987,12 @@ const PokemonDraftData = {
           "stage1": false,
           "fullyEvolved": false
         }
-      }
+      },
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Poltchageist",
@@ -22294,7 +33007,12 @@ const PokemonDraftData = {
           "stage1": true,
           "fullyEvolved": false
         }
-      }
+      },
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Sinistcha",
@@ -22309,7 +33027,12 @@ const PokemonDraftData = {
           "stage1": false,
           "fullyEvolved": true
         }
-      }
+      },
+      "types": [
+        "Grass",
+        "Ghost"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Okidogi",
@@ -22327,7 +33050,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "subLegendary"
-      ]
+      ],
+      "types": [
+        "Poison",
+        "Fighting"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Munkidori",
@@ -22345,7 +33073,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "subLegendary"
-      ]
+      ],
+      "types": [
+        "Poison",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Fezandipiti",
@@ -22363,7 +33096,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "subLegendary"
-      ]
+      ],
+      "types": [
+        "Poison",
+        "Fairy"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ogerpon",
@@ -22381,7 +33119,11 @@ const PokemonDraftData = {
       },
       "tags": [
         "subLegendary"
-      ]
+      ],
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ogerpon-Wellspring",
@@ -22400,7 +33142,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Water"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ogerpon-Hearthflame",
@@ -22419,7 +33166,12 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Ogerpon-Cornerstone",
@@ -22438,7 +33190,110 @@ const PokemonDraftData = {
       "tags": [
         "subLegendary",
         "itemForm"
-      ]
+      ],
+      "types": [
+        "Grass",
+        "Rock"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Ogerpon-Teal-Tera",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 1017,
+      "formOrder": 50,
+      "tags": [
+        "subLegendary",
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Grass"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Ogerpon-Wellspring-Tera",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 1017,
+      "formOrder": 51,
+      "tags": [
+        "subLegendary",
+        "itemForm",
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Water"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Ogerpon-Hearthflame-Tera",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 1017,
+      "formOrder": 52,
+      "tags": [
+        "subLegendary",
+        "itemForm",
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Ogerpon-Cornerstone-Tera",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 1017,
+      "formOrder": 53,
+      "tags": [
+        "subLegendary",
+        "itemForm",
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Grass",
+        "Rock"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Archaludon",
@@ -22453,7 +33308,12 @@ const PokemonDraftData = {
           "stage1": false,
           "fullyEvolved": true
         }
-      }
+      },
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "evolutionStage": 2
     },
     {
       "name": "Hydrapple",
@@ -22468,7 +33328,12 @@ const PokemonDraftData = {
           "stage1": false,
           "fullyEvolved": true
         }
-      }
+      },
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "evolutionStage": 3
     },
     {
       "name": "Gouging Fire",
@@ -22486,7 +33351,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "paradoxUltraBeast"
-      ]
+      ],
+      "types": [
+        "Fire",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Raging Bolt",
@@ -22504,7 +33374,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "paradoxUltraBeast"
-      ]
+      ],
+      "types": [
+        "Electric",
+        "Dragon"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Boulder",
@@ -22522,7 +33397,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "paradoxUltraBeast"
-      ]
+      ],
+      "types": [
+        "Rock",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Iron Crown",
@@ -22540,7 +33420,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "paradoxUltraBeast"
-      ]
+      ],
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Terapagos",
@@ -22558,7 +33443,57 @@ const PokemonDraftData = {
       },
       "tags": [
         "subLegendary"
-      ]
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Terapagos-Stellar",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 1024,
+      "formOrder": 50,
+      "tags": [
+        "subLegendary",
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
+    },
+    {
+      "name": "Terapagos-Terastal",
+      "games": {
+        "natDex": {
+          "stage1": true,
+          "fullyEvolved": true
+        },
+        "radicalRed": {
+          "stage1": true,
+          "fullyEvolved": true
+        }
+      },
+      "natDexId": 1024,
+      "formOrder": 50,
+      "tags": [
+        "subLegendary",
+        "battleOnlyForm"
+      ],
+      "types": [
+        "Normal"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Pecharunt",
@@ -22576,7 +33511,12 @@ const PokemonDraftData = {
       },
       "tags": [
         "subLegendary"
-      ]
+      ],
+      "types": [
+        "Poison",
+        "Ghost"
+      ],
+      "evolutionStage": 1
     },
     {
       "name": "Chillet",
@@ -22589,7 +33529,12 @@ const PokemonDraftData = {
         }
       },
       "customDexId": "RR#001",
-      "spriteSource": "radicalRed"
+      "spriteSource": "radicalRed",
+      "evolutionStage": 1,
+      "types": [
+        "Ice",
+        "Dragon"
+      ]
     }
   ]
 };

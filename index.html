@@ -299,6 +299,40 @@
       box-sizing: border-box;
     }
 
+    .list-viewer-controls {
+      max-width: 860px;
+      margin: 0 auto 18px;
+      padding: 14px;
+      background: #ffffff;
+      border: 2px solid #ffcb05;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(59, 76, 202, 0.12);
+    }
+
+    .list-viewer-controls h2 {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      color: #e3350d;
+      border-bottom: 2px solid #ffcb05;
+      padding-bottom: 6px;
+      text-align: center;
+    }
+
+    .list-extra-filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px 14px;
+      margin-top: 14px;
+    }
+
+    .filter-note {
+      margin: 10px auto 0;
+      color: #e3350d;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.4;
+    }
+
     #listViewerInstruction {
       margin-bottom: 10px;
     }
@@ -462,6 +496,15 @@
 
     .list-viewer-card {
       position: relative;
+      height: 230px;
+      width: 210px;
+      padding: 14px 10px;
+      gap: 6px;
+    }
+
+    .list-viewer-card .choice-sprite {
+      width: 88px;
+      height: 88px;
     }
 
     .natdex-label {
@@ -469,6 +512,49 @@
       color: #3b4cca;
       font-weight: bold;
     }
+
+    .type-badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+
+    .type-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.1rem;
+      padding: 2px 6px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: bold;
+      line-height: 1.1;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(0, 0, 0, 0.18);
+    }
+
+    .type-normal { background: #a8a77a; }
+    .type-fire { background: #ee8130; }
+    .type-water { background: #6390f0; }
+    .type-electric { background: #f7d02c; color: #1f2a44; text-shadow: none; }
+    .type-grass { background: #7ac74c; }
+    .type-ice { background: #96d9d6; color: #1f2a44; text-shadow: none; }
+    .type-fighting { background: #c22e28; }
+    .type-poison { background: #a33ea1; }
+    .type-ground { background: #e2bf65; color: #1f2a44; text-shadow: none; }
+    .type-flying { background: #a98ff3; }
+    .type-psychic { background: #f95587; }
+    .type-bug { background: #a6b91a; }
+    .type-rock { background: #b6a136; }
+    .type-ghost { background: #735797; }
+    .type-dragon { background: #6f35fc; }
+    .type-dark { background: #705746; }
+    .type-steel { background: #b7b7ce; color: #1f2a44; text-shadow: none; }
+    .type-fairy { background: #d685ad; }
 
 
     .shiny-badge {
@@ -643,6 +729,17 @@
         width: 100%;
       }
 
+      #pokemonListViewer .list-viewer-card {
+        height: 215px;
+        min-height: 215px;
+        padding: 12px 8px;
+      }
+
+      #pokemonListViewer .list-viewer-card .choice-sprite {
+        width: 78px;
+        height: 78px;
+      }
+
       #playerLists {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -672,8 +769,13 @@
         height: 36px;
       }
 
-      .list-search-row {
+      .list-search-row,
+      .list-viewer-controls {
         max-width: 100%;
+      }
+
+      .list-extra-filter-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -687,6 +789,10 @@
       .pokemon-button {
         height: auto;
         min-height: 132px;
+      }
+
+      #pokemonListViewer .list-viewer-card {
+        min-height: 215px;
       }
     }
 
@@ -827,6 +933,8 @@
     <div class="setup-actions">
       <button class="main-button" id="startDraftButton">Start draft</button>
       <button class="main-button secondary-button" id="viewListButton">View list</button>
+      <button class="main-button secondary-button" id="importDraftButton" type="button">Import draft</button>
+      <input id="importDraftInput" type="file" accept=".txt,.json" hidden />
     </div>
   </section>
 
@@ -837,6 +945,7 @@
   <section id="draftArea">
     <div class="draft-controls">
       <button class="main-button" id="backToSetupButton">Back to Setup</button>
+      <button class="main-button secondary-button" id="exportDraftButton" type="button">Export draft</button>
     </div>
 
     <div id="currentPlayer"></div>
@@ -855,7 +964,129 @@
     </div>
 
     <div id="listViewerTitle"></div>
-    <div id="listViewerFilters"></div>
+
+    <div id="listViewerControls" class="list-viewer-controls">
+      <h2>List filters</h2>
+
+      <div class="dex-selection-row">
+        <div>
+          <label for="listGameSelect">Game</label>
+          <select id="listGameSelect">
+            <option value="natDex">NatDex</option>
+            <option value="infiniteFusion">Infinite Fusion</option>
+            <option value="radicalRed">Radical Red</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="listDexSelect">Dex</label>
+          <select id="listDexSelect">
+            <option value="stage1">Stage 1 Dex</option>
+            <option value="fullyEvolved">Fully Evolved Dex</option>
+            <option value="full">Full Dex</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tag-filter-section">
+        <p class="filter-heading">Categories</p>
+        <div class="tag-filter-row">
+          <label class="checkbox-label"><input type="checkbox" class="list-tag-filter" value="legendary" /> Legendaries</label>
+          <label class="checkbox-label"><input type="checkbox" class="list-tag-filter" value="mythical" /> Mythicals</label>
+          <label class="checkbox-label"><input type="checkbox" class="list-tag-filter" value="subLegendary" /> Sub-legendaries</label>
+          <label class="checkbox-label"><input type="checkbox" class="list-tag-filter" value="pseudoLegendary" /> Pseudo-legendaries</label>
+          <label class="checkbox-label"><input type="checkbox" class="list-tag-filter" value="paradoxUltraBeast" /> Paradox / Ultra Beast</label>
+        </div>
+
+        <div class="tag-filter-row alternate-form-row">
+          <label class="checkbox-label"><input type="checkbox" id="listIncludeAlternateForms" /> Mechanically different forms</label>
+          <label class="checkbox-label"><input type="checkbox" id="listIncludeAbilityForms" /> Ability-based forms</label>
+          <label class="checkbox-label"><input type="checkbox" id="listIncludeItemForms" /> Item-based forms</label>
+        </div>
+      </div>
+
+      <div class="list-extra-filter-grid">
+        <div>
+          <label for="listTypeFilter">Type 1</label>
+          <select id="listTypeFilter">
+            <option value="">Any type</option>
+            <option value="Normal">Normal</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Electric">Electric</option>
+            <option value="Grass">Grass</option>
+            <option value="Ice">Ice</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Poison">Poison</option>
+            <option value="Ground">Ground</option>
+            <option value="Flying">Flying</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Bug">Bug</option>
+            <option value="Rock">Rock</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Dark">Dark</option>
+            <option value="Steel">Steel</option>
+            <option value="Fairy">Fairy</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="listTypeFilter2">Type 2</label>
+          <select id="listTypeFilter2">
+            <option value="">Any type</option>
+            <option value="Normal">Normal</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Electric">Electric</option>
+            <option value="Grass">Grass</option>
+            <option value="Ice">Ice</option>
+            <option value="Fighting">Fighting</option>
+            <option value="Poison">Poison</option>
+            <option value="Ground">Ground</option>
+            <option value="Flying">Flying</option>
+            <option value="Psychic">Psychic</option>
+            <option value="Bug">Bug</option>
+            <option value="Rock">Rock</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Dark">Dark</option>
+            <option value="Steel">Steel</option>
+            <option value="Fairy">Fairy</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="listEvolutionStageFilter">Evolution stage</label>
+          <select id="listEvolutionStageFilter">
+            <option value="">Any stage</option>
+            <option value="1">Stage 1</option>
+            <option value="2">Stage 2</option>
+            <option value="3">Stage 3</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="listCanEvolveFilter">Can still evolve</label>
+          <select id="listCanEvolveFilter">
+            <option value="">Either</option>
+            <option value="yes">Can evolve</option>
+            <option value="no">Cannot evolve</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="listMegaPrimalFilter">Mega / Primal</label>
+          <select id="listMegaPrimalFilter">
+            <option value="">Either</option>
+            <option value="yes">Mega / Primal only</option>
+            <option value="no">Exclude Mega / Primal</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="listTypeFilterNote" class="filter-note"></p>
+    </div>
 
     <p id="listViewerInstruction">Click a Pokémon to toggle it shiny.</p>
 
@@ -901,6 +1132,10 @@
       }
 
       if (tags.includes("itemForm") && !includeItemFormsElement.checked) {
+        return false;
+      }
+
+      if (tags.includes("battleOnlyForm") || tags.includes("visualOnlyForm")) {
         return false;
       }
 
@@ -970,10 +1205,18 @@
       if (!includeAlternateFormsElement.checked) {
         if (name === "Oricorio-Baile") return "Oricorio";
         if (name === "Squawkabilly") return "Squawkabilly";
+        if (name === "Tatsugiri") return "Tatsugiri";
+        if (name === "Tatsugiri-Mega" || name === "Tatsugiri-Curly-Mega") return "Tatsugiri-Mega";
+        if (name === "Wormadam") return "Wormadam";
       }
 
       if (name === "Squawkabilly") return "Squawkabilly-Green/Blue";
       if (name === "Urshifu-Single-Strike") return "Urshifu-Single Strike";
+      if (name === "Ogerpon") return "Ogerpon-Teal";
+      if (name === "Tatsugiri") return "Tatsugiri-Curly";
+      if (name === "Tatsugiri-Mega" || name === "Tatsugiri-Curly-Mega") return "Tatsugiri-Curly-Mega";
+      if (name === "Wormadam") return "Wormadam-Plant";
+      if (name === "Lycanroc") return "Lycanroc-Midday";
 
       return name;
     }
@@ -1023,13 +1266,27 @@
     const marketPoolStatusElement = document.getElementById("marketPoolStatus");
     const startDraftButton = document.getElementById("startDraftButton");
     const viewListButton = document.getElementById("viewListButton");
+    const importDraftButton = document.getElementById("importDraftButton");
+    const importDraftInput = document.getElementById("importDraftInput");
+    const exportDraftButton = document.getElementById("exportDraftButton");
     const draftAreaElement = document.getElementById("draftArea");
     const listViewerAreaElement = document.getElementById("listViewerArea");
     const backFromListButton = document.getElementById("backFromListButton");
     const listViewerTitleElement = document.getElementById("listViewerTitle");
     const listViewerStatusElement = document.getElementById("listViewerStatus");
-    const listViewerFiltersElement = document.getElementById("listViewerFilters");
     const listSearchInputElement = document.getElementById("listSearchInput");
+    const listGameSelectElement = document.getElementById("listGameSelect");
+    const listDexSelectElement = document.getElementById("listDexSelect");
+    const listTagFilterElements = [...document.querySelectorAll(".list-tag-filter")];
+    const listIncludeAlternateFormsElement = document.getElementById("listIncludeAlternateForms");
+    const listIncludeAbilityFormsElement = document.getElementById("listIncludeAbilityForms");
+    const listIncludeItemFormsElement = document.getElementById("listIncludeItemForms");
+    const listTypeFilterElement = document.getElementById("listTypeFilter");
+    const listTypeFilter2Element = document.getElementById("listTypeFilter2");
+    const listEvolutionStageFilterElement = document.getElementById("listEvolutionStageFilter");
+    const listCanEvolveFilterElement = document.getElementById("listCanEvolveFilter");
+    const listMegaPrimalFilterElement = document.getElementById("listMegaPrimalFilter");
+    const listTypeFilterNoteElement = document.getElementById("listTypeFilterNote");
     const pokemonListViewerElement = document.getElementById("pokemonListViewer");
     const currentPlayerElement = document.getElementById("currentPlayer");
     const choicesElement = document.getElementById("pokemonChoices");
@@ -1278,8 +1535,114 @@
     
     // ===== DRAFT INITIALIZATION =====
 
-    function showListViewer() {
+    function syncListControlsFromSetup() {
+      listGameSelectElement.value = pokemonGameSelectElement.value;
+      listDexSelectElement.value = pokemonDexSelectElement.value;
+
+      const setupTags = getSelectedTagFilters();
+      listTagFilterElements.forEach((checkbox) => {
+        checkbox.checked = setupTags[checkbox.value] !== false;
+      });
+
+      listIncludeAlternateFormsElement.checked = includeAlternateFormsElement.checked;
+      listIncludeAbilityFormsElement.checked = includeAbilityFormsElement.checked;
+      listIncludeItemFormsElement.checked = includeItemFormsElement.checked;
+    }
+
+    function syncSetupControlsFromList() {
+      pokemonGameSelectElement.value = listGameSelectElement.value;
+      pokemonDexSelectElement.value = listDexSelectElement.value;
+
+      const listTags = {};
+      listTagFilterElements.forEach((checkbox) => {
+        listTags[checkbox.value] = checkbox.checked;
+      });
+
+      tagFilterElements.forEach((checkbox) => {
+        checkbox.checked = listTags[checkbox.value] !== false;
+      });
+
+      includeAlternateFormsElement.checked = listIncludeAlternateFormsElement.checked;
+      includeAbilityFormsElement.checked = listIncludeAbilityFormsElement.checked;
+      includeItemFormsElement.checked = listIncludeItemFormsElement.checked;
+
       updatePokemonList();
+    }
+
+    function getListExtraFilters() {
+      return {
+        type: listTypeFilterElement.value,
+        type2: listTypeFilter2Element.value,
+        evolutionStage: listEvolutionStageFilterElement.value,
+        canEvolve: listCanEvolveFilterElement.value,
+        megaPrimal: listMegaPrimalFilterElement.value
+      };
+    }
+
+    function pokemonHasTypeData(pokemonData) {
+      return Array.isArray(pokemonData?.types) && pokemonData.types.length > 0;
+    }
+
+    function pokemonMatchesTypeFilter(pokemonData, selectedType, selectedType2 = "") {
+      if (!selectedType && !selectedType2) return true;
+      if (!pokemonHasTypeData(pokemonData)) return false;
+
+      const types = pokemonData.types || [];
+
+      if (selectedType && selectedType2 && selectedType === selectedType2) {
+        return types.length === 1 && types[0] === selectedType;
+      }
+
+      if (selectedType && !types.includes(selectedType)) return false;
+      if (selectedType2 && !types.includes(selectedType2)) return false;
+
+      return true;
+    }
+
+    function isMegaOrPrimalPokemon(name) {
+      return name.includes("-Mega") || name.includes("-Primal");
+    }
+
+    function pokemonMatchesListExtraFilters(name) {
+      const pokemonData = getPokemonDataByName(name);
+      const gameInfo = pokemonData?.games?.[selectedPokemonGame];
+      const filters = getListExtraFilters();
+
+      if (!pokemonMatchesTypeFilter(pokemonData, filters.type, filters.type2)) {
+        return false;
+      }
+
+      if (filters.evolutionStage && String(pokemonData?.evolutionStage || "") !== filters.evolutionStage) {
+        return false;
+      }
+
+      if (filters.canEvolve === "yes" && gameInfo?.fullyEvolved) return false;
+      if (filters.canEvolve === "no" && !gameInfo?.fullyEvolved) return false;
+
+      const isMegaPrimal = isMegaOrPrimalPokemon(name);
+      if (filters.megaPrimal === "yes" && !isMegaPrimal) return false;
+      if (filters.megaPrimal === "no" && isMegaPrimal) return false;
+
+      return true;
+    }
+
+    function updateTypeFilterNote() {
+      const selectedType = listTypeFilterElement.value;
+      const selectedType2 = listTypeFilter2Element.value;
+      if (!selectedType && !selectedType2) {
+        listTypeFilterNoteElement.textContent = "";
+        return;
+      }
+
+      const hasAnyTypeData = PokemonDraftData.pokemon.some(pokemonHasTypeData);
+      listTypeFilterNoteElement.textContent = hasAnyTypeData
+        ? ""
+        : "Type filtering is ready, but this data file does not currently include Pokémon type data.";
+    }
+
+    function showListViewer() {
+      syncListControlsFromSetup();
+      syncSetupControlsFromList();
 
       setupElement.style.display = "none";
       draftAreaElement.style.display = "none";
@@ -1321,21 +1684,38 @@
       return `<strong>Active Filters:</strong><br>${categoriesText}<br>${formTexts.join("<br>")}`;
     }
 
+    function getTypeClassName(type) {
+      return `type-${String(type).toLowerCase().replace(/[^a-z0-9]/g, "")}`;
+    }
+
+    function createTypeBadgeRow(pokemonData) {
+      const types = pokemonData?.types || [];
+      if (!types.length) return null;
+
+      const row = document.createElement("div");
+      row.className = "type-badge-row";
+      updateTypeBadgeRow(row, types);
+
+      return row;
+    }
+
     function renderListViewer() {
       pokemonListViewerElement.innerHTML = "";
 
       const pokemonList = getSelectedPokemonList();
       const searchTerm = listSearchInputElement.value.trim().toLowerCase();
-      const filteredPokemonList = searchTerm
+      const searchedPokemonList = searchTerm
         ? pokemonList.filter((pokemon) => getPokemonDisplayName(pokemon).toLowerCase().includes(searchTerm) || pokemon.toLowerCase().includes(searchTerm))
         : pokemonList;
+      const filteredPokemonList = searchedPokemonList.filter(pokemonMatchesListExtraFilters);
+
+      updateTypeFilterNote();
 
       const gameLabel = PokemonDraftData.games[selectedPokemonGame] || selectedPokemonGame;
       const dexLabel = pokemonDexSelectElement.options[pokemonDexSelectElement.selectedIndex].textContent;
 
       listViewerTitleElement.textContent = `${gameLabel}: ${dexLabel}`;
-      listViewerFiltersElement.innerHTML = getActiveFilterText();
-      listViewerStatusElement.textContent = searchTerm
+      listViewerStatusElement.textContent = (searchTerm || Object.values(getListExtraFilters()).some(Boolean))
         ? `${filteredPokemonList.length} of ${pokemonList.length} Pokémon shown.`
         : `${pokemonList.length} Pokémon shown.`;
 
@@ -1353,6 +1733,11 @@
           natDexLabel.className = "natdex-label";
           natDexLabel.textContent = dexLabelText;
           button.insertBefore(natDexLabel, button.firstChild);
+        }
+
+        const typeBadgeRow = createTypeBadgeRow(pokemonData);
+        if (typeBadgeRow) {
+          button.appendChild(typeBadgeRow);
         }
 
         button.classList.add("list-viewer-card");
@@ -1458,6 +1843,7 @@
         "Beedrill-Mega": "beedrill-mega",
         "Pidgeot-Mega": "pidgeot-mega",
         "Alakazam-Mega": "alakazam-mega",
+        "Machamp-Mega": "machamp-mega",
         "Slowbro-Mega": "slowbro-mega",
         "Gengar-Mega": "gengar-mega",
         "Kangaskhan-Mega": "kangaskhan-mega",
@@ -1575,7 +1961,9 @@
         "Delphox-Mega": "delphox-mega",
         "Greninja-Mega": "greninja-mega",
         "Pyroar-Mega": "pyroar-mega",
-        "Floette-Mega": "floette-mega",
+        "Floette-Eternal-Mega": "floette-mega",
+        "Meowstic-Mega": "meowstic-mmega",
+        "Meowstic-f-Mega": "meowstic-mmega",
         "Meowstic-Mega": "meowstic-mega",
         "Malamar-Mega": "malamar-mega",
         "Barbaracle-Mega": "barbaracle-mega",
@@ -1632,7 +2020,57 @@
         "Chillet": "chillet",
         "Wishiwashi-School-Sevii": "wishiwashi-school-sevii",
         "Centiskorch-Sevii-Mega": "centiskorch-seviimega",
-        "Sizzlipede-Sevii": "sizzlepede-sevii"
+        "Sizzlipede-Sevii": "sizzlepede-sevii",
+        "Pikachu-Cosplay": "pikachu-cosplay",
+        "Pikachu-Rock-Star": "pikachu-rockstar",
+        "Pikachu-Pop-Star": "pikachu-popstar",
+        "Pikachu-PhD": "pikachu-phd",
+        "Eevee-Starter": "eevee-starter",
+        "Toxtricity-Low-Key": "toxtricity-lowkey",
+        "Tatsugiri-Droopy": "tatsugiri-droopy",
+        "Tatsugiri-Stretchy": "tatsugiri-stretchy",
+        "Tatsugiri-Droopy-Mega": "tatsugiri-mega",
+        "Tatsugiri-Stretchy-Mega": "tatsugiri-mega",
+        "Shellos-East": "shellos-east",
+        "Gastrodon-East": "gastrodon-east",
+        "Keldeo-Resolute": "keldeo-resolute",
+        "Meloetta-Pirouette": "meloetta-pirouette",
+        "Vivillon-Pokeball": "vivillon-pokeball",
+        "Flabebe-Yellow": "flabebe-yellow",
+        "Flabebe-Orange": "flabebe-orange",
+        "Flabebe-Blue": "flabebe-blue",
+        "Flabebe-White": "flabebe-white",
+        "Floette-Yellow": "floette-yellow",
+        "Floette-Orange": "floette-orange",
+        "Floette-Blue": "floette-blue",
+        "Floette-White": "floette-white",
+        "Florges-Yellow": "florges-yellow",
+        "Florges-Orange": "florges-orange",
+        "Florges-Blue": "florges-blue",
+        "Florges-White": "florges-white",
+        "Furfrou-La-Reine": "furfrou-lareine",
+        "Magearna-Original": "magearna-original",
+        "Magearna-Original-Mega": "magearna-mega",
+        "Alcremie-Ruby-Cream": "alcremie-rubycream",
+        "Alcremie-Matcha-Cream": "alcremie-matchacream",
+        "Alcremie-Mint-Cream": "alcremie-mintcream",
+        "Alcremie-Lemon-Cream": "alcremie-lemoncream",
+        "Alcremie-Salted-Cream": "alcremie-saltedcream",
+        "Alcremie-Ruby-Swirl": "alcremie-rubyswirl",
+        "Alcremie-Caramel-Swirl": "alcremie-caramelswirl",
+        "Alcremie-Rainbow-Swirl": "alcremie-rainbowswirl",
+        "Zarude-Dada": "zarude-dada",
+        "Maushold-Four": "maushold-four",
+        "Dudunsparce-Three-Segment": "dudunsparce-threesegment",
+        "Ogerpon-Teal-Tera": "ogerpon-tealtera",
+        "Ogerpon-Wellspring-Tera": "ogerpon-wellspringtera",
+        "Ogerpon-Hearthflame-Tera": "ogerpon-hearthflametera",
+        "Ogerpon-Cornerstone-Tera": "ogerpon-cornerstonetera",
+        "Terapagos-Terastal": "terapagos-terastal",
+        "Terapagos-Stellar": "terapagos-stellar",
+        "Unfezant-F": "unfezant-f",
+        "Frillish-F": "frillish-f",
+        "Jellicent-F": "jellicent-f"
       };
 
       if (specialCases[pokemon]) {
@@ -1659,6 +2097,141 @@
 
     function getPokemonSpriteFilenames(pokemon) {
       const alwaysCyclingSprites = {
+        "Burmy": ["burmy", "burmy-sandy", "burmy-trash"],
+        "Pikachu-Cosplay": [{"filename": "pikachu-cosplay", "types": ["Electric"]}, {"filename": "pikachu-rockstar", "types": ["Electric", "Steel"]}, {"filename": "pikachu-belle", "types": ["Electric", "Ice"]}, {"filename": "pikachu-popstar", "types": ["Electric", "Fairy"]}, {"filename": "pikachu-phd", "types": ["Electric"]}, {"filename": "pikachu-libre", "types": ["Electric", "Fighting"]}],
+        "Castform": ["castform", "castform-sunny", "castform-rainy", "castform-snowy"],
+        "Cherrim": ["cherrim", "cherrim-sunshine"],
+        "Shellos": ["shellos", "shellos-east"],
+        "Gastrodon": ["gastrodon", "gastrodon-east"],
+        "Deerling": ["deerling", "deerling-summer", "deerling-autumn", "deerling-winter"],
+        "Sawsbuck": ["sawsbuck", "sawsbuck-summer", "sawsbuck-autumn", "sawsbuck-winter"],
+        "Keldeo": ["keldeo", "keldeo-resolute"],
+        "Meloetta": ["meloetta", "meloetta-pirouette"],
+        "Vivillon": ["vivillon", "vivillon-archipelago", "vivillon-continental", "vivillon-elegant", "vivillon-fancy", "vivillon-garden", "vivillon-highplains", "vivillon-icysnow", "vivillon-jungle", "vivillon-marine", "vivillon-meadow", "vivillon-modern", "vivillon-monsoon", "vivillon-ocean", "vivillon-pokeball", "vivillon-polar", "vivillon-river", "vivillon-sandstorm", "vivillon-savanna", "vivillon-sun", "vivillon-tundra"],
+        "Flabébé": ["flabebe", "flabebe-yellow", "flabebe-orange", "flabebe-blue", "flabebe-white"],
+        "Floette": ["floette", "floette-yellow", "floette-orange", "floette-blue", "floette-white"],
+        "Florges": ["florges", "florges-yellow", "florges-orange", "florges-blue", "florges-white"],
+        "Furfrou": ["furfrou", "furfrou-heart", "furfrou-star", "furfrou-diamond", "furfrou-debutante", "furfrou-matron", "furfrou-dandy", "furfrou-lareine", "furfrou-kabuki", "furfrou-pharaoh"],
+        "Aegislash": ["aegislash", "aegislash-blade"],
+        "Xerneas": ["xerneas", "xerneas-neutral"],
+        "Wishiwashi": ["wishiwashi", "wishiwashi-school"],
+        "Wishiwashi-Sevii": [{"filename": "wishiwashi-sevii", "source": "radicalRed", "types": ["Ghost"]}, {"filename": "wishiwashi-seviischool", "source": "radicalRed", "types": ["Ghost", "Dragon"]}],
+        "Minior": ["minior", "minior-meteor", "minior-red", "minior-orange", "minior-yellow", "minior-green", "minior-blue", "minior-indigo", "minior-violet"],
+        "Mimikyu": ["mimikyu", "mimikyu-busted"],
+        "Magearna": ["magearna", "magearna-original"],
+        "Magearna-Mega": ["magearna-mega", "magearna-mega"],
+        "Cramorant": ["cramorant", "cramorant-gulping", "cramorant-gorging"],
+        "Alcremie": ["alcremie", "alcremie-rubycream", "alcremie-matchacream", "alcremie-mintcream", "alcremie-lemoncream", "alcremie-saltedcream", "alcremie-rubyswirl", "alcremie-caramelswirl", "alcremie-rainbowswirl"],
+        "Eiscue": ["eiscue", "eiscue-noice"],
+        "Morpeko": ["morpeko", "morpeko-hangry"],
+        "Zarude": ["zarude", "zarude-dada"],
+        "Maushold": ["maushold", "maushold-four"],
+        "Palafin": ["palafin", "palafin-hero"],
+        "Dudunsparce": ["dudunsparce", "dudunsparce-threesegment"],
+        "Gimmighoul": ["gimmighoul", "gimmighoul-roaming"],
+        "Ogerpon": ["ogerpon", "ogerpon-tealtera"],
+        "Ogerpon-Wellspring": ["ogerpon-wellspring", "ogerpon-wellspringtera"],
+        "Ogerpon-Hearthflame": ["ogerpon-hearthflame", "ogerpon-hearthflametera"],
+        "Ogerpon-Cornerstone": ["ogerpon-cornerstone", "ogerpon-cornerstonetera"],
+        "Terapagos": ["terapagos", "terapagos-terastal", "terapagos-stellar"],
+        "Unfezant": ["unfezant", "unfezant-f"],
+        "Frillish": ["frillish", "frillish-f"],
+        "Jellicent": ["jellicent", "jellicent-f"],
+        "Pyroar": ["pyroar", "pyroar-f"],
+
+        "Venusaur": ["venusaur", "venusaur-f"],
+        "Butterfree": ["butterfree", "butterfree-f"],
+        "Rattata": ["rattata", "rattata-f"],
+        "Raticate": ["raticate", "raticate-f"],
+        "Pikachu": ["pikachu", "pikachu-f"],
+        "Raichu": ["raichu", "raichu-f"],
+        "Zubat": ["zubat", "zubat-f"],
+        "Golbat": ["golbat", "golbat-f"],
+        "Gloom": ["gloom", "gloom-f"],
+        "Vileplume": ["vileplume", "vileplume-f"],
+        "Kadabra": ["kadabra", "kadabra-f"],
+        "Alakazam": ["alakazam", "alakazam-f"],
+        "Doduo": ["doduo", "doduo-f"],
+        "Dodrio": ["dodrio", "dodrio-f"],
+        "Hypno": ["hypno", "hypno-f"],
+        "Rhyhorn": ["rhyhorn", "rhyhorn-f"],
+        "Rhydon": ["rhydon", "rhydon-f"],
+        "Goldeen": ["goldeen", "goldeen-f"],
+        "Seaking": ["seaking", "seaking-f"],
+        "Scyther": ["scyther", "scyther-f"],
+        "Magikarp": ["magikarp", "magikarp-f"],
+        "Gyarados": ["gyarados", "gyarados-f"],
+        "Eevee": ["eevee", "eevee-f"],
+        "Meganium": ["meganium", "meganium-f"],
+        "Ledyba": ["ledyba", "ledyba-f"],
+        "Ledian": ["ledian", "ledian-f"],
+        "Xatu": ["xatu", "xatu-f"],
+        "Sudowoodo": ["sudowoodo", "sudowoodo-f"],
+        "Politoed": ["politoed", "politoed-f"],
+        "Aipom": ["aipom", "aipom-f"],
+        "Wooper": ["wooper", "wooper-f"],
+        "Quagsire": ["quagsire", "quagsire-f"],
+        "Murkrow": ["murkrow", "murkrow-f"],
+        "Wobbuffet": ["wobbuffet", "wobbuffet-f"],
+        "Girafarig": ["girafarig", "girafarig-f"],
+        "Gligar": ["gligar", "gligar-f"],
+        "Steelix": ["steelix", "steelix-f"],
+        "Scizor": ["scizor", "scizor-f"],
+        "Heracross": ["heracross", "heracross-f"],
+        "Sneasel": ["sneasel", "sneasel-f"],
+        "Ursaring": ["ursaring", "ursaring-f"],
+        "Piloswine": ["piloswine", "piloswine-f"],
+        "Octillery": ["octillery", "octillery-f"],
+        "Houndoom": ["houndoom", "houndoom-f"],
+        "Donphan": ["donphan", "donphan-f"],
+        "Torchic": ["torchic", "torchic-f"],
+        "Combusken": ["combusken", "combusken-f"],
+        "Blaziken": ["blaziken", "blaziken-f"],
+        "Beautifly": ["beautifly", "beautifly-f"],
+        "Dustox": ["dustox", "dustox-f"],
+        "Ludicolo": ["ludicolo", "ludicolo-f"],
+        "Nuzleaf": ["nuzleaf", "nuzleaf-f"],
+        "Shiftry": ["shiftry", "shiftry-f"],
+        "Meditite": ["meditite", "meditite-f"],
+        "Medicham": ["medicham", "medicham-f"],
+        "Roselia": ["roselia", "roselia-f"],
+        "Gulpin": ["gulpin", "gulpin-f"],
+        "Swalot": ["swalot", "swalot-f"],
+        "Numel": ["numel", "numel-f"],
+        "Camerupt": ["camerupt", "camerupt-f"],
+        "Cacturne": ["cacturne", "cacturne-f"],
+        "Milotic": ["milotic", "milotic-f"],
+        "Relicanth": ["relicanth", "relicanth-f"],
+        "Starly": ["starly", "starly-f"],
+        "Staravia": ["staravia", "staravia-f"],
+        "Staraptor": ["staraptor", "staraptor-f"],
+        "Bidoof": ["bidoof", "bidoof-f"],
+        "Bibarel": ["bibarel", "bibarel-f"],
+        "Kricketot": ["kricketot", "kricketot-f"],
+        "Kricketune": ["kricketune", "kricketune-f"],
+        "Shinx": ["shinx", "shinx-f"],
+        "Luxio": ["luxio", "luxio-f"],
+        "Luxray": ["luxray", "luxray-f"],
+        "Roserade": ["roserade", "roserade-f"],
+        "Combee": ["combee", "combee-f"],
+        "Pachirisu": ["pachirisu", "pachirisu-f"],
+        "Buizel": ["buizel", "buizel-f"],
+        "Floatzel": ["floatzel", "floatzel-f"],
+        "Gible": ["gible", "gible-f"],
+        "Gabite": ["gabite", "gabite-f"],
+        "Garchomp": ["garchomp", "garchomp-f"],
+        "Hippopotas": ["hippopotas", "hippopotas-f"],
+        "Hippowdon": ["hippowdon", "hippowdon-f"],
+        "Croagunk": ["croagunk", "croagunk-f"],
+        "Toxicroak": ["toxicroak", "toxicroak-f"],
+        "Finneon": ["finneon", "finneon-f"],
+        "Lumineon": ["lumineon", "lumineon-f"],
+        "Snover": ["snover", "snover-f"],
+        "Abomasnow": ["abomasnow", "abomasnow-f"],
+        "Weavile": ["weavile", "weavile-f"],
+        "Rhyperior": ["rhyperior", "rhyperior-f"],
+        "Tangrowth": ["tangrowth", "tangrowth-f"],
+        "Mamoswine": ["mamoswine", "mamoswine-f"],
         "Squawkabilly": ["squawkabilly", "squawkabilly-blue"],
         "Squawkabilly-Yellow/White": ["squawkabilly-yellow", "squawkabilly-white"]
       };
@@ -1718,6 +2291,13 @@
         "Decidueye": ["decidueye", "decidueye-hisui"],
         "Wooper": ["wooper", "wooper-paldea"],
         "Tauros": ["tauros", "tauros-paldeacombat", "tauros-paldeablaze", "tauros-paldeaaqua"],
+        "Pikachu": ["pikachu", {"filename": "pikachu-cosplay", "types": ["Electric"]}, {"filename": "pikachu-rockstar", "types": ["Electric", "Steel"]}, {"filename": "pikachu-belle", "types": ["Electric", "Ice"]}, {"filename": "pikachu-popstar", "types": ["Electric", "Fairy"]}, {"filename": "pikachu-phd", "types": ["Electric"]}, {"filename": "pikachu-libre", "types": ["Electric", "Fighting"]}],
+        "Pikachu-Cosplay": [{"filename": "pikachu-cosplay", "types": ["Electric"]}, {"filename": "pikachu-rockstar", "types": ["Electric", "Steel"]}, {"filename": "pikachu-belle", "types": ["Electric", "Ice"]}, {"filename": "pikachu-popstar", "types": ["Electric", "Fairy"]}, {"filename": "pikachu-phd", "types": ["Electric"]}, {"filename": "pikachu-libre", "types": ["Electric", "Fighting"]}],
+        "Eevee": ["eevee", "eevee-starter"],
+        "Wormadam": ["wormadam", "wormadam-sandy", "wormadam-trash"],
+        "Toxtricity": ["toxtricity", "toxtricity-lowkey"],
+        "Lycanroc": ["lycanroc", "lycanroc-midnight", "lycanroc-dusk"],
+        "Tatsugiri": ["tatsugiri", "tatsugiri-droopy", "tatsugiri-stretchy"],
         "Rotom": ["rotom", "rotom-heat", "rotom-wash", "rotom-frost", "rotom-fan", "rotom-mow"],
         "Deoxys": ["deoxys", "deoxys-attack", "deoxys-defense", "deoxys-speed"],
         "Shaymin": ["shaymin", "shaymin-sky"],
@@ -1750,7 +2330,7 @@
         "Clawitzer": ["clawitzer", {"filename": "clawitzer-sevii", "source": "radicalRed"}],
         "Noibat": ["noibat", {"filename": "noibat-sevii", "source": "radicalRed"}],
         "Noivern": ["noivern", {"filename": "noivern-sevii", "source": "radicalRed"}],
-        "Wishiwashi": ["wishiwashi", {"filename": "wishiwashi-sevii", "source": "radicalRed"}],
+        "Wishiwashi": ["wishiwashi", {"filename": "wishiwashi-sevii", "source": "radicalRed", "types": ["Ghost"]}],
         "Dhelmise": ["dhelmise", {"filename": "dhelmise-sevii", "source": "radicalRed"}],
         "Sizzlipede": ["sizzlipede", {"filename": "sizzlepede-sevii", "source": "radicalRed"}],
         "Centiskorch": ["centiskorch", {"filename": "centiskorch-sevii", "source": "radicalRed"}],
@@ -1794,6 +2374,41 @@
       return spriteEntry.source || getPokemonSpriteSource(fallbackPokemon);
     }
 
+    function getSpriteEntryTypes(spriteEntry, fallbackPokemon) {
+      if (typeof spriteEntry === "object" && Array.isArray(spriteEntry.types)) {
+        return spriteEntry.types;
+      }
+
+      if (typeof spriteEntry === "object" && spriteEntry.pokemonName) {
+        return getPokemonDataByName(spriteEntry.pokemonName)?.types || getPokemonDataByName(fallbackPokemon)?.types || [];
+      }
+
+      const filename = getSpriteFilenameValue(spriteEntry);
+      const matchedPokemon = PokemonDraftData.pokemon.find((pokemonData) =>
+        getPokemonSpriteFilename(pokemonData.name) === filename
+      );
+
+      return matchedPokemon?.types || getPokemonDataByName(fallbackPokemon)?.types || [];
+    }
+
+    function updateTypeBadgeRow(row, types) {
+      if (!row) return;
+      row.innerHTML = "";
+
+      (types || []).forEach((type) => {
+        const badge = document.createElement("span");
+        badge.className = `type-badge ${getTypeClassName(type)}`;
+        badge.textContent = type;
+        badge.title = `${type} type`;
+        row.appendChild(badge);
+      });
+    }
+
+    function getCurrentSpriteEntry(pokemon, spriteIndex = 0) {
+      const filenames = getPokemonSpriteFilenames(pokemon);
+      return filenames[spriteIndex % filenames.length];
+    }
+
     function getPokemonSpriteUrl(pokemon, isShiny = false, spriteIndex = 0) {
       const folder = isShiny ? "gen5-shiny" : "gen5";
       const filenames = getPokemonSpriteFilenames(pokemon);
@@ -1813,8 +2428,16 @@
 
       let spriteIndex = 0;
       setInterval(() => {
-        spriteIndex = (spriteIndex + 1) % getPokemonSpriteFilenames(pokemon).length;
+        const currentFilenames = getPokemonSpriteFilenames(pokemon);
+        spriteIndex = (spriteIndex + 1) % currentFilenames.length;
+        const spriteEntry = currentFilenames[spriteIndex];
         sprite.src = getPokemonSpriteUrl(pokemon, isShinyGetter(), spriteIndex);
+
+        const card = sprite.closest(".pokemon-button");
+        const typeRow = card?.querySelector(".type-badge-row");
+        if (typeRow) {
+          updateTypeBadgeRow(typeRow, getSpriteEntryTypes(spriteEntry, pokemon));
+        }
       }, 1000);
     }
 
@@ -2058,6 +2681,232 @@
     
     // ===== PLAYER DISPLAY =====
 
+    // ===== IMPORT / EXPORT =====
+
+    function getDraftModeLabel(mode = draftMode) {
+      const option = [...draftModeElement.options].find((item) => item.value === mode);
+      return option ? option.textContent : mode;
+    }
+
+    function getDexLabel() {
+      return pokemonDexSelectElement.options[pokemonDexSelectElement.selectedIndex]?.textContent || selectedPokemonDex;
+    }
+
+    function getGameLabel() {
+      return PokemonDraftData.games[selectedPokemonGame] || selectedPokemonGame;
+    }
+
+    function getDraftSaveData() {
+      return {
+        version: 1,
+        exportedAt: new Date().toISOString(),
+        settings: {
+          selectedPokemonGame,
+          selectedPokemonDex,
+          draftMode,
+          pokemonPerPlayer,
+          classicChoiceCount,
+          marketBonusCount,
+          marketPokemonPerPlayerInPool,
+          draftAllPossible: draftAllPossibleElement.checked,
+          includeAlternateForms: includeAlternateFormsElement.checked,
+          includeAbilityForms: includeAbilityFormsElement.checked,
+          includeItemForms: includeItemFormsElement.checked,
+          tagFilters: getSelectedTagFilters(),
+          reverseFullRandom: reverseFullRandomElement.checked
+        },
+        state: {
+          players,
+          availablePokemon,
+          currentPlayerIndex,
+          currentRoundChoices,
+          currentRoundOrder,
+          currentRoundPickIndex,
+          roundNumber,
+          snakeDirection,
+          reverseTargetMap,
+          reverseCurrentTargetIndex,
+          completed: allPlayersFull() || availablePokemon.length === 0
+        }
+      };
+    }
+
+    function formatPickForExport(pick, index) {
+      const shinyText = pick.shiny ? " (Shiny)" : "";
+      return `  ${index + 1}. ${getPokemonDisplayName(pick.name)}${shinyText}`;
+    }
+
+    function createHumanReadableDraftExport(saveData) {
+      const lines = [];
+      const totalDrafted = saveData.state.players.reduce((total, player) => total + player.picks.length, 0);
+
+      lines.push("Pokémon Draft Export");
+      lines.push("====================");
+      lines.push("");
+      lines.push(`Exported: ${new Date(saveData.exportedAt).toLocaleString()}`);
+      lines.push(`Game: ${getGameLabel()}`);
+      lines.push(`Dex: ${getDexLabel()}`);
+      lines.push(`Draft Mode: ${getDraftModeLabel()}`);
+      lines.push(`Pokémon per Player: ${saveData.settings.pokemonPerPlayer}`);
+      lines.push(`Total Drafted: ${totalDrafted}`);
+      lines.push(`Remaining Pokémon: ${saveData.state.availablePokemon.length}`);
+      lines.push("");
+      lines.push("Teams");
+      lines.push("-----");
+
+      saveData.state.players.forEach((player) => {
+        lines.push("");
+        lines.push(`${player.name} (${player.picks.length})`);
+        lines.push("-".repeat(`${player.name} (${player.picks.length})`.length));
+
+        if (player.picks.length === 0) {
+          lines.push("  No Pokémon drafted.");
+        } else {
+          player.picks.forEach((pick, index) => {
+            lines.push(formatPickForExport(pick, index));
+          });
+        }
+      });
+
+      lines.push("");
+      lines.push("Import Data");
+      lines.push("-----------");
+      lines.push("Leave everything below this line unchanged if you want to import this draft back into the site.");
+      lines.push("===POKEMON_DRAFT_SAVE_DATA===");
+      lines.push(JSON.stringify(saveData, null, 2));
+      lines.push("===END_POKEMON_DRAFT_SAVE_DATA===");
+
+      return lines.join("\n");
+    }
+
+    function downloadTextFile(filename, contents) {
+      const blob = new Blob([contents], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function exportDraft() {
+      if (!players.length) {
+        alert("Start or import a draft before exporting.");
+        return;
+      }
+
+      const saveData = getDraftSaveData();
+      const safeGame = selectedPokemonGame.replace(/[^a-z0-9]/gi, "-").toLowerCase();
+      const safeDate = new Date().toISOString().slice(0, 10);
+      const filename = `pokemon-draft-${safeGame}-${safeDate}.txt`;
+
+      downloadTextFile(filename, createHumanReadableDraftExport(saveData));
+    }
+
+    function extractDraftSaveData(text) {
+      const match = text.match(/===POKEMON_DRAFT_SAVE_DATA===\s*([\s\S]*?)\s*===END_POKEMON_DRAFT_SAVE_DATA===/);
+      const jsonText = match ? match[1] : text;
+      return JSON.parse(jsonText);
+    }
+
+    function applyImportedDraft(saveData) {
+      if (!saveData || !saveData.settings || !saveData.state || !Array.isArray(saveData.state.players)) {
+        throw new Error("This file does not look like a Pokémon Draft Picker export.");
+      }
+
+      selectedPokemonGame = saveData.settings.selectedPokemonGame || "natDex";
+      selectedPokemonDex = saveData.settings.selectedPokemonDex || "stage1";
+      draftMode = saveData.settings.draftMode || "classic";
+
+      pokemonGameSelectElement.value = selectedPokemonGame;
+      pokemonDexSelectElement.value = selectedPokemonDex;
+      draftModeElement.value = draftMode;
+
+      includeAlternateFormsElement.checked = saveData.settings.includeAlternateForms !== false;
+      includeAbilityFormsElement.checked = !!saveData.settings.includeAbilityForms;
+      includeItemFormsElement.checked = !!saveData.settings.includeItemForms;
+      draftAllPossibleElement.checked = !!saveData.settings.draftAllPossible;
+      reverseFullRandomElement.checked = !!saveData.settings.reverseFullRandom;
+
+      const tagFilters = saveData.settings.tagFilters || {};
+      tagFilterElements.forEach((checkbox) => {
+        checkbox.checked = tagFilters[checkbox.value] !== false;
+      });
+
+      pokemonPerPlayer = Number(saveData.settings.pokemonPerPlayer) || 10;
+      classicChoiceCount = Number(saveData.settings.classicChoiceCount) || 3;
+      marketBonusCount = Number(saveData.settings.marketBonusCount) || 2;
+      marketPokemonPerPlayerInPool = Number(saveData.settings.marketPokemonPerPlayerInPool) || 1;
+
+      pokemonPerPlayerElement.value = pokemonPerPlayer;
+      classicChoiceCountElement.value = classicChoiceCount;
+      marketBonusCountElement.value = marketBonusCount;
+      marketPokemonPerPlayerInPoolElement.value = marketPokemonPerPlayerInPool;
+
+      players = saveData.state.players;
+      playerCountElement.value = players.length;
+      createPlayerInputs();
+
+      [...document.querySelectorAll(".player-name-input")].forEach((input, index) => {
+        input.value = players[index]?.name || `Player ${index + 1}`;
+      });
+
+      updatePokemonList();
+
+      availablePokemon = Array.isArray(saveData.state.availablePokemon)
+        ? saveData.state.availablePokemon
+        : [...originalPokemon];
+
+      currentPlayerIndex = Number(saveData.state.currentPlayerIndex) || 0;
+      currentRoundChoices = Array.isArray(saveData.state.currentRoundChoices) ? saveData.state.currentRoundChoices : [];
+      currentRoundOrder = Array.isArray(saveData.state.currentRoundOrder) ? saveData.state.currentRoundOrder : [];
+      currentRoundPickIndex = Number(saveData.state.currentRoundPickIndex) || 0;
+      roundNumber = Number(saveData.state.roundNumber) || 1;
+      snakeDirection = Number(saveData.state.snakeDirection) || 1;
+      reverseTargetMap = Array.isArray(saveData.state.reverseTargetMap) ? saveData.state.reverseTargetMap : [];
+      reverseCurrentTargetIndex = Number(saveData.state.reverseCurrentTargetIndex);
+      if (Number.isNaN(reverseCurrentTargetIndex)) reverseCurrentTargetIndex = -1;
+
+      pokemonPerPlayerElement.disabled = draftAllPossibleElement.checked;
+      setupElement.style.display = "none";
+      listViewerAreaElement.style.display = "none";
+      draftAreaElement.style.display = "block";
+      updateModeSettings();
+      updatePlayerLists();
+
+      if (saveData.state.completed || allPlayersFull() || availablePokemon.length === 0) {
+        currentPlayerElement.textContent = "Draft complete";
+        choicesElement.innerHTML = "";
+        statusElement.textContent = "";
+        return;
+      }
+
+      if (isMarketMode() && currentRoundChoices.length > 0) {
+        displayRoundChoices();
+      } else {
+        displayChoices();
+      }
+    }
+
+    function importDraftFile(file) {
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const saveData = extractDraftSaveData(String(reader.result || ""));
+          applyImportedDraft(saveData);
+        } catch (error) {
+          alert(`Could not import draft: ${error.message}`);
+        } finally {
+          importDraftInput.value = "";
+        }
+      };
+      reader.readAsText(file);
+    }
+
     function updatePlayerLists() {
       playerListsElement.innerHTML = "";
 
@@ -2132,6 +2981,28 @@
     startDraftButton.addEventListener("click", startDraft);
     viewListButton.addEventListener("click", showListViewer);
     listSearchInputElement.addEventListener("input", renderListViewer);
+
+    [
+      listGameSelectElement,
+      listDexSelectElement,
+      listIncludeAlternateFormsElement,
+      listIncludeAbilityFormsElement,
+      listIncludeItemFormsElement,
+      listTypeFilterElement,
+      listTypeFilter2Element,
+      listEvolutionStageFilterElement,
+      listCanEvolveFilterElement,
+      listMegaPrimalFilterElement,
+      ...listTagFilterElements
+    ].forEach((control) => {
+      control.addEventListener("change", () => {
+        syncSetupControlsFromList();
+        renderListViewer();
+      });
+    });
+    importDraftButton.addEventListener("click", () => importDraftInput.click());
+    importDraftInput.addEventListener("change", () => importDraftFile(importDraftInput.files[0]));
+    exportDraftButton.addEventListener("click", exportDraft);
     backToSetupButton.addEventListener("click", returnToSetup);
     backFromListButton.addEventListener("click", returnToSetup);
 
