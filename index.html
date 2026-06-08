@@ -318,11 +318,80 @@
       text-align: center;
     }
 
+    .list-viewer-controls .dex-selection-row {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .list-viewer-controls .dex-selection-row > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .list-viewer-controls .tag-filter-section,
+    .list-viewer-controls .filter-heading {
+      text-align: center;
+    }
+
+    .list-viewer-controls .tag-filter-row {
+      justify-content: center;
+    }
+
     .list-extra-filter-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      gap: 10px 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px 18px;
       margin-top: 14px;
+      text-align: center;
+    }
+
+    .list-extra-filter-grid > div {
+      flex: 0 1 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .type-filter-pair {
+      flex-basis: 320px;
+    }
+
+    .evolution-stage-filter {
+      margin-left: 22px;
+    }
+
+    .type-filter-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .list-extra-filter-grid label {
+      display: block;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .list-extra-filter-grid > div:not(.type-filter-pair) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .type-filter-controls select {
+      min-width: 120px;
+      max-width: 135px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .type-filter-plus {
+      color: #3b4cca;
+      font-weight: bold;
+      line-height: 1;
     }
 
     .filter-note {
@@ -775,7 +844,29 @@
       }
 
       .list-extra-filter-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .list-extra-filter-grid > div,
+      .type-filter-pair {
+        flex-basis: auto;
+        width: 100%;
+      }
+
+      .type-filter-controls {
+        gap: 8px;
+      }
+
+      .type-filter-controls select {
+        min-width: 0;
+        max-width: none;
+        flex: 1;
+      }
+
+      .evolution-stage-filter {
+        margin-left: 0;
       }
     }
 
@@ -963,7 +1054,6 @@
       <button class="main-button" id="backFromListButton">Back to Setup</button>
     </div>
 
-    <div id="listViewerTitle"></div>
 
     <div id="listViewerControls" class="list-viewer-controls">
       <h2>List filters</h2>
@@ -1006,57 +1096,58 @@
       </div>
 
       <div class="list-extra-filter-grid">
-        <div>
-          <label for="listTypeFilter">Type 1</label>
-          <select id="listTypeFilter">
-            <option value="">Any type</option>
-            <option value="Normal">Normal</option>
-            <option value="Fire">Fire</option>
-            <option value="Water">Water</option>
-            <option value="Electric">Electric</option>
-            <option value="Grass">Grass</option>
-            <option value="Ice">Ice</option>
-            <option value="Fighting">Fighting</option>
-            <option value="Poison">Poison</option>
-            <option value="Ground">Ground</option>
-            <option value="Flying">Flying</option>
-            <option value="Psychic">Psychic</option>
-            <option value="Bug">Bug</option>
-            <option value="Rock">Rock</option>
-            <option value="Ghost">Ghost</option>
-            <option value="Dragon">Dragon</option>
-            <option value="Dark">Dark</option>
-            <option value="Steel">Steel</option>
-            <option value="Fairy">Fairy</option>
-          </select>
+        <div class="type-filter-pair">
+          <label>Type</label>
+          <div class="type-filter-controls">
+            <select id="listTypeFilter" aria-label="Type 1">
+              <option value="">Any type</option>
+              <option value="Normal">Normal</option>
+              <option value="Fire">Fire</option>
+              <option value="Water">Water</option>
+              <option value="Electric">Electric</option>
+              <option value="Grass">Grass</option>
+              <option value="Ice">Ice</option>
+              <option value="Fighting">Fighting</option>
+              <option value="Poison">Poison</option>
+              <option value="Ground">Ground</option>
+              <option value="Flying">Flying</option>
+              <option value="Psychic">Psychic</option>
+              <option value="Bug">Bug</option>
+              <option value="Rock">Rock</option>
+              <option value="Ghost">Ghost</option>
+              <option value="Dragon">Dragon</option>
+              <option value="Dark">Dark</option>
+              <option value="Steel">Steel</option>
+              <option value="Fairy">Fairy</option>
+            </select>
+
+            <span class="type-filter-plus">+</span>
+
+            <select id="listTypeFilter2" aria-label="Type 2">
+              <option value="">Any type</option>
+              <option value="Normal">Normal</option>
+              <option value="Fire">Fire</option>
+              <option value="Water">Water</option>
+              <option value="Electric">Electric</option>
+              <option value="Grass">Grass</option>
+              <option value="Ice">Ice</option>
+              <option value="Fighting">Fighting</option>
+              <option value="Poison">Poison</option>
+              <option value="Ground">Ground</option>
+              <option value="Flying">Flying</option>
+              <option value="Psychic">Psychic</option>
+              <option value="Bug">Bug</option>
+              <option value="Rock">Rock</option>
+              <option value="Ghost">Ghost</option>
+              <option value="Dragon">Dragon</option>
+              <option value="Dark">Dark</option>
+              <option value="Steel">Steel</option>
+              <option value="Fairy">Fairy</option>
+            </select>
+          </div>
         </div>
 
-        <div>
-          <label for="listTypeFilter2">Type 2</label>
-          <select id="listTypeFilter2">
-            <option value="">Any type</option>
-            <option value="Normal">Normal</option>
-            <option value="Fire">Fire</option>
-            <option value="Water">Water</option>
-            <option value="Electric">Electric</option>
-            <option value="Grass">Grass</option>
-            <option value="Ice">Ice</option>
-            <option value="Fighting">Fighting</option>
-            <option value="Poison">Poison</option>
-            <option value="Ground">Ground</option>
-            <option value="Flying">Flying</option>
-            <option value="Psychic">Psychic</option>
-            <option value="Bug">Bug</option>
-            <option value="Rock">Rock</option>
-            <option value="Ghost">Ghost</option>
-            <option value="Dragon">Dragon</option>
-            <option value="Dark">Dark</option>
-            <option value="Steel">Steel</option>
-            <option value="Fairy">Fairy</option>
-          </select>
-        </div>
-
-        <div>
+        <div class="evolution-stage-filter">
           <label for="listEvolutionStageFilter">Evolution stage</label>
           <select id="listEvolutionStageFilter">
             <option value="">Any stage</option>
@@ -1272,7 +1363,6 @@
     const draftAreaElement = document.getElementById("draftArea");
     const listViewerAreaElement = document.getElementById("listViewerArea");
     const backFromListButton = document.getElementById("backFromListButton");
-    const listViewerTitleElement = document.getElementById("listViewerTitle");
     const listViewerStatusElement = document.getElementById("listViewerStatus");
     const listSearchInputElement = document.getElementById("listSearchInput");
     const listGameSelectElement = document.getElementById("listGameSelect");
@@ -1583,11 +1673,35 @@
       return Array.isArray(pokemonData?.types) && pokemonData.types.length > 0;
     }
 
-    function pokemonMatchesTypeFilter(pokemonData, selectedType, selectedType2 = "") {
-      if (!selectedType && !selectedType2) return true;
-      if (!pokemonHasTypeData(pokemonData)) return false;
+    function getPokemonTypeSetsForFiltering(pokemonName) {
+      const pokemonData = getPokemonDataByName(pokemonName);
+      const baseTypes = pokemonData?.types || [];
+      const spriteEntries = getPokemonSpriteFilenames(pokemonName);
 
-      const types = pokemonData.types || [];
+      const typeSets = [];
+
+      if (baseTypes.length) {
+        typeSets.push(baseTypes);
+      }
+
+      spriteEntries.forEach((spriteEntry) => {
+        const spriteTypes = getSpriteEntryTypes(spriteEntry, pokemonName);
+        if (spriteTypes.length) {
+          typeSets.push(spriteTypes);
+        }
+      });
+
+      const uniqueKeys = new Set();
+      return typeSets.filter((types) => {
+        const key = [...types].sort().join("/");
+        if (uniqueKeys.has(key)) return false;
+        uniqueKeys.add(key);
+        return true;
+      });
+    }
+
+    function typeSetMatchesFilter(types, selectedType, selectedType2 = "") {
+      if (!selectedType && !selectedType2) return true;
 
       if (selectedType && selectedType2 && selectedType === selectedType2) {
         return types.length === 1 && types[0] === selectedType;
@@ -1599,6 +1713,15 @@
       return true;
     }
 
+    function pokemonMatchesTypeFilter(pokemonName, selectedType, selectedType2 = "") {
+      if (!selectedType && !selectedType2) return true;
+
+      const typeSets = getPokemonTypeSetsForFiltering(pokemonName);
+      if (!typeSets.length) return false;
+
+      return typeSets.some((types) => typeSetMatchesFilter(types, selectedType, selectedType2));
+    }
+
     function isMegaOrPrimalPokemon(name) {
       return name.includes("-Mega") || name.includes("-Primal");
     }
@@ -1608,7 +1731,7 @@
       const gameInfo = pokemonData?.games?.[selectedPokemonGame];
       const filters = getListExtraFilters();
 
-      if (!pokemonMatchesTypeFilter(pokemonData, filters.type, filters.type2)) {
+      if (!pokemonMatchesTypeFilter(name, filters.type, filters.type2)) {
         return false;
       }
 
@@ -1710,11 +1833,6 @@
       const filteredPokemonList = searchedPokemonList.filter(pokemonMatchesListExtraFilters);
 
       updateTypeFilterNote();
-
-      const gameLabel = PokemonDraftData.games[selectedPokemonGame] || selectedPokemonGame;
-      const dexLabel = pokemonDexSelectElement.options[pokemonDexSelectElement.selectedIndex].textContent;
-
-      listViewerTitleElement.textContent = `${gameLabel}: ${dexLabel}`;
       listViewerStatusElement.textContent = (searchTerm || Object.values(getListExtraFilters()).some(Boolean))
         ? `${filteredPokemonList.length} of ${pokemonList.length} Pokémon shown.`
         : `${pokemonList.length} Pokémon shown.`;
@@ -2018,7 +2136,7 @@
         "Necrozma-Dawn-Wings": "necrozma-dawnwings",
         "Necrozma-Ultra": "necrozma-ultra",
         "Chillet": "chillet",
-        "Wishiwashi-School-Sevii": "wishiwashi-school-sevii",
+        "Wishiwashi-School-Sevii": "wishiwashi-seviischool",
         "Centiskorch-Sevii-Mega": "centiskorch-seviimega",
         "Sizzlipede-Sevii": "sizzlepede-sevii",
         "Pikachu-Cosplay": "pikachu-cosplay",
@@ -2161,7 +2279,6 @@
         "Scyther": ["scyther", "scyther-f"],
         "Magikarp": ["magikarp", "magikarp-f"],
         "Gyarados": ["gyarados", "gyarados-f"],
-        "Eevee": ["eevee", "eevee-f"],
         "Meganium": ["meganium", "meganium-f"],
         "Ledyba": ["ledyba", "ledyba-f"],
         "Ledian": ["ledian", "ledian-f"],
@@ -2184,7 +2301,6 @@
         "Octillery": ["octillery", "octillery-f"],
         "Houndoom": ["houndoom", "houndoom-f"],
         "Donphan": ["donphan", "donphan-f"],
-        "Torchic": ["torchic", "torchic-f"],
         "Combusken": ["combusken", "combusken-f"],
         "Blaziken": ["blaziken", "blaziken-f"],
         "Beautifly": ["beautifly", "beautifly-f"],
@@ -2215,7 +2331,6 @@
         "Roserade": ["roserade", "roserade-f"],
         "Combee": ["combee", "combee-f"],
         "Pachirisu": ["pachirisu", "pachirisu-f"],
-        "Buizel": ["buizel", "buizel-f"],
         "Floatzel": ["floatzel", "floatzel-f"],
         "Gible": ["gible", "gible-f"],
         "Gabite": ["gabite", "gabite-f"],
@@ -2234,6 +2349,15 @@
         "Mamoswine": ["mamoswine", "mamoswine-f"],
         "Squawkabilly": ["squawkabilly", "squawkabilly-blue"],
         "Squawkabilly-Yellow/White": ["squawkabilly-yellow", "squawkabilly-white"]
+      };
+
+      const groupedRadicalRedSpritesWhenAlternateFormsHidden = {
+        "Wishiwashi": [
+          {"filename": "wishiwashi", "types": ["Water"]},
+          {"filename": "wishiwashi-school", "types": ["Water"]},
+          {"filename": "wishiwashi-sevii", "source": "radicalRed", "types": ["Ghost"]},
+          {"filename": "wishiwashi-seviischool", "source": "radicalRed", "types": ["Ghost", "Dragon"]}
+        ]
       };
 
       const groupedSpritesWhenAlternateFormsHidden = {
@@ -2342,12 +2466,12 @@
 
       const groupedSpritesWhenItemFormsHidden = {};
 
-      if (!includeAlternateFormsElement.checked && groupedSpritesWhenAlternateFormsHidden[pokemon]) {
-        return groupedSpritesWhenAlternateFormsHidden[pokemon];
-      }
-
-      if (alwaysCyclingSprites[pokemon]) {
-        return alwaysCyclingSprites[pokemon];
+      if (
+        !includeAlternateFormsElement.checked &&
+        isRadicalRedSelected() &&
+        groupedRadicalRedSpritesWhenAlternateFormsHidden[pokemon]
+      ) {
+        return groupedRadicalRedSpritesWhenAlternateFormsHidden[pokemon];
       }
 
       if (
@@ -2356,6 +2480,14 @@
         groupedSeviiSpritesWhenAlternateFormsHidden[pokemon]
       ) {
         return groupedSeviiSpritesWhenAlternateFormsHidden[pokemon];
+      }
+
+      if (!includeAlternateFormsElement.checked && groupedSpritesWhenAlternateFormsHidden[pokemon]) {
+        return groupedSpritesWhenAlternateFormsHidden[pokemon];
+      }
+
+      if (alwaysCyclingSprites[pokemon]) {
+        return alwaysCyclingSprites[pokemon];
       }
 
       if (!includeItemFormsElement.checked && groupedSpritesWhenItemFormsHidden[pokemon]) {

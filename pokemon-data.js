@@ -905,17 +905,9 @@ const PokemonDraftData = {
     {
       "name": "Pikachu-Cosplay",
       "games": {
-        "infiniteFusion": {
-          "stage1": false,
-          "fullyEvolved": false
-        },
-        "radicalRed": {
-          "stage1": false,
-          "fullyEvolved": false
-        },
         "natDex": {
           "stage1": false,
-          "fullyEvolved": false
+          "fullyEvolved": true
         }
       },
       "natDexId": 25,
@@ -4999,14 +4991,6 @@ const PokemonDraftData = {
     {
       "name": "Eevee-Starter",
       "games": {
-        "infiniteFusion": {
-          "stage1": true,
-          "fullyEvolved": false
-        },
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": false
-        },
         "natDex": {
           "stage1": true,
           "fullyEvolved": false
@@ -5016,32 +5000,6 @@ const PokemonDraftData = {
       "formOrder": 1,
       "tags": [
         "alternateForm"
-      ],
-      "types": [
-        "Normal"
-      ],
-      "evolutionStage": 1
-    },
-    {
-      "name": "Eevee-f",
-      "games": {
-        "infiniteFusion": {
-          "stage1": true,
-          "fullyEvolved": false
-        },
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": false
-        },
-        "natDex": {
-          "stage1": true,
-          "fullyEvolved": false
-        }
-      },
-      "natDexId": 133,
-      "formOrder": 92,
-      "tags": [
-        "visualOnlyForm"
       ],
       "types": [
         "Normal"
@@ -9140,32 +9098,6 @@ const PokemonDraftData = {
       },
       "natDexId": 255,
       "formOrder": 0,
-      "types": [
-        "Fire"
-      ],
-      "evolutionStage": 1
-    },
-    {
-      "name": "Torchic-f",
-      "games": {
-        "infiniteFusion": {
-          "stage1": true,
-          "fullyEvolved": false
-        },
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": false
-        },
-        "natDex": {
-          "stage1": true,
-          "fullyEvolved": false
-        }
-      },
-      "natDexId": 255,
-      "formOrder": 115,
-      "tags": [
-        "visualOnlyForm"
-      ],
       "types": [
         "Fire"
       ],
@@ -14339,28 +14271,6 @@ const PokemonDraftData = {
       },
       "natDexId": 418,
       "formOrder": 0,
-      "types": [
-        "Water"
-      ],
-      "evolutionStage": 1
-    },
-    {
-      "name": "Buizel-f",
-      "games": {
-        "radicalRed": {
-          "stage1": true,
-          "fullyEvolved": false
-        },
-        "natDex": {
-          "stage1": true,
-          "fullyEvolved": false
-        }
-      },
-      "natDexId": 418,
-      "formOrder": 146,
-      "tags": [
-        "visualOnlyForm"
-      ],
       "types": [
         "Water"
       ],
